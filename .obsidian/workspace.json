@@ -1,0 +1,354 @@
+{
+  "main": {
+    "id": "c8c963bfd1d973f3",
+    "type": "split",
+    "children": [
+      {
+        "id": "9fd0fec7daff6971",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "16e8496dd0c2187f",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "00 - Main vault/Notes/Cj 2nd Brain.canvas",
+                "viewState": {
+                  "x": 0,
+                  "y": 0,
+                  "zoom": 0
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Cj 2nd Brain"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f24dbbc0371e3179",
+    "type": "split",
+    "children": [
+      {
+        "id": "4b13b41fa857145f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "76605281b7c3e293",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": true
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "4c81c3e34721e3f9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#Mood",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "6edc12a54ab9fb7a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 218.5
+  },
+  "right": {
+    "id": "17ea2e828d15a2a3",
+    "type": "split",
+    "children": [
+      {
+        "id": "07acc302767c9a61",
+        "type": "tabs",
+        "dimension": 38.15217391304348,
+        "children": [
+          {
+            "id": "ce56779bc01cc3dd",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
+          },
+          {
+            "id": "b6528d21662c518c",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {},
+              "icon": "checkmark",
+              "title": "Todo List"
+            }
+          },
+          {
+            "id": "7c8518ee53efb84a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "00 - Cj's note/Notes/Annually reports/2025.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 2025"
+            }
+          },
+          {
+            "id": "8a58863e4b6d4579",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "00 - Cj's note/Daily Notes/250219 _ Wednesday February 19th 2025.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 250219 _ Wednesday February 19th 2025"
+            }
+          },
+          {
+            "id": "36d98e7d679044b1",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "00 - Main vault/Notes/Cj 2nd Brain.canvas",
+                "followCursor": false,
+                "showSearch": true,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Cj 2nd Brain"
+            }
+          },
+          {
+            "id": "ba8d0b95f009dcae",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "fc536aa2e981cbb3",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "00 - Main vault/Notes/Cj 2nd Brain.canvas"
+              },
+              "icon": "lucide-info",
+              "title": "File properties for Cj 2nd Brain"
+            }
+          }
+        ],
+        "currentTab": 6
+      },
+      {
+        "id": "99ed44430941ba8e",
+        "type": "tabs",
+        "dimension": 34.67391304347826,
+        "children": [
+          {
+            "id": "d464d982dc1531ae",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          }
+        ]
+      },
+      {
+        "id": "0e3ba23ce7a16840",
+        "type": "tabs",
+        "dimension": 27.173913043478258,
+        "children": [
+          {
+            "id": "7219b34825cbff33",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "00 - Main vault/Notes/Cj 2nd Brain.canvas",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.4823760655947091,
+                  "close": true
+                }
+              },
+              "icon": "lucide-git-fork",
+              "title": "Graph of Cj 2nd Brain"
+            }
+          },
+          {
+            "id": "02bc387a59b4b218",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "48c64c14a0718003",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {},
+              "icon": "clock",
+              "title": "Recent Files"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 272.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "templater-obsidian:Templater": false,
+      "zk-prefixer:Create new unique note": false,
+      "periodic-notes:Open today": false,
+      "workspaces:Manage workspace layouts": false,
+      "dbfolder:Create a new database table": false
+    }
+  },
+  "active": "16e8496dd0c2187f",
+  "lastOpenFiles": [
+    "00 - Main vault/Notes/TempDailyNote.md",
+    "00 - Main vault/Notes/Vault of money.md",
+    "00 - Main vault/Templates/Writing.md",
+    "00 - Main vault/Templates/Weekly report.md",
+    "00 - Main vault/Templates/Teaching.md",
+    "00 - Main vault/Templates/Skills.md",
+    "00 - Main vault/Templates/Review.md",
+    "00 - Main vault/Templates/Projects.md",
+    "00 - Main vault/Templates/New note.md",
+    "00 - Main vault/Templates/Monthly report.md",
+    "00 - Main vault/Templates/Meeting.md",
+    "00 - Main vault/Templates/Learning.md",
+    "00 - Main vault/Templates/Gaming.md",
+    "00 - Main vault/Templates/Daily notes.md",
+    "00 - Main vault/Templates/Contacts.md",
+    "00 - Main vault/Templates/Annual report.md",
+    "00 - Main vault/MainMap.canvas",
+    "01 - Learning/Road to CS/1. Fundamentals/Matrices.md",
+    "01 - Learning/Road to CS/1. Fundamentals/Fundamentals.md",
+    "01 - Learning/Road to CS/2. Statistics/Statistics.md",
+    "01 - Learning/Road to CS/3. Programming/Programming (for CS).md",
+    "01 - Learning/Road to CS/4. Machine Learning/Machine Learning.md",
+    "01 - Learning/Road to CS/5. Text Mining and NLP/Text Mining.md",
+    "01 - Learning/Road to CS/6. Visualization/Visualization.md",
+    "01 - Learning/Road to CS/7. Big Data/Big Data.md",
+    "01 - Learning/Road to CS/8. Data Munging/Data Munging.md",
+    "01 - Learning/Road to CS/9. Data Ingestion/Data Ingestion.md",
+    "01 - Learning/Road to CS/Road map.jpg",
+    "01 - Learning/Roads.canvas",
+    "04 - Teaching Work/Digital skills/Planing for seances.canvas",
+    "05 - Projects/Collab/Metavers/Connection.canvas",
+    "01 - Learning/Road to CS/9. Data Ingestion",
+    "01 - Learning/Road to CS/8. Data Munging",
+    "01 - Learning/Road to CS/7. Big Data",
+    "01 - Learning/Road to CS/6. Visualization",
+    "01 - Learning/Road to CS/5. Text Mining and NLP",
+    "01 - Learning/Road to CS/4. Machine Learning",
+    "01 - Learning/Road to CS/3. Programming",
+    "01 - Learning/Road to CS/2. Statistics",
+    "01 - Learning/Road to CS/1. Fundamentals",
+    "01 - Learning/Road to CS/10. Toolbox",
+    "00 - Main vault/Assets/alt-checkboxes.png",
+    "00 - Main vault/Notes/Cj 2nd Brain.canvas",
+    "00 - Main vault/Assets/Banners/Sky1Banner.jpg",
+    "00 - Cj's note/Assets/Banners/Sky1Banner_.jpg",
+    "00 - Main vault/Assets/Banners/Sky3Banner.jpg",
+    "00 - Main vault/Assets/Banners/Sky2Banner.jpg",
+    "00 - Main vault/Assets/Banners/Milky0Banner.jpg",
+    "00 - Main vault/Assets/Banners/Friends1Banner.jpg",
+    "00 - Main vault/Assets/Banners/WorldBanner.jpg",
+    "00 - Main vault/Assets/Banners/MediaBanner.jpg",
+    "Untitled.canvas",
+    "Untitled 1.canvas"
+  ]
+}

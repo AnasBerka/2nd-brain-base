@@ -1,0 +1,14 @@
+{
+  "cssTheme": "Minimal",
+  "theme": "system",
+  "textFontFamily": "Comic Sans MS",
+  "interfaceFontFamily": "Inter",
+  "enabledCssSnippets": [
+    "Colored Sidebar Items",
+    "Notebook Backgrounds",
+    "Daily Note Themes",
+    "CyanVoxel's General Tweaks",
+    "heatmap_styleAlternatingMonths",
+    "heatmap_custom_styling"
+  ]
+}

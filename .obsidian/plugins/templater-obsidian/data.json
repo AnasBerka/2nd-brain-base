@@ -1,0 +1,89 @@
+{
+  "command_timeout": 5,
+  "templates_folder": "00 - Main vault/Templates",
+  "templates_pairs": [
+    [
+      "",
+      ""
+    ]
+  ],
+  "trigger_on_file_creation": true,
+  "auto_jump_to_cursor": false,
+  "enable_system_commands": false,
+  "shell_path": "",
+  "user_scripts_folder": "",
+  "enable_folder_templates": true,
+  "folder_templates": [
+    {
+      "folder": "00 - Main vault/Notes/Daily Notes",
+      "template": "00 - Main vault/Templates/Daily notes.md"
+    },
+    {
+      "folder": "00 - Main vault/Notes/Weekly reports",
+      "template": "00 - Main vault/Templates/Weekly report.md"
+    },
+    {
+      "folder": "00 - Main vault/Notes/Monthly reports",
+      "template": "00 - Main vault/Templates/Monthly report.md"
+    },
+    {
+      "folder": "00 - Main vault/Notes/Annually reports",
+      "template": "00 - Main vault/Templates/Annual report.md"
+    },
+    {
+      "folder": "00 - Main vault/Meetings",
+      "template": "00 - Main vault/Templates/Meeting.md"
+    },
+    {
+      "folder": "01 - Learning",
+      "template": "00 - Main vault/Templates/Learning.md"
+    },
+    {
+      "folder": "02 - Reading and Watching",
+      "template": "00 - Main vault/Templates/Review.md"
+    },
+    {
+      "folder": "03 - Writing",
+      "template": "00 - Main vault/Templates/Writing.md"
+    },
+    {
+      "folder": "04 - Teaching Work",
+      "template": "00 - Main vault/Templates/Teaching.md"
+    },
+    {
+      "folder": "05 - Projects",
+      "template": "00 - Main vault/Templates/Projects.md"
+    },
+    {
+      "folder": "05 - Projects/People",
+      "template": "00 - Main vault/Templates/Contacts.md"
+    },
+    {
+      "folder": "06 - Skills",
+      "template": "00 - Main vault/Templates/Skills.md"
+    },
+    {
+      "folder": "07 - Gaming",
+      "template": "00 - Main vault/Templates/Gaming.md"
+    },
+    {
+      "folder": "/",
+      "template": "00 - Main vault/Templates/New note.md"
+    }
+  ],
+  "enable_file_templates": false,
+  "file_templates": [
+    {
+      "regex": ".*",
+      "template": ""
+    }
+  ],
+  "syntax_highlighting": true,
+  "syntax_highlighting_mobile": false,
+  "enabled_templates_hotkeys": [
+    ""
+  ],
+  "startup_templates": [
+    ""
+  ]
+}

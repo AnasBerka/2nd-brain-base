@@ -1,0 +1,34 @@
+{
+  "showGettingStartedBanner": false,
+  "hasMigratedDailyNoteSettings": true,
+  "hasMigratedWeeklyNoteSettings": false,
+  "daily": {
+    "format": "YYYY-MM-DD",
+    "folder": "00 - Main vault/Notes/Daily Notes",
+    "template": "00 - Main vault/Templates/Daily notes.md",
+    "enabled": true
+  },
+  "weekly": {
+    "format": "",
+    "template": "00 - Main vault/Templates/Weekly report.md",
+    "folder": "00 - Main vault/Notes/Weekly reports",
+    "enabled": true
+  },
+  "monthly": {
+    "format": "YYYY-MM _ MMMM",
+    "template": "00 - Main vault/Templates/Monthly report.md",
+    "folder": "00 - Main vault/Notes/Monthly reports",
+    "enabled": true
+  },
+  "quarterly": {
+    "format": "",
+    "template": "",
+    "folder": ""
+  },
+  "yearly": {
+    "format": "YYYY",
+    "template": "00 - Main vault/Templates/Annual report.md",
+    "folder": "00 - Main vault/Notes/Annually reports",
+    "enabled": true
+  }
+}
