@@ -1,24 +1,56 @@
 {
   "recentFiles": [
     {
+      "basename": "2nd brain _ demo",
+      "path": "2nd brain _ demo.mp4"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "HTML",
+      "path": "06 - Skills/Coding/Basic Web/HTML.md"
+    },
+    {
+      "basename": "CSS",
+      "path": "06 - Skills/Coding/Basic Web/CSS.md"
+    },
+    {
+      "basename": "PhD",
+      "path": "03 - Writing/Thesis/PhD.md"
+    },
+    {
+      "basename": "Main Idea",
+      "path": "03 - Writing/Thesis/Main Idea.md"
+    },
+    {
+      "basename": "Anime",
+      "path": "02 - Reading and Watching/Animes/Anime.md"
+    },
+    {
+      "basename": "Statistics",
+      "path": "01 - Learning/Road to CS/2. Statistics/Statistics.md"
+    },
+    {
+      "basename": "alt-checkboxes",
+      "path": "00 - Main vault/Assets/alt-checkboxes.png"
+    },
+    {
       "basename": "Cj 2nd Brain",
       "path": "00 - Main vault/Notes/Cj 2nd Brain.canvas"
     },
     {
-      "basename": "TempDailyNote",
-      "path": "00 - Main vault/Notes/TempDailyNote.md"
-    },
-    {
-      "basename": "Vault of money",
-      "path": "00 - Main vault/Notes/Vault of money.md"
-    },
-    {
-      "basename": "Writing",
-      "path": "00 - Main vault/Templates/Writing.md"
+      "basename": "MainMap",
+      "path": "00 - Main vault/MainMap.canvas"
     },
     {
       "basename": "Weekly report",
       "path": "00 - Main vault/Templates/Weekly report.md"
+    },
+    {
+      "basename": "Writing",
+      "path": "00 - Main vault/Templates/Writing.md"
     },
     {
       "basename": "Teaching",
@@ -69,8 +101,12 @@
       "path": "00 - Main vault/Templates/Annual report.md"
     },
     {
-      "basename": "MainMap",
-      "path": "00 - Main vault/MainMap.canvas"
+      "basename": "TempDailyNote",
+      "path": "00 - Main vault/Notes/TempDailyNote.md"
+    },
+    {
+      "basename": "Vault of money",
+      "path": "00 - Main vault/Notes/Vault of money.md"
     },
     {
       "basename": "Matrices",
@@ -79,10 +115,6 @@
     {
       "basename": "Fundamentals",
       "path": "01 - Learning/Road to CS/1. Fundamentals/Fundamentals.md"
-    },
-    {
-      "basename": "Statistics",
-      "path": "01 - Learning/Road to CS/2. Statistics/Statistics.md"
     },
     {
       "basename": "Programming (for CS)",
@@ -145,18 +177,6 @@
       "path": "02 - Reading and Watching/Light Novels/Light Novels.md"
     },
     {
-      "basename": "Anime",
-      "path": "02 - Reading and Watching/Animes/Anime.md"
-    },
-    {
-      "basename": "Main Idea",
-      "path": "03 - Writing/Thesis/Main Idea.md"
-    },
-    {
-      "basename": "PhD",
-      "path": "03 - Writing/Thesis/PhD.md"
-    },
-    {
       "basename": "Digital Skills",
       "path": "04 - Teaching Work/Digital skills/Digital Skills.md"
     },
@@ -179,26 +199,6 @@
     {
       "basename": "Assembly",
       "path": "06 - Skills/Coding/Assembly/Assembly.md"
-    },
-    {
-      "basename": "Java",
-      "path": "06 - Skills/Coding/Java/Java.md"
-    },
-    {
-      "basename": "Cs",
-      "path": "06 - Skills/Coding/Cs/Cs.md"
-    },
-    {
-      "basename": "C++",
-      "path": "06 - Skills/Coding/C++/C++.md"
-    },
-    {
-      "basename": "C",
-      "path": "06 - Skills/Coding/C/C.md"
-    },
-    {
-      "basename": "PhP",
-      "path": "06 - Skills/Coding/Basic Web/PhP.md"
     }
   ],
   "omittedPaths": [],
