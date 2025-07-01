@@ -181,13 +181,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00 - Main vault/Statistiques/Tasks _ Stat.md",
+                "file": "00 - Main vault/Notes/Daily Notes/2025/07/2025-07-01.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Tasks _ Stat"
+              "title": "Outline of 2025-07-01"
             }
           },
           {
@@ -297,7 +297,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "00 - Main vault/Statistiques/Tasks _ Stat.md",
+                "file": "00 - Main vault/Notes/Daily Notes/2025/07/2025-07-01.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -325,7 +325,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Tasks _ Stat"
+              "title": "Graph of 2025-07-01"
             }
           },
           {
