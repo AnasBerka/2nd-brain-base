@@ -13,7 +13,7 @@
   "useFilenameAsScheduledDate": true,
   "filenameAsScheduledDateFormat": "YYYY-MM-DD",
   "filenameAsDateFolders": [],
-  "recurrenceOnNextLine": false,
+  "recurrenceOnNextLine": true,
   "statusSettings": {
     "coreStatuses": [
       {

@@ -1,5 +1,5 @@
 {
   "folder": "00 - Main vault/Templates",
   "dateFormat": "dddd, MMMM Do YYYY",
-  "timeFormat": "hh:mm A"
+  "timeFormat": "[####] hh:mm A"
 }

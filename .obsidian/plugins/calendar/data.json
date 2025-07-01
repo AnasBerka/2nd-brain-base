@@ -1,7 +1,7 @@
 {
-  "shouldConfirmBeforeCreate": true,
+  "shouldConfirmBeforeCreate": false,
   "weekStart": "monday",
-  "wordsPerDot": 2500,
+  "wordsPerDot": 25000,
   "showWeeklyNote": true,
   "weeklyNoteFormat": "",
   "weeklyNoteTemplate": "00 - Cj's note/Templates/Weekly report",

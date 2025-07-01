@@ -10,5 +10,6 @@
     "CyanVoxel's General Tweaks",
     "heatmap_styleAlternatingMonths",
     "heatmap_custom_styling"
-  ]
+  ],
+  "baseFontSize": 15
 }

@@ -3,19 +3,19 @@
   "hasMigratedDailyNoteSettings": true,
   "hasMigratedWeeklyNoteSettings": false,
   "daily": {
-    "format": "YYYY-MM-DD",
+    "format": "YYYY/MM/YYYY-MM-DD",
     "folder": "00 - Main vault/Notes/Daily Notes",
     "template": "00 - Main vault/Templates/Daily notes.md",
     "enabled": true
   },
   "weekly": {
-    "format": "",
+    "format": "YYYY/gggg-[W]ww",
     "template": "00 - Main vault/Templates/Weekly report.md",
     "folder": "00 - Main vault/Notes/Weekly reports",
     "enabled": true
   },
   "monthly": {
-    "format": "YYYY-MM _ MMMM",
+    "format": "YYYY/YYYY-MM _ MMMM",
     "template": "00 - Main vault/Templates/Monthly report.md",
     "folder": "00 - Main vault/Notes/Monthly reports",
     "enabled": true

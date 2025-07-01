@@ -1,4 +1,5 @@
 {
-  "folder": "00 - Main vault/Notes/Daily Notes",
-  "format": "YYYY-MM-DD-HH-mm-ss"
+  "folder": "00 - Main vault/Notes/Ideas",
+  "format": "YYYY-MM-DD-HH-mm-ss",
+  "template": "00 - Main vault/Templates/New note"
 }

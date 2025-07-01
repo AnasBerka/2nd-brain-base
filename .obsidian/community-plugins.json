@@ -6,9 +6,7 @@
   "templater-obsidian",
   "obsidian-mind-map",
   "editing-toolbar",
-  "obsidian-zotero-desktop-connector",
   "obsidian-latex-suite",
-  "url-into-selection",
   "obsidian-reading-time",
   "file-explorer-note-count",
   "obsidian-tasks-plugin",
@@ -25,5 +23,10 @@
   "dbfolder",
   "dataview",
   "heatmap-tracker",
-  "recent-files-obsidian"
+  "recent-files-obsidian",
+  "obsidian-excalidraw-plugin",
+  "obsidian-zotero-desktop-connector",
+  "obsidian-full-calendar",
+  "obsidian-day-planner",
+  "obsidian-pandoc-reference-list"
 ]

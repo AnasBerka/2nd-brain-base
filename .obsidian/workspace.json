@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "9fd0fec7daff6971",
+        "id": "aff3a79f652532de",
         "type": "tabs",
         "children": [
           {
-            "id": "16e8496dd0c2187f",
+            "id": "7bde6cce13a4f18f",
             "type": "leaf",
             "state": {
-              "type": "video",
+              "type": "markdown",
               "state": {
-                "file": "2nd brain _ demo.mp4"
+                "file": "00 - Main vault/Notes/Daily Notes/2025/07/2025-07-01.md",
+                "mode": "preview",
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "2nd brain _ demo"
+              "title": "2025-07-01"
             }
           }
         ]
@@ -31,6 +33,7 @@
       {
         "id": "4b13b41fa857145f",
         "type": "tabs",
+        "dimension": 54.32801822323462,
         "children": [
           {
             "id": "76605281b7c3e293",
@@ -51,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Mood",
+                "query": "hafsa",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -71,12 +74,97 @@
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
+          },
+          {
+            "id": "fc536aa2e981cbb3",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "00 - Main vault/Notes/Daily Notes/2025/03/2025-03-25.md"
+              },
+              "icon": "lucide-info",
+              "title": "File properties for 2025-03-25"
+            }
+          },
+          {
+            "id": "6b33293e24073abd",
+            "type": "leaf",
+            "state": {
+              "type": "planner-timeline",
+              "state": {},
+              "icon": "sheets-in-box",
+              "title": "Timeline"
+            }
+          }
+        ],
+        "currentTab": 4
+      },
+      {
+        "id": "7de255c596e51a59",
+        "type": "tabs",
+        "dimension": 22.779043280182233,
+        "children": [
+          {
+            "id": "3d474e0402e71e6e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00 - Main vault/Statistiques/Tasks _ Stat.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Tasks _ Stat"
+            }
+          },
+          {
+            "id": "6f08611a6ef50540",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00 - Main vault/Statistiques/Money _ Stat.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Money _ Stat"
+            }
+          }
+        ]
+      },
+      {
+        "id": "8fce91b630e61113",
+        "type": "tabs",
+        "dimension": 22.89293849658314,
+        "children": [
+          {
+            "id": "48c64c14a0718003",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {},
+              "icon": "clock",
+              "title": "Recent Files"
+            }
+          },
+          {
+            "id": "ce56779bc01cc3dd",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 218.5
+    "width": 247.5
   },
   "right": {
     "id": "17ea2e828d15a2a3",
@@ -85,35 +173,40 @@
       {
         "id": "07acc302767c9a61",
         "type": "tabs",
-        "dimension": 38.15217391304348,
+        "dimension": 39.23913043478261,
         "children": [
           {
-            "id": "ce56779bc01cc3dd",
+            "id": "36d98e7d679044b1",
             "type": "leaf",
             "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "type": "outline",
+              "state": {
+                "file": "00 - Main vault/Statistiques/Tasks _ Stat.md",
+                "followCursor": false,
+                "showSearch": true,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Tasks _ Stat"
             }
           },
           {
-            "id": "b6528d21662c518c",
+            "id": "cc29dec470f47c89",
             "type": "leaf",
             "state": {
-              "type": "todo",
+              "type": "mindmap",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "icon": "dot-network",
+              "title": "Mind Map of 2025-05-12"
             }
           },
           {
-            "id": "7c8518ee53efb84a",
+            "id": "1fc62aa693d6b81f",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00 - Cj's note/Notes/Annually reports/2025.md",
+                "file": "00 - Main vault/Notes/People/Contacts/Anas BERKA.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,40 +216,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2025"
+              "title": "Backlinks for Anas BERKA"
             }
           },
           {
-            "id": "8a58863e4b6d4579",
+            "id": "a1a1e94e655e3b03",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00 - Cj's note/Daily Notes/250219 _ Wednesday February 19th 2025.md",
+                "file": "00 - Main vault/Notes/People/Contacts/Anas BERKA.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 250219 _ Wednesday February 19th 2025"
+              "title": "Outgoing links from Anas BERKA"
             }
           },
           {
-            "id": "36d98e7d679044b1",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "00 - Main vault/Notes/Cj 2nd Brain.canvas",
-                "followCursor": false,
-                "showSearch": true,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "Outline of Cj 2nd Brain"
-            }
-          },
-          {
-            "id": "ba8d0b95f009dcae",
+            "id": "aebeeee43605f782",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -170,19 +248,7 @@
             }
           },
           {
-            "id": "fc536aa2e981cbb3",
-            "type": "leaf",
-            "state": {
-              "type": "file-properties",
-              "state": {
-                "file": "2nd brain _ demo.mp4"
-              },
-              "icon": "lucide-info",
-              "title": "File properties for 2nd brain _ demo"
-            }
-          },
-          {
-            "id": "88f6091fdcbcbe7d",
+            "id": "4625b4230fb64416",
             "type": "leaf",
             "state": {
               "type": "todo",
@@ -190,14 +256,23 @@
               "icon": "checkmark",
               "title": "Todo List"
             }
+          },
+          {
+            "id": "1f8ec70c95e8f920",
+            "type": "leaf",
+            "state": {
+              "type": "full-calendar-sidebar-view",
+              "state": {},
+              "icon": "calendar-glyph",
+              "title": "Full Calendar"
+            }
           }
-        ],
-        "currentTab": 7
+        ]
       },
       {
         "id": "99ed44430941ba8e",
         "type": "tabs",
-        "dimension": 34.67391304347826,
+        "dimension": 34.45652173913044,
         "children": [
           {
             "id": "d464d982dc1531ae",
@@ -214,7 +289,7 @@
       {
         "id": "0e3ba23ce7a16840",
         "type": "tabs",
-        "dimension": 27.17391304347826,
+        "dimension": 26.304347826086953,
         "children": [
           {
             "id": "7219b34825cbff33",
@@ -222,16 +297,16 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "2nd brain _ demo.mp4",
+                "file": "00 - Main vault/Statistiques/Tasks _ Stat.md",
                 "options": {
-                  "collapse-filter": true,
+                  "collapse-filter": false,
                   "search": "",
                   "localJumps": 1,
                   "localBacklinks": true,
                   "localForelinks": true,
-                  "localInterlinks": false,
-                  "showTags": false,
-                  "showAttachments": false,
+                  "localInterlinks": true,
+                  "showTags": true,
+                  "showAttachments": true,
                   "hideUnresolved": false,
                   "collapse-color-groups": true,
                   "colorGroups": [],
@@ -245,12 +320,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.4823760655947091,
+                  "scale": 0.30262757578756194,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of 2nd brain _ demo"
+              "title": "Graph of Tasks _ Stat"
             }
           },
           {
@@ -259,7 +334,7 @@
             "state": {
               "type": "tag",
               "state": {
-                "sortOrder": "frequency",
+                "sortOrder": "alphabetical",
                 "useHierarchy": true,
                 "showSearch": false,
                 "searchQuery": ""
@@ -267,92 +342,87 @@
               "icon": "lucide-tags",
               "title": "Tags"
             }
-          },
-          {
-            "id": "48c64c14a0718003",
-            "type": "leaf",
-            "state": {
-              "type": "recent-files",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 272.5
+    "width": 233.5
   },
   "left-ribbon": {
     "hiddenItems": {
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "zk-prefixer:Create new unique note": false,
-      "workspaces:Manage workspace layouts": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "templater-obsidian:Templater": false,
-      "periodic-notes:Open today": false,
-      "dbfolder:Create a new database table": false
+      "workspaces:Manage workspace layouts": false,
+      "dbfolder:Create a new database table": false,
+      "obsidian-day-planner:Open Timeline": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-full-calendar:Open Full Calendar": false,
+      "zk-prefixer:Create new unique note": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "obsidian-day-planner:Open Multi-Day View": false,
+      "audio-recorder:Start/stop recording": false,
+      "periodic-notes:Open today": false
     }
   },
-  "active": "16e8496dd0c2187f",
+  "active": "6b33293e24073abd",
   "lastOpenFiles": [
-    "README.md",
-    "06 - Skills/Coding/Basic Web/HTML.md",
-    "06 - Skills/Coding/Basic Web/CSS.md",
-    "03 - Writing/Thesis/PhD.md",
-    "03 - Writing/Thesis/Main Idea.md",
-    "02 - Reading and Watching/Animes/Anime.md",
-    "01 - Learning/Road to CS/2. Statistics/Statistics.md",
+    "00 - Main vault/Statistiques/Money _ Stat.md",
+    "00 - Main vault/Statistiques/Tasks _ Stat.md",
+    "00 - Main vault/Statistiques/Good vs Bad _ Stat.md",
+    "00 - Main vault/Notes/Daily Notes/2025/07/2025-07-01.md",
     "00 - Main vault/Assets/alt-checkboxes.png",
-    "00 - Main vault/Notes/Cj 2nd Brain.canvas",
-    "00 - Main vault/MainMap.canvas",
-    "00 - Main vault/Templates/Weekly report.md",
+    "00 - Main vault/Templates/Daily notes.md",
+    "00 - Main vault/Notes/Annually reports/2025.md",
+    "00 - Main vault/MainDB.md",
+    "00 - Main vault/Templates/Zotero Importer.md",
     "00 - Main vault/Templates/Writing.md",
+    "00 - Main vault/Templates/Weekly report.md",
     "00 - Main vault/Templates/Teaching.md",
+    "00 - Main vault/Templates/Tafsir Quran.md",
     "00 - Main vault/Templates/Skills.md",
     "00 - Main vault/Templates/Review.md",
+    "00 - Main vault/Templates/Quran.md",
     "00 - Main vault/Templates/Projects.md",
     "00 - Main vault/Templates/New note.md",
     "00 - Main vault/Templates/Monthly report.md",
     "00 - Main vault/Templates/Meeting.md",
     "00 - Main vault/Templates/Learning.md",
     "00 - Main vault/Templates/Gaming.md",
-    "00 - Main vault/Templates/Daily notes.md",
     "00 - Main vault/Templates/Contacts.md",
+    "00 - Main vault/Templates/Bdays template.md",
     "00 - Main vault/Templates/Annual report.md",
-    "00 - Main vault/Notes/TempDailyNote.md",
-    "00 - Main vault/Notes/Vault of money.md",
-    "01 - Learning/Road to CS/1. Fundamentals/Matrices.md",
-    "01 - Learning/Road to CS/1. Fundamentals/Fundamentals.md",
-    "01 - Learning/Road to CS/3. Programming/Programming (for CS).md",
+    "00 - Main vault/Statistiques/Work _ Stat.md",
+    "00 - Main vault/Statistiques/Weight and Height _ Stat.md",
+    "00 - Main vault/Notes/Cj 2nd Brain.canvas",
+    "00 - Main vault/Notes/Daily Notes/2025/07",
+    "00 - Main vault/CV/src5/Scan_20250628_CASA _ ENSEM _ IoT.pdf",
+    "00 - Main vault/CV/src5/Scan_20250628_eljadida _ FS _ Info.pdf",
+    "00 - Main vault/CV/src5/Scan_20250628_Eljadida _ ENSA _ Info dev info.pdf",
+    "00 - Main vault/CV/src5/Scan_20250628_SidiBnour_ FP _ Info SD.pdf",
+    "00 - Main vault/CV/src5/Scan_20250628_ain chok_ FS_ IA et SD.pdf",
+    "00 - Main vault/CV/src5/Scan_20250628_Med _ FST_ GL.pdf",
+    "00 - Main vault/CV/src5/Scan_20250628_Ben Msik_ FS _ Info IA.pdf",
+    "00 - Main vault/CV/src5/Scan_20250628_Med _ ENSET _ Inf BD.pdf",
+    "00 - Main vault/CV/src5/Scan_20250628_Casa _ ENSAM _ IA.pdf",
+    "00 - Main vault/CV/src/Bac_Chaimae.jpg",
+    "00 - Main vault/CV/AnasBERKA.png",
+    "00 - Main vault/Notes/Daily Notes/2025/06/Assets/Pasted image 20250613094110.png",
+    "00 - Main vault/Notes/Daily Notes/2025/06/Assets/Pasted image 20250613090014.png",
+    "00 - Main vault/Notes/Daily Notes/2025/06/Assets/Pasted image 20250613074750.png",
+    "00 - Main vault/Notes/Daily Notes/2025/06/Assets/Pasted image 20250608061327.png",
     "01 - Learning/Road to CS/Road map.jpg",
-    "01 - Learning/Roads.canvas",
+    "00 - Main vault/Assets/2ndBrainState 20250225122340.png",
+    "04 - Teaching Work/Web/Classes/ENSA/202425/Solutions/HTML/Logo_UIZ.png",
+    "04 - Teaching Work/Web/Classes/ENSA/202425/Untitled.canvas",
+    "00 - Main vault/MainMap.canvas",
     "04 - Teaching Work/Digital skills/Planing for seances.canvas",
+    "01 - Learning/Roads.canvas",
     "05 - Projects/Collab/Metavers/Connection.canvas",
-    "01 - Learning/Road to CS/9. Data Ingestion",
-    "01 - Learning/Road to CS/8. Data Munging",
-    "01 - Learning/Road to CS/7. Big Data",
-    "01 - Learning/Road to CS/6. Visualization",
-    "01 - Learning/Road to CS/5. Text Mining and NLP",
-    "01 - Learning/Road to CS/4. Machine Learning",
-    "01 - Learning/Road to CS/3. Programming",
-    "01 - Learning/Road to CS/2. Statistics",
-    "01 - Learning/Road to CS/1. Fundamentals",
-    "01 - Learning/Road to CS/10. Toolbox",
-    "00 - Main vault/Assets/Banners/Sky1Banner.jpg",
-    "00 - Cj's note/Assets/Banners/Sky1Banner_.jpg",
-    "00 - Main vault/Assets/Banners/Sky3Banner.jpg",
-    "00 - Main vault/Assets/Banners/Sky2Banner.jpg",
-    "00 - Main vault/Assets/Banners/Milky0Banner.jpg",
-    "00 - Main vault/Assets/Banners/Friends1Banner.jpg",
-    "00 - Main vault/Assets/Banners/WorldBanner.jpg",
-    "00 - Main vault/Assets/Banners/MediaBanner.jpg",
     "Untitled.canvas",
     "Untitled 1.canvas"
   ]

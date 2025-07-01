@@ -1,0 +1,61 @@
+{
+  "calendarSources": [
+    {
+      "type": "local",
+      "color": "hsl( 215, 91%, calc(64% - 5%) )",
+      "directory": "00 - Main vault/Notes/Calenders/Events"
+    },
+    {
+      "type": "local",
+      "color": "#ff0000",
+      "directory": "00 - Main vault/Notes/Calenders/Meets"
+    },
+    {
+      "type": "local",
+      "color": "#ffffff",
+      "directory": "00 - Main vault/Notes/Calenders/Studies"
+    },
+    {
+      "type": "local",
+      "color": "#329b37",
+      "directory": "00 - Main vault/Notes/Calenders/Work"
+    },
+    {
+      "type": "local",
+      "color": "#5da9e9",
+      "directory": "00 - Main vault/Notes/Calenders/Work/UIZ FPT"
+    },
+    {
+      "type": "local",
+      "color": "#7fdbb6",
+      "directory": "00 - Main vault/Notes/Calenders/Work/ENSA"
+    },
+    {
+      "type": "local",
+      "color": "#ff6b6b",
+      "directory": "00 - Main vault/Notes/Calenders/Work/UIZ FLSH"
+    },
+    {
+      "type": "local",
+      "color": "#b0bec5",
+      "directory": "00 - Main vault/Notes/Calenders/Work/UIZ FSA"
+    },
+    {
+      "type": "local",
+      "color": "#ffd479",
+      "directory": "00 - Main vault/Notes/Calenders/Work/UIZ FSJES CUAM"
+    },
+    {
+      "type": "local",
+      "color": "#ff0000",
+      "directory": "00 - Main vault/Notes/Calenders/Events/Recrutement"
+    }
+  ],
+  "defaultCalendar": 0,
+  "firstDay": 1,
+  "initialView": {
+    "desktop": "timeGridWeek",
+    "mobile": "timeGrid3Days"
+  },
+  "timeFormat24h": false
+}

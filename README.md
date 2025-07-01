@@ -1,11 +1,11 @@
-# Hello and welcome to my 2nd brain's main structure vault <img src="https://user-images.githubusercontent.com/1303154/88677602-1635ba80-d120-11ea-84d8-d263ba5fc3c0.gif" width="28px" height="28px" alt="hi"> 
+# Hello and welcome to my 2nd brain's main structure vault V2 <img src="https://user-images.githubusercontent.com/1303154/88677602-1635ba80-d120-11ea-84d8-d263ba5fc3c0.gif" width="28px" height="28px" alt="hi"> 
 
-This folder serves as the primary structure for my personal knowledge management system (2nd brain). Thanks to the excellent software **Obsidian** and its active community, I was able to build this vault. 
+This folder serves as the primary structure for my personal knowledge management system (2nd brain). Thanks to the excellent software [**Obsidian**](https://obsidian.md/download) and its active community, I was able to build this vault. 
 
 ### Usage
 
-- Install Obsidian : https://obsidian.md/download
-- Fork or download this repository.
+- Install Obsidian : https://obsidian.md/download (If it is no longer available or has been discontinued, unzip the legacy application version (Obsidian-1.8.10) in the Obsidian installation folder: `./__ Obsidian installation`)
+- Clone or download this repository (don't fork, for your own privacy, since you don't need it to be public...). 
 - Enable community plugins.
 - Create your own notes. 
 - Be productif.
@@ -13,7 +13,7 @@ This folder serves as the primary structure for my personal knowledge management
 ### Tips
 
 - In order to have a great looking notes, add some background images into your vault. For example in "00 - Main vault/Assets/Banners".
-- You may need some images but it's easy to got...
+- You may need some images but it's easy to get...
 
 ### References
 

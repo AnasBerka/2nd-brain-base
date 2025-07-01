@@ -1,6 +1,6 @@
 ---
 tags:
-  - Daily
+  - Logging/Daily/<%moment(tp.file.title,"YYYY-MM-DD").format("YYYY")%>/<%moment(tp.file.title,"YYYY-MM-DD").format("MM")%>
 Creation date: <%tp.date.now("YYYY/MM/DD HH:mm")%>
 week:
   - <%moment(tp.file.title).format("gggg-[W]ww")%>
@@ -10,115 +10,191 @@ cssclasses:
 banner: "[[NoteBanner.jpg]]"
 banner_x: 0
 banner_y: 0.644
-isCompleted:
+isCompleted: 
+aliases: []
 ---
  
 # DAILY NOTE
 ## <%moment(tp.file.title).format("dddd, MMMM Do YYYY")%>
+
 ***
-### Journal
+### 📜 Journal
 #### {{for TIME}} use ‘ctrl + shift + /’
-Customize this template to your liking!
+Starting Obsidian !
 
 ***
-
-### New tasks
-- [ ] Morning check for 📅 <%moment(tp.file.title).format("YYYY-MM-DD")%> about everything ⏬ 
+### 📝 Today’s tasks
+```tasks
+not done 
+no cancelled date
+due before <%moment(tp.file.title).add(1, "days").format("YYYY-MM-DD")%>
+sort by priority
+sort by due date 
+sort by description ASC
+```
 ***
-### On-going tasks:
+### ✍️ New tasks
+- [ ] 📝 Morning check about everything ⏲️ 06:30 - 07:30 ⏬ 📅 <%moment(tp.file.title).format("YYYY-MM-DD")%> 
+- [ ] 📝 Logging the daily activities in Obsidian for the [[00 - Main vault/Notes/Daily Notes/<%moment(tp.file.title,"YYYY-MM-DD").subtract(1,'day').format("YYYY")%>/<%moment(tp.file.title,"YYYY-MM-DD").subtract(1,'day').format("MM")%>/<%moment(tp.file.title,"YYYY-MM-DD").subtract(1,'day').format("YYYY-MM-DD")%>|previous day]] about everything  ⏲️ 07:30 - 08:00 📅 <%moment(tp.file.title).format("YYYY-MM-DD")%> ⏬ 
+***
+### 🌚On-going tasks:
+#### ⚫ Urgent Priority Tasks
+```tasks
+not done 
+tags do not include #Payment
+tags do not include #BDay
+no cancelled date
+priority is highest 
+sort by due date 
+sort by description ASC
+```
+#### 🔴 High Priority Tasks
+```tasks
+not done 
+tags do not include #Payment
+tags do not include #BDay
+no cancelled date
+priority is high 
+sort by due date 
+sort by description ASC
+```
+#### 🟡 Medium Priority Tasks
+```tasks
+not done 
+tags do not include #Payment
+tags do not include #BDay
+no cancelled date
+priority is medium 
+sort by due date 
+sort by description ASC
+```
+#### ⚪ Low Priority Tasks
+```tasks
+not done 
+tags do not include #Payment
+tags do not include #BDay
+no cancelled date
+priority is low 
+sort by due date 
+sort by description ASC
+```
+#### 🍰 Upcoming birthdays this month
 ```tasks
 not done
-priority is above lowest
+tags include #BDay
+scheduled in <%moment(tp.file.title).subtract(1, "days").format("YYYY-MM-DD")%> <%moment(tp.file.title).add(30, "days").format("YYYY-MM-DD")%>
 sort by priority 
-sort by due date 
-sort by description
+sort by scheduled 
+sort by description ASC
+```
+#### 💸 Upcoming payments
+```tasks
+not done
+tags include #Payment
+sort by scheduled 
+sort by priority
+sort by description ASC
 ```
 ***
 
-### Habits
-#### Salat
-How many prayers I couldn't pray on time (valid only if all on time)
-- salatOnTime:: 0 
+### ☢️Habits
+#### 🛐 Salat
 
-	- salatFajer:: false
-	- salatDohr:: false
-	- salatAaser:: false
-	- salatMeghrb:: false
-	- salatIshae:: false
+- [ ] Time for Quran & Salat Fajer 05:30 - 06:30
+	- Quran reading [quranReading:: ] 
+	- Quran’s 7izb [Quran/7izb:: ]
 
-#### Work time
-Self-improvements (in HH):
-- hWork:: 0 
-- startHWorkAt:: 
-- finishHWorkAt:: 
 
-Official Work (in HH):
-- oWork:: 0 
+- [ ] 🛐 Prayers on time
+	- Salat on time [salatOnTime:: ] 
+	- Fajer [salatFajer:: false] | Doher [salatDohr:: false] | Aaser [salatAaser:: false] | Meghrb [salatMeghrb:: false] | Ishae [salatIshae:: false]
+	
+
+#### 👨‍💼 Work time
+Self-improvements (in Min): [hWork:: ]
+<br>
+
+Official Work (in Min):
+- oWork:: 
+- pWork:: 
+- pWorkDh::108
 - startOWorkAt:: 
 - finishOWorkAt:: 
 
-Research Work (in HH):
-- rWork:: 0 
-- startRWorkAt:: 
-- finishRWorkAt:: 
+Research Work (in Min):
+- rWork:: 
 
-#### GYM time
-How much weight I trained with (ref the app):
-- gymKg:: 0
-- myWeight:: 0
-- myHeight:: 0
-- pushBarbellMaxKg:: 0
-- pushBarbellMaxRep:: 0
-- pullBarMaxKg:: 0
-- pullBarMaxRep:: 0
-- pressLegMaxKg:: 0
-- pressLegMaxRep:: 0
-- pullDumpMaxKg:: 0
-- pullDumpMaxRep:: 0
-- SpringMaxSpeed:: 0
-- SpringMaxSS:: 0
+#### 🏋️‍♂️ GYM time
+Personal stats:
+- myWeight:: 
+- myHeight:: 
+<br/>
 
-GYM activities (GYM in Min & number of repetition for others):
-- gymMin:: 0 
+- [ ] 🏃Run RUUUN 08:00 - 08:30
+	- Running [runingKm:: ] [runingMin:: ] [runingAS:: ]
+	- Springing [springMaxSpeed:: ] [springMaxSS:: ]
 
-	- pushUpReps:: 0 
-	- setUpReps:: 0 
-	- squadReps:: 0 
 
-How much I ran this day (in Km)
-- runingKm:: 0 
+- [ ] 💪 GYM :  08:30 - 10:00
+	- Stats [gymKg:: ] [gymMin:: ]
+	- Leveling up [pushUpReps:: ] [setUpReps::  ] [squadReps::  ]
+	- Basic exercices [pushBarMaxKg:: ] [pushBarMaxRep:: ] [pullBarMaxKg:: ]  [pullBarMaxRep:: ] [squadBarMaxKg:: ] [squadBarMaxRep:: ] [curlDumpMaxKg:: ] [curlDumpMaxRep:: ]
+	- IT training [typingTraining:: ] [typingSpeed:: ]
 
-#### Fun Time
-Episodes watched (num of episodes):
-- animeEp:: 0
+How much I moved this day 
+- travelingDist:: 
+- Steps::  
 
-Watching random stuffs (in Min):
-- movieMin:: 0 
+#### 🖥️ Fun Time
+
+
+- [ ] 👺 Having fun while watching stuffs 23:00 - 00:00
+	- Movies [movieMin:: ]
+	- Animes [animeEp:: ]
+
+Manga/Manhwa readed (Count):
+- RManga:: 
+
+Light/Web novel readed (Nbr pages):
+- BRead:: 
+- LWRead:: 
+- LWReadMin:: 
 
 Gaming (in Min):
-- gamingMin:: 0 
+- gamingPCMin::
+- gamingMobileMin::
 
 Browsing Social Media (in Min):
-- smMin:: 0 
+- smMin:: 
+- Fb:: 
+- Insta:: 
 
-Doing random stuffs on the ROG (in HH):
-rwROG:: 0 
+Phone statics :
+- UnlockNbr:: 
+- ScreenTime:: 
 
-#### Money
+#### 💰 Money
+Various transaction for the day :
+
+
 How much mony I spent or saved (in Dh)
-moneyInDh::  0
+- moneyInDh::  
+- dailyDh:: 
 
-#### Personal Space
-How many hours for me to sleep & relax (in HH): 
-meTime:: 0
-gTime:: false
-bTime:: 0
-sleptAt:: 
+#### 😋 Food
+What I recalled I ate this day:
+- 
+
+#### 💤 Personal Space
+How many hours for me to sleep & relax (in min) and other stats: 
+meTime:: 1
+gTime:: 
+bTime:: 
 wokedAt:: 
+sleptAt::
+
 ***
 ### Links
-=> [[00 - Main vault/Notes/Daily Notes/<%moment(tp.file.title,"YYYY-MM-DD").subtract(1,'day').format("YYYY-MM-DD")%>|View previous day]]
-=> [[00 - Main vault/Notes/Weekly reports/<%moment(tp.file.title).format("gggg-[W]ww")%>|View the weekly report]]
-=> [[00 - Main vault/Notes/Monthly reports/<%moment(tp.file.title).format("YYYY-MM _ MMMM")%>|View the monthly report]]
-=> [[00 - Main vault/Notes/Annually reports/<%moment(tp.file.title).format("YYYY")%>|View the annually report]]
+=> [[00 - Main vault/Notes/Daily Notes/<%moment(tp.file.title,"YYYY-MM-DD").subtract(1,'day').format("YYYY")%>/<%moment(tp.file.title,"YYYY-MM-DD").subtract(1,'day').format("MM")%>/<%moment(tp.file.title,"YYYY-MM-DD").subtract(1,'day').format("YYYY-MM-DD")%>|View previous day]]
+=> [[00 - Main vault/Notes/Weekly reports/<%moment(tp.file.title,"YYYY-MM-DD").format("YYYY")%>/<%moment(tp.file.title).format("gggg-[W]ww")%>|View the weekly report]]
 

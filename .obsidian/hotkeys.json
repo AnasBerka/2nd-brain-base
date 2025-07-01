@@ -25,5 +25,28 @@
       ],
       "key": "/"
     }
+  ],
+  "obsidian-zotero-desktop-connector:zdc-exp-SHwH": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "Key223"
+    }
+  ],
+  "templater-obsidian:replace-in-file-templater": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "r"
+    },
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "1"
+    }
   ]
 }

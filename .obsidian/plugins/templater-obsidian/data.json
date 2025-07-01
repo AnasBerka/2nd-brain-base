@@ -69,6 +69,26 @@
     {
       "folder": "/",
       "template": "00 - Main vault/Templates/New note.md"
+    },
+    {
+      "folder": "02 - Reading and Watching/_Quran Kareem/_Sourates",
+      "template": "00 - Main vault/Templates/Quran.md"
+    },
+    {
+      "folder": "02 - Reading and Watching/_Quran Kareem/Meanings",
+      "template": "00 - Main vault/Templates/Tafsir Quran.md"
+    },
+    {
+      "folder": "00 - Main vault/Notes/People",
+      "template": "00 - Main vault/Templates/Contacts.md"
+    },
+    {
+      "folder": "00 - Main vault/Notes/Calenders",
+      "template": "00 - Main vault/Templates/Meeting.md"
+    },
+    {
+      "folder": "",
+      "template": ""
     }
   ],
   "enable_file_templates": false,
@@ -81,7 +101,7 @@
   "syntax_highlighting": true,
   "syntax_highlighting_mobile": false,
   "enabled_templates_hotkeys": [
-    ""
+    "00 - Main vault/Templates/Quran.md"
   ],
   "startup_templates": [
     ""

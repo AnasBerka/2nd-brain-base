@@ -1,0 +1,95 @@
+{
+  "items": [
+    {
+      "type": "graph",
+      "ctime": 1740573132387,
+      "title": "Only real connections and files",
+      "options": {
+        "collapse-filter": false,
+        "search": "-tag:#Daily  ",
+        "showTags": true,
+        "showAttachments": true,
+        "hideUnresolved": true,
+        "showOrphans": false,
+        "collapse-color-groups": false,
+        "colorGroups": [],
+        "collapse-display": false,
+        "showArrow": true,
+        "textFadeMultiplier": 0,
+        "nodeSizeMultiplier": 1.031,
+        "lineSizeMultiplier": 1.12380457380457,
+        "collapse-forces": false,
+        "centerStrength": 0.518713248970312,
+        "repelStrength": 10,
+        "linkStrength": 1,
+        "linkDistance": 250,
+        "scale": 0.3135980353276692,
+        "close": false
+      }
+    },
+    {
+      "type": "group",
+      "ctime": 1747336036828,
+      "items": [
+        {
+          "type": "file",
+          "ctime": 1747336019534,
+          "path": "00 - Main vault/Notes/People/Contacts/Anas BERKA.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1747336019534,
+          "path": "00 - Main vault/Cj_IGX.md"
+        },
+        {
+          "type": "graph",
+          "ctime": 1747336019535,
+          "title": "Global Graph",
+          "options": {
+            "collapse-filter": false,
+            "search": "",
+            "showTags": true,
+            "showAttachments": true,
+            "hideUnresolved": false,
+            "showOrphans": true,
+            "collapse-color-groups": false,
+            "colorGroups": [],
+            "collapse-display": false,
+            "showArrow": false,
+            "textFadeMultiplier": 0,
+            "nodeSizeMultiplier": 1,
+            "lineSizeMultiplier": 1,
+            "collapse-forces": false,
+            "centerStrength": 0.518713248970312,
+            "repelStrength": 10,
+            "linkStrength": 1,
+            "linkDistance": 250,
+            "scale": 0.08639435530981106,
+            "close": true
+          }
+        },
+        {
+          "type": "file",
+          "ctime": 1747336019535,
+          "path": "00 - Main vault/Notes/Annually reports/2025.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1747336019535,
+          "path": "00 - Main vault/Notes/Monthly reports/2025/2025-05 _ May.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1747336019535,
+          "path": "00 - Main vault/Notes/Weekly reports/2025/2025-W20.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1747336019535,
+          "path": "00 - Main vault/Notes/Daily Notes/2025/05/2025-05-15.md"
+        }
+      ],
+      "title": "Main pages"
+    }
+  ]
+}
