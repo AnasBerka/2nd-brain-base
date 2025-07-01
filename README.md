@@ -6,6 +6,8 @@ This folder serves as the primary structure for my personal knowledge management
 
 - Install Obsidian : https://obsidian.md/download (If it is no longer available or has been discontinued, unzip the legacy application version (Obsidian-1.8.10) in the Obsidian installation folder: `./__ Obsidian installation`)
 - Clone or download this repository (don't fork, for your own privacy, since you don't need it to be public...). 
+- Unzip the folder and rename it if needed.
+- Open the `2nd-brain-base-main` as vault in Obsidian.
 - Enable community plugins.
 - Create your own notes. 
 - Be productif.
