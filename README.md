@@ -10,7 +10,7 @@ This folder serves as the primary structure for my personal knowledge management
 - Open the `2nd-brain-base-main` as vault in Obsidian.
 - Enable community plugins.
 - Create your own notes. 
-- Be productif.
+- Be productif...
 
 ### Tips
 
