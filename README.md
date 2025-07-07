@@ -12,6 +12,9 @@ This folder serves as the primary structure for my personal knowledge management
 - Create your own notes. 
 - Be productif...
 
+### Demo
+[![Watch the video](https://img.youtube.com/vi/5J_vW_WQFDg/0.jpg)](https://youtu.be/5J_vW_WQFDg)
+
 ### Tips
 
 - In order to have a great looking notes, add some background images into your vault. For example in "00 - Main vault/Assets/Banners".
