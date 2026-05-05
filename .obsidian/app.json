@@ -1,14 +1,8 @@
 {
-  "promptDelete": false,
-  "alwaysUpdateLinks": true,
   "newFileLocation": "current",
-  "defaultViewMode": "preview",
-  "livePreview": true,
-  "readableLineLength": false,
-  "newFileFolderPath": "00 - Main vault/Notes/Ideas",
-  "showUnsupportedFiles": true,
   "attachmentFolderPath": "./Assets",
-  "userIgnoreFilters": [
-    "00 - Main vault/Assets/Banners/"
-  ]
+  "defaultViewMode": "preview",
+  "readableLineLength": false,
+  "promptDelete": false,
+  "alwaysUpdateLinks": true
 }

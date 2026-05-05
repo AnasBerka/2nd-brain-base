@@ -1,10 +1,10 @@
 ---
 tags: Reading/Review/
-aliases: 
-Type: 
+aliases:
+Type:
 Creation date: <% tp.file.creation_date() %>
-isDone: 
-Last modification: 
+isDone:
+Last modification:
 Decision:
   - "#Accepted"
   - "#Rejected"
@@ -20,5 +20,6 @@ cssclasses:
 banner: "[[DarkTheme0Banner.jpg]]"
 banner_x: 0
 banner_y: 0.886
+reread: 0
 ---
 

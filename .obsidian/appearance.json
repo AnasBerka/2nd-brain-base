@@ -1,7 +1,7 @@
 {
   "cssTheme": "Minimal",
   "theme": "obsidian",
-  "textFontFamily": "Comic Sans MS",
+  "textFontFamily": "Comic Sans MS,sans-serif",
   "interfaceFontFamily": "Inter",
   "enabledCssSnippets": [
     "Colored Sidebar Items",
@@ -9,7 +9,9 @@
     "Daily Note Themes",
     "CyanVoxel's General Tweaks",
     "heatmap_styleAlternatingMonths",
-    "heatmap_custom_styling"
+    "heatmap_custom_styling",
+    "spread"
   ],
-  "baseFontSize": 15
+  "baseFontSize": 18,
+  "baseFontSizeAction": true
 }

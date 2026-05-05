@@ -1,60 +1,141 @@
 {
   "main": {
-    "id": "c8c963bfd1d973f3",
+    "id": "d5e0639d0799a418",
     "type": "split",
     "children": [
       {
-        "id": "aff3a79f652532de",
+        "id": "b945b9995d286d4c",
         "type": "tabs",
         "children": [
           {
-            "id": "7bde6cce13a4f18f",
+            "id": "380d3b9c0c94e8a0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00 - Main vault/Notes/Daily Notes/2025/07/2025-07-01.md",
+                "file": "00 - Main vault/Notes/Relationships/OwnerFirstName OwnerLastName.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "OwnerFirstName OwnerLastName"
+            }
+          },
+          {
+            "id": "311ba8a8d7033722",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00 - Main vault/Statistiques/Work _ Stat.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Work _ Stat"
+            }
+          },
+          {
+            "id": "074735e84e3e888a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00 - Main vault/Notes/Annually reports/2026.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-07-01"
+              "title": "2026"
+            }
+          },
+          {
+            "id": "e3c0d6a27156cf2c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00 - Main vault/Notes/Monthly reports/2026/2026-05 _ May.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2026-05 _ May"
+            }
+          },
+          {
+            "id": "022518ba3bdf7f0f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00 - Main vault/Notes/Weekly reports/2026/2026-W19.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2026-W19"
+            }
+          },
+          {
+            "id": "18f6bbbc2cb104fb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00 - Main vault/Notes/Daily Notes/2026/05/2026-05-05.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2026-05-05"
+            }
+          },
+          {
+            "id": "3c5b3411279f6ae1",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
-        ]
+        ],
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "f24dbbc0371e3179",
+    "id": "fdf3c7810cb37e99",
     "type": "split",
     "children": [
       {
-        "id": "4b13b41fa857145f",
+        "id": "8939afdb27820b6d",
         "type": "tabs",
-        "dimension": 54.32801822323462,
+        "dimension": 57.21017907634307,
         "children": [
           {
-            "id": "76605281b7c3e293",
+            "id": "fac4271b4e5e14d5",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": true
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
             }
           },
           {
-            "id": "4c81c3e34721e3f9",
+            "id": "e27155e87b482be4",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "hafsa",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -66,7 +147,7 @@
             }
           },
           {
-            "id": "6edc12a54ab9fb7a",
+            "id": "7dbd60259bad7d55",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -74,21 +155,16 @@
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "43ea6b0d94c9642c",
+        "type": "tabs",
+        "dimension": 42.78982092365693,
+        "children": [
           {
-            "id": "fc536aa2e981cbb3",
-            "type": "leaf",
-            "state": {
-              "type": "file-properties",
-              "state": {
-                "file": "00 - Main vault/Notes/Daily Notes/2025/03/2025-03-25.md"
-              },
-              "icon": "lucide-info",
-              "title": "File properties for 2025-03-25"
-            }
-          },
-          {
-            "id": "6b33293e24073abd",
+            "id": "766f63ee718fa041",
             "type": "leaf",
             "state": {
               "type": "planner-timeline",
@@ -96,52 +172,9 @@
               "icon": "sheets-in-box",
               "title": "Timeline"
             }
-          }
-        ],
-        "currentTab": 4
-      },
-      {
-        "id": "7de255c596e51a59",
-        "type": "tabs",
-        "dimension": 22.779043280182233,
-        "children": [
-          {
-            "id": "3d474e0402e71e6e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00 - Main vault/Statistiques/Tasks _ Stat.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Tasks _ Stat"
-            }
           },
           {
-            "id": "6f08611a6ef50540",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00 - Main vault/Statistiques/Money _ Stat.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Money _ Stat"
-            }
-          }
-        ]
-      },
-      {
-        "id": "8fce91b630e61113",
-        "type": "tabs",
-        "dimension": 22.89293849658314,
-        "children": [
-          {
-            "id": "48c64c14a0718003",
+            "id": "06e10341298dba11",
             "type": "leaf",
             "state": {
               "type": "recent-files",
@@ -149,64 +182,30 @@
               "icon": "clock",
               "title": "Recent Files"
             }
-          },
-          {
-            "id": "ce56779bc01cc3dd",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {},
-              "icon": "spreadsheet",
-              "title": "Advanced Tables"
-            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 247.5
+    "width": 300
   },
   "right": {
-    "id": "17ea2e828d15a2a3",
+    "id": "c33f92a9ffd8b7d7",
     "type": "split",
     "children": [
       {
-        "id": "07acc302767c9a61",
+        "id": "cd9f75042c84d606",
         "type": "tabs",
-        "dimension": 39.23913043478261,
+        "dimension": 46.376811594202906,
         "children": [
           {
-            "id": "36d98e7d679044b1",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "00 - Main vault/Notes/Daily Notes/2025/07/2025-07-01.md",
-                "followCursor": false,
-                "showSearch": true,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "Outline of 2025-07-01"
-            }
-          },
-          {
-            "id": "cc29dec470f47c89",
-            "type": "leaf",
-            "state": {
-              "type": "mindmap",
-              "state": {},
-              "icon": "dot-network",
-              "title": "Mind Map of 2025-05-12"
-            }
-          },
-          {
-            "id": "1fc62aa693d6b81f",
+            "id": "9ba181099ed37ff9",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00 - Main vault/Notes/People/Contacts/Anas BERKA.md",
+                "file": "00 - Main vault/Statistiques/Sleeping _ Stat.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -216,25 +215,39 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Anas BERKA"
+              "title": "Backlinks for Sleeping _ Stat"
             }
           },
           {
-            "id": "a1a1e94e655e3b03",
+            "id": "054a1c1e8f08ac41",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00 - Main vault/Notes/People/Contacts/Anas BERKA.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Anas BERKA"
+              "title": "Outgoing links"
             }
           },
           {
-            "id": "aebeeee43605f782",
+            "id": "567e0ed755db4adc",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "3ff2440d47a342ec",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -248,7 +261,21 @@
             }
           },
           {
-            "id": "4625b4230fb64416",
+            "id": "2b81c25d182d390c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "8c04ed0988672bb0",
             "type": "leaf",
             "state": {
               "type": "todo",
@@ -258,24 +285,27 @@
             }
           },
           {
-            "id": "1f8ec70c95e8f920",
+            "id": "a1e8a73c9295a9b0",
             "type": "leaf",
             "state": {
-              "type": "full-calendar-sidebar-view",
-              "state": {},
-              "icon": "calendar-glyph",
-              "title": "Full Calendar"
+              "type": "file-properties",
+              "state": {
+                "file": "00 - Main vault/Statistiques/Sleeping _ Stat.md"
+              },
+              "icon": "lucide-info",
+              "title": "File properties for Sleeping _ Stat"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       },
       {
-        "id": "99ed44430941ba8e",
+        "id": "cd2ac4f57452b274",
         "type": "tabs",
-        "dimension": 34.45652173913044,
+        "dimension": 27.989130434782613,
         "children": [
           {
-            "id": "d464d982dc1531ae",
+            "id": "f4fbb2d0b686fbe1",
             "type": "leaf",
             "state": {
               "type": "calendar",
@@ -287,26 +317,25 @@
         ]
       },
       {
-        "id": "0e3ba23ce7a16840",
+        "id": "6ab2bab893dc3b2b",
         "type": "tabs",
-        "dimension": 26.304347826086953,
+        "dimension": 25.63405797101449,
         "children": [
           {
-            "id": "7219b34825cbff33",
+            "id": "c8a1e0d493a39c32",
             "type": "leaf",
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "00 - Main vault/Notes/Daily Notes/2025/07/2025-07-01.md",
                 "options": {
-                  "collapse-filter": false,
+                  "collapse-filter": true,
                   "search": "",
                   "localJumps": 1,
                   "localBacklinks": true,
                   "localForelinks": true,
-                  "localInterlinks": true,
-                  "showTags": true,
-                  "showAttachments": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
                   "hideUnresolved": false,
                   "collapse-color-groups": true,
                   "colorGroups": [],
@@ -320,110 +349,89 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.30262757578756194,
+                  "scale": 0.15285444850678326,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of 2025-07-01"
-            }
-          },
-          {
-            "id": "02bc387a59b4b218",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "alphabetical",
-                "useHierarchy": true,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-tags",
-              "title": "Tags"
+              "title": "Graph view"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 233.5
+    "width": 263.5
   },
   "left-ribbon": {
     "hiddenItems": {
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "templater-obsidian:Templater": false,
-      "workspaces:Manage workspace layouts": false,
-      "dbfolder:Create a new database table": false,
-      "obsidian-day-planner:Open Timeline": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-full-calendar:Open Full Calendar": false,
       "zk-prefixer:Create new unique note": false,
-      "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-day-planner:Open Multi-Day View": false,
       "audio-recorder:Start/stop recording": false,
+      "workspaces:Manage workspace layouts": false,
+      "bases:Create new base": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "templater-obsidian:Templater": false,
+      "dbfolder:Create a new database table": false,
+      "obsidian-day-planner:Open Timeline": false,
+      "obsidian-day-planner:Open Multi-Day View": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "obsidian-full-calendar:Open Full Calendar": false,
       "periodic-notes:Open today": false
     }
   },
-  "active": "6b33293e24073abd",
+  "active": "3c5b3411279f6ae1",
   "lastOpenFiles": [
-    "00 - Main vault/Statistiques/Money _ Stat.md",
-    "00 - Main vault/Statistiques/Tasks _ Stat.md",
-    "00 - Main vault/Statistiques/Good vs Bad _ Stat.md",
-    "00 - Main vault/Notes/Daily Notes/2025/07/2025-07-01.md",
-    "00 - Main vault/Assets/alt-checkboxes.png",
-    "00 - Main vault/Templates/Daily notes.md",
-    "00 - Main vault/Notes/Annually reports/2025.md",
-    "00 - Main vault/MainDB.md",
-    "00 - Main vault/Templates/Zotero Importer.md",
-    "00 - Main vault/Templates/Writing.md",
-    "00 - Main vault/Templates/Weekly report.md",
-    "00 - Main vault/Templates/Teaching.md",
-    "00 - Main vault/Templates/Tafsir Quran.md",
-    "00 - Main vault/Templates/Skills.md",
-    "00 - Main vault/Templates/Review.md",
-    "00 - Main vault/Templates/Quran.md",
-    "00 - Main vault/Templates/Projects.md",
-    "00 - Main vault/Templates/New note.md",
-    "00 - Main vault/Templates/Monthly report.md",
-    "00 - Main vault/Templates/Meeting.md",
-    "00 - Main vault/Templates/Learning.md",
-    "00 - Main vault/Templates/Gaming.md",
-    "00 - Main vault/Templates/Contacts.md",
-    "00 - Main vault/Templates/Bdays template.md",
-    "00 - Main vault/Templates/Annual report.md",
+    "00 - Main vault/Notes/Daily Notes/2026/05/2026-05-05.md",
+    "00 - Main vault/Notes/Daily Notes/Animes DB.md",
+    "00 - Main vault/Notes/Daily Notes/Books DB.md",
+    "00 - Main vault/Notes/Daily Notes/Data DB.md",
+    "00 - Main vault/Notes/Daily Notes/Games DB.md",
+    "00 - Main vault/Notes/Daily Notes/GYM DB.md",
+    "00 - Main vault/Notes/Daily Notes/Manga DB.md",
+    "00 - Main vault/Notes/Daily Notes/Manhwa DB.md",
+    "00 - Main vault/Notes/Daily Notes/Peers DB.md",
+    "00 - Main vault/Notes/Daily Notes/Research DB.md",
+    "00 - Main vault/Notes/Daily Notes/Studies DB.md",
+    "00 - Main vault/Notes/Daily Notes/Work DB.md",
+    "00 - Main vault/Notes/Weekly reports/2026/2026-W19.md",
+    "00 - Main vault/Notes/Monthly reports/2026/2026-05 _ May.md",
+    "00 - Main vault/Notes/Annually reports/2026.md",
+    "00 - Main vault/Notes/Relationships/OwnerFirstName OwnerLastName.md",
     "00 - Main vault/Statistiques/Work _ Stat.md",
-    "00 - Main vault/Statistiques/Weight and Height _ Stat.md",
+    "00 - Main vault/Notes/Financial Records.md",
+    "00 - Main vault/Notes/TempDailyNote.md",
     "00 - Main vault/Notes/Cj 2nd Brain.canvas",
-    "00 - Main vault/Notes/Daily Notes/2025/07",
-    "00 - Main vault/CV/src5/Scan_20250628_CASA _ ENSEM _ IoT.pdf",
-    "00 - Main vault/CV/src5/Scan_20250628_eljadida _ FS _ Info.pdf",
-    "00 - Main vault/CV/src5/Scan_20250628_Eljadida _ ENSA _ Info dev info.pdf",
-    "00 - Main vault/CV/src5/Scan_20250628_SidiBnour_ FP _ Info SD.pdf",
-    "00 - Main vault/CV/src5/Scan_20250628_ain chok_ FS_ IA et SD.pdf",
-    "00 - Main vault/CV/src5/Scan_20250628_Med _ FST_ GL.pdf",
-    "00 - Main vault/CV/src5/Scan_20250628_Ben Msik_ FS _ Info IA.pdf",
-    "00 - Main vault/CV/src5/Scan_20250628_Med _ ENSET _ Inf BD.pdf",
-    "00 - Main vault/CV/src5/Scan_20250628_Casa _ ENSAM _ IA.pdf",
-    "00 - Main vault/CV/src/Bac_Chaimae.jpg",
-    "00 - Main vault/CV/AnasBERKA.png",
-    "00 - Main vault/Notes/Daily Notes/2025/06/Assets/Pasted image 20250613094110.png",
-    "00 - Main vault/Notes/Daily Notes/2025/06/Assets/Pasted image 20250613090014.png",
-    "00 - Main vault/Notes/Daily Notes/2025/06/Assets/Pasted image 20250613074750.png",
-    "00 - Main vault/Notes/Daily Notes/2025/06/Assets/Pasted image 20250608061327.png",
-    "01 - Learning/Road to CS/Road map.jpg",
-    "00 - Main vault/Assets/2ndBrainState 20250225122340.png",
-    "04 - Teaching Work/Web/Classes/ENSA/202425/Solutions/HTML/Logo_UIZ.png",
-    "04 - Teaching Work/Web/Classes/ENSA/202425/Untitled.canvas",
-    "00 - Main vault/MainMap.canvas",
-    "04 - Teaching Work/Digital skills/Planing for seances.canvas",
-    "01 - Learning/Roads.canvas",
-    "05 - Projects/Collab/Metavers/Connection.canvas",
-    "Untitled.canvas",
-    "Untitled 1.canvas"
+    "00 - Main vault/Notes/Relationships/People I knew.md",
+    "00 - Main vault/Notes/Ideas/Money spending categories.md",
+    "00 - Main vault/Statistiques/Weight and Height _ Stat.md",
+    "00 - Main vault/Statistiques/Tasks _ Stat.md",
+    "00 - Main vault/Statistiques/Sleeping _ Stat.md",
+    "00 - Main vault/Statistiques/Salat _ Stat.md",
+    "00 - Main vault/Statistiques/Research _ Stat.md",
+    "00 - Main vault/Assets/alt-checkboxes.png",
+    "00 - Main vault/Notes/Monthly reports/2026",
+    "00 - Main vault/Notes/Weekly reports/2026",
+    "00 - Main vault/Notes/Daily Notes/2026/05",
+    "00 - Main vault/Notes/Daily Notes/2026",
+    "00 - Main vault/Assets/Banners/youve_got_this-wallpaper-3840x2160.jpg",
+    "06 - Projects/Supervision/PFE",
+    "06 - Projects/Supervision/PFA/DUT",
+    "06 - Projects/Supervision/PFA",
+    "06 - Projects/Supervision/Mini Projet",
+    "06 - Projects/YouTube/Support",
+    "06 - Projects/YouTube/Perso",
+    "00 - Main vault/Assets/Banners/54580-Tim-Ferriss-Quote-Focus-on-being-productive-instead-of-busy.jpg",
+    "00 - Main vault/Assets/Banners/wp10389836.jpg",
+    "00 - Main vault/Assets/Banners/all-games-3780-x-1920-2eaxw5453myac1da.jpg",
+    "00 - Main vault/Assets/Banners/teaching.jpg",
+    "00 - Main vault/Assets/Banners/writing.jpeg",
+    "00 - Main vault/Assets/Banners/writing.jpg",
+    "00 - Main vault/Assets/Banners/animes_wp.jpg",
+    "00 - Main vault/Assets/Logos/Signature mail.png"
   ]
 }

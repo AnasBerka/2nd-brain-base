@@ -8,7 +8,7 @@ Owner(s):
 Related notes: 
 cssclasses:
   - daily
-  - sNote
+  - focus
 banner: "[[ROGBanner.jpg]]"
 banner_x: 0
 banner_y: 0.635

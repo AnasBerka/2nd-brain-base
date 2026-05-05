@@ -1,0 +1,40 @@
+/* 
+ * Enable snippet in Settings -> Appearance -> CSS snippets 
+ */
+
+
+/*------ Alters the colors of every alternating month -------*/
+
+/* Light mode */
+.heatmap-calendar-boxes .month-feb.isEmpty,
+.heatmap-calendar-boxes .month-apr.isEmpty,
+.heatmap-calendar-boxes .month-jun.isEmpty,
+.heatmap-calendar-boxes .month-aug.isEmpty,
+.heatmap-calendar-boxes .month-oct.isEmpty,
+.heatmap-calendar-boxes .month-dec.isEmpty {
+    background: #dbdbdb !important;
+    /* border: 1px solid #e2e2e2;*/
+}
+
+/* Dark mode */
+.theme-dark .heatmap-calendar-boxes .month-feb.isEmpty,
+.theme-dark .heatmap-calendar-boxes .month-apr.isEmpty,
+.theme-dark .heatmap-calendar-boxes .month-jun.isEmpty,
+.theme-dark .heatmap-calendar-boxes .month-aug.isEmpty,
+.theme-dark .heatmap-calendar-boxes .month-oct.isEmpty,
+.theme-dark .heatmap-calendar-boxes .month-dec.isEmpty {
+    background: #121212 !important;
+	/* border: 1px solid #414141;*/
+}
+.theme-dark .heatmap-calendar-boxes .month-jan.isEmpty,
+.theme-dark .heatmap-calendar-boxes .month-mar.isEmpty,
+.theme-dark .heatmap-calendar-boxes .month-may.isEmpty,
+.theme-dark .heatmap-calendar-boxes .month-jul.isEmpty,
+.theme-dark .heatmap-calendar-boxes .month-sep.isEmpty,
+.theme-dark .heatmap-calendar-boxes .month-nov.isEmpty {
+    background: #1a1a1a !important;
+	/* border: 1px solid #414141;*/
+}
+
+
+/* --------------------------------------------------------  */

@@ -10,7 +10,6 @@ authors:
 - "[[{{ author | trim }}]]"
 {% endfor %}
 year: {{date | format("YYYY")}}
-publisher: 
 {% if publicationTitle %}
 publisher: "[[{{publicationTitle}}]]"
 {% elif repository %}
@@ -25,7 +24,7 @@ citekey: {{citekey}}
 keywords: [{{allTags}}]
 cssclasses:
   - daily
-  - sNote
+  - reflection
 banner: "[[CircuitBanner.jpg]]"
 banner_x: 0
 banner_y: 0.644

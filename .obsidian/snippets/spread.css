@@ -1,0 +1,45 @@
+.cell-split {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.cell-split span:first-child {
+  text-align: left;
+}
+
+.cell-split span:last-child {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.cell-right {
+  text-align: right;
+  width: 100%;
+}
+
+/* Stack children vertically */
+.cell-stack {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* First line: left-aligned, full width */
+.cell-stack .stack-top {
+  text-align: left;
+  width: 100%;
+}
+
+/* Second line: new line + right-aligned */
+.cell-stack .stack-bottom {
+  text-align: right;
+  width: 100%;
+  white-space: nowrap;
+}
+
+/* For the last column */
+.cell-left {
+  text-align: left;
+  width: 100%;
+}

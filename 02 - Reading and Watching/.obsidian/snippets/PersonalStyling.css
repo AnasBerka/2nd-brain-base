@@ -1,0 +1,133 @@
+/* 🌙 Dark Theme Always On */
+body {
+    background-color: #000 !important;
+    color: #e0e0e0 !important;
+  }
+  
+  /* 🌈 Headers with distinct colors */
+  h1, .HyperMD-header-1 {
+    color: #ff5733;
+    text-align: center;
+    font-size: 2.8em;
+    border-bottom: 3px solid #ff5733;
+    padding-bottom: 5px;
+  }
+  
+  h2, .HyperMD-header-2 {
+    color: #33c3ff;
+    text-align: center;
+    font-size: 2.2em;
+    border-bottom: 2px solid #33c3ff;
+    padding-bottom: 4px;
+  }
+  
+  h3, .HyperMD-header-3 {
+    color: #50c878;
+    text-align: left;
+    font-size: 1.8em;
+    border-left: 5px solid #50c878;
+    padding-left: 10px;
+  }
+  
+  h4, .HyperMD-header-4 {
+    color: #f4d03f;
+    background-color: #222;
+    font-size: 1.5em;
+    padding: 5px 10px;
+    border-radius: 6px;
+    width: fit-content;
+  }
+  
+  /* 🖋️ Improve text visibility */
+  p {
+    color: #e0e0e0;
+    line-height: 1.6;
+    font-size: 1.1em;
+  }
+  
+  strong {
+    color: #ffd700;
+  }
+  
+  em {
+    color: #ffa07a;
+  }
+  
+  blockquote {
+    border-left: 4px solid #ff5733;
+    padding-left: 10px;
+    font-style: italic;
+    color: #bbb;
+  }
+  
+  /* 🔗 Links */
+  a, .cm-hmd-internal-link {
+    color: #33c3ff;
+    text-decoration: none;
+  }
+  
+  a:hover, .cm-hmd-internal-link:hover {
+    color: #ff5733;
+    text-decoration: underline;
+  }
+  
+  /* 📌 Lists */
+  ul {
+    list-style-type: square;
+  }
+  
+  ul li::marker {
+    color: #50c878;
+  }
+  
+  ol li::marker {
+    color: #33c3ff;
+  }
+  
+  /* ✅ Task Lists */
+  input[type="checkbox"] {
+    accent-color: #ff5733;
+  }
+  
+  /* 🖼️ Images */
+  img {
+    border: 3px solid #33c3ff;
+    border-radius: 8px;
+    max-width: 100%;
+    display: block;
+    margin: 10px auto;
+  }
+  
+  /* 📌 Code Blocks */
+  code {
+    background-color: #222;
+    color: #ffa07a;
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-family: "JetBrains Mono", monospace;
+  }
+  
+  pre {
+    background-color: #111;
+    padding: 10px;
+    border-radius: 6px;
+    color: #ffd700;
+  }
+  
+  /* 🏷️ Tags */
+  .tag {
+    background-color: #222;
+    color: #ff5733;
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-size: 0.9em;
+  }
+  
+  /* 🔄 Horizontal Lines */
+  hr {
+    border: none;
+    height: 2px;
+    background-color: #33c3ff;
+    margin: 20px 0;
+  }
+  

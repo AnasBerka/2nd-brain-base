@@ -3,14 +3,14 @@ tags:
   - Logging/Daily/<%moment(tp.file.title,"YYYY-MM-DD").format("YYYY")%>/<%moment(tp.file.title,"YYYY-MM-DD").format("MM")%>
 Creation date: <%tp.date.now("YYYY/MM/DD HH:mm")%>
 week:
-  - <%moment(tp.file.title).format("gggg-[W]ww")%>
+  - <%moment(tp.file.title).format("GGGG-[W]WW")%>
 cssclasses:
   - daily
   - <%tp.date.now("dddd",0,tp.file.title,"YYYY-MM-DD").toLowerCase()%>
 banner: "[[NoteBanner.jpg]]"
 banner_x: 0
 banner_y: 0.644
-isCompleted: 
+isCompleted:
 aliases: []
 ---
  
@@ -19,8 +19,10 @@ aliases: []
 
 ***
 ### 📜 Journal
+#### [vUpTimeROG::<%tp.date.now("HH:mm A")%>]
+Turning on one of my machines connected to Obsidian !
+
 #### {{for TIME}} use ‘ctrl + shift + /’
-Starting Obsidian !
 
 ***
 ### 📝 Today’s tasks
@@ -32,169 +34,411 @@ sort by priority
 sort by due date 
 sort by description ASC
 ```
-***
-### ✍️ New tasks
-- [ ] 📝 Morning check about everything ⏲️ 06:30 - 07:30 ⏬ 📅 <%moment(tp.file.title).format("YYYY-MM-DD")%> 
-- [ ] 📝 Logging the daily activities in Obsidian for the [[00 - Main vault/Notes/Daily Notes/<%moment(tp.file.title,"YYYY-MM-DD").subtract(1,'day').format("YYYY")%>/<%moment(tp.file.title,"YYYY-MM-DD").subtract(1,'day').format("MM")%>/<%moment(tp.file.title,"YYYY-MM-DD").subtract(1,'day').format("YYYY-MM-DD")%>|previous day]] about everything  ⏲️ 07:30 - 08:00 📅 <%moment(tp.file.title).format("YYYY-MM-DD")%> ⏬ 
-***
-### 🌚On-going tasks:
-#### ⚫ Urgent Priority Tasks
-```tasks
-not done 
-tags do not include #Payment
-tags do not include #BDay
-no cancelled date
-priority is highest 
-sort by due date 
-sort by description ASC
-```
-#### 🔴 High Priority Tasks
-```tasks
-not done 
-tags do not include #Payment
-tags do not include #BDay
-no cancelled date
-priority is high 
-sort by due date 
-sort by description ASC
-```
-#### 🟡 Medium Priority Tasks
-```tasks
-not done 
-tags do not include #Payment
-tags do not include #BDay
-no cancelled date
-priority is medium 
-sort by due date 
-sort by description ASC
-```
-#### ⚪ Low Priority Tasks
-```tasks
-not done 
-tags do not include #Payment
-tags do not include #BDay
-no cancelled date
-priority is low 
-sort by due date 
-sort by description ASC
-```
-#### 🍰 Upcoming birthdays this month
+### 📝 Tomorrow's tasks (aside from the usual daily ones)
+
 ```tasks
 not done
-tags include #BDay
+no cancelled date
+due on <%moment(tp.file.title).add(1, "days").format("YYYY-MM-DD")%>
+sort by priority
+sort by due date
+sort by description ASC
+```
+***
+### ✍️ New tasks
+- [ ] 📝 Morning check about everything & cleaning the house + organize everything correctly ⏲️ 07:00 - 07:45 ⏬ 📅 <%moment(tp.file.title).format("YYYY-MM-DD")%> 
+- [ ] 📝 Logging the daily activities in Obsidian for the [[00 - Main vault/Notes/Daily Notes/<%moment(tp.file.title,"YYYY-MM-DD").subtract(1,'day').format("YYYY")%>/<%moment(tp.file.title,"YYYY-MM-DD").subtract(1,'day').format("MM")%>/<%moment(tp.file.title,"YYYY-MM-DD").subtract(1,'day').format("YYYY-MM-DD")%>|previous day]] about everything  ⏲️  07:45 - 08:00 📅 <%moment(tp.file.title).format("YYYY-MM-DD")%> ⏬ 
+
+***
+### 🔔 Upcoming events (this month)
+```tasks
+(tag includes #Logging/SDay/BDay) OR (tag includes #RIP ) OR (tag includes #SDay)
 scheduled in <%moment(tp.file.title).subtract(1, "days").format("YYYY-MM-DD")%> <%moment(tp.file.title).add(30, "days").format("YYYY-MM-DD")%>
+sort by status
 sort by priority 
 sort by scheduled 
 sort by description ASC
 ```
-#### 💸 Upcoming payments
-```tasks
-not done
-tags include #Payment
-sort by scheduled 
-sort by priority
-sort by description ASC
-```
 ***
-
 ### ☢️Habits
 #### 🛐 Salat
 
-- [ ] Time for Quran & Salat Fajer 05:30 - 06:30
-	- Quran reading [quranReading:: ] 
-	- Quran’s 7izb [Quran/7izb:: ]
+- [ ] 🕋 Time for Quran & Salat Fajer ⏲️ 05:00 - 06:00   
+	- Quran reading 
+		- [quranReading::] 
+		- [quranReadingO::] 
+		- [quranReadingE::]
+	- Quran’s 7izb 
+		- [Quran/7izb::] 
+		- [Quran/7izbO::] 
+		- [Quran/7izbE::]
 
-
-- [ ] 🛐 Prayers on time
-	- Salat on time [salatOnTime:: ] 
-	- Fajer [salatFajer:: false] | Doher [salatDohr:: false] | Aaser [salatAaser:: false] | Meghrb [salatMeghrb:: false] | Ishae [salatIshae:: false]
+- [/] 🛐 Prayers on time ⏲️ 22:00 - 22:15  
+	- Salat on time [salatOnTime:: 1] 
+		- Fajer [salatFajer:: false] 
+		- Doher [salatDohr:: false] 
+		- Aaser [salatAaser:: false] 
+		- Meghrb [salatMeghrb:: false] 
+		- Ishae [salatIshae:: false]
 	
 
-#### 👨‍💼 Work time
-Self-improvements (in Min): [hWork:: ]
-<br>
+#### 📓 Top 10 items I’m reading
+```dataviewjs
+// List of variables you want to track
 
-Official Work (in Min):
-- oWork:: 
-- pWork:: 
-- pWorkDh::108
-- startOWorkAt:: 
-- finishOWorkAt:: 
+const vars = ["Quran/7izb", "Quran/7izbO", "Quran/7izbE", "BK/AtomicHabits", "BK/DeepWork", "BK/1200Verbes","LN/Overlord", "LN/Slime", "LN/SoloLeveling", "WN/ReZero"];
+const reRead = [1, 0, 0, 0, 0, 0,0, 0, 2,0];
 
-Research Work (in Min):
-- rWork:: 
+// Collect all daily notes (adapt to your folder if needed)
+let pages = dv.pages('"00 - Main vault/Notes/Daily Notes"')
+	.filter(p => p.file.name <= "<%moment(tp.file.title).format("YYYY-MM-DD")%>" )
+    .sort(p => p.file.name, 'desc'); 
+    
+// Object to hold first found values
+let results = {};
+for (let v of vars) results[v] = null;
+
+// Iterate pages and capture value + date
+for (let page of pages) {
+    for (let v of vars) {
+        if (results[v] === null) {
+            let value = page[v];
+            if (value !== null && value !== undefined && value !== 0 && value !== "0") {
+                results[v] = {
+                    value: value,
+                    date: page.file.link // assuming YYYY-MM-DD.md naming
+                };
+            }
+        }
+    }
+    if (Object.values(results).every(x => x !== null)) break;
+}
+
+// Render results in table
+dv.table(
+    ["Items", "Last Value", "Date Found", "Complete reread"],
+    vars.map((v, i) => {
+        let entry = results[v];
+        return [
+            v,
+            entry ? entry.value : "❌ not found",
+            entry ? entry.date : "—",
+            reRead[i]
+        ];
+    })
+);
+```
 
 #### 🏋️‍♂️ GYM time
-Personal stats:
-- myWeight:: 
-- myHeight:: 
-<br/>
+Working out:
+- [ ] 🏃Run Lord Cj RUUUN ⏲️  06:00 - 06:20 
+	- Running 
+		- [runingKm::] 
+		- [runingMin::] 
+		- [runingAS::]
+	- Springing 
+		- [springMaxSpeed::] 
+		- [springMaxSS::]
 
-- [ ] 🏃Run RUUUN 08:00 - 08:30
-	- Running [runingKm:: ] [runingMin:: ] [runingAS:: ]
-	- Springing [springMaxSpeed:: ] [springMaxSS:: ]
-
-
-- [ ] 💪 GYM :  08:30 - 10:00
-	- Stats [gymKg:: ] [gymMin:: ]
-	- Leveling up [pushUpReps:: ] [setUpReps::  ] [squadReps::  ]
-	- Basic exercices [pushBarMaxKg:: ] [pushBarMaxRep:: ] [pullBarMaxKg:: ]  [pullBarMaxRep:: ] [squadBarMaxKg:: ] [squadBarMaxRep:: ] [curlDumpMaxKg:: ] [curlDumpMaxRep:: ]
-	- IT training [typingTraining:: ] [typingSpeed:: ]
-
-How much I moved this day 
-- travelingDist:: 
-- Steps::  
+- [ ] 💪 GYM time  ⏲️06:20 - 07:00
+	- Stats 
+		- [gymKg::] 
+		- [gymMin::] 
+		- [Cal::]
+	- Active time 
+		- [activeTime::] 
+		- [activeTravelingDist::] 
+		- [activeCal::] 
+		- [activeSteps::]
+	- Leveling up 
+		- [pushUpReps:: 0] 
+		- [pushUpRepsMax::] 
+		- [setUpReps:: 0] 
+		- [setUpRepsMax::] 
+		- [squadReps::  0]
+		- [squadRepsMax::]
+	- Basic exercices 
+		- [pushBarMaxKg::] 
+		- [pushBarMaxRep::] 
+		- [pullBarMaxKg::] 
+		- [pullBarMaxRep::] 
+		- [squadBarMaxKg::] 
+		- [squadBarMaxRep::] 
+		- [curlDumpMaxKg::] 
+		- [curlDumpMaxRep::]
+	- IT training 
+		- [typingTraining::] 
+		- [typingSpeed::]
 
 #### 🖥️ Fun Time
 
+- [/] 👺 Having fun while watching stuffs ⏲️ 23:00 - 23:30 :
+	- Movies [movieMin::]
+	- Animes [animeEp:: 0]
+	
+- [/] 📓 Manga & Manhwa ⏲️ 23:30 - 23:59 :
+	- Reading Manga [RManga:: 0]
 
-- [ ] 👺 Having fun while watching stuffs 23:00 - 00:00
-	- Movies [movieMin:: ]
-	- Animes [animeEp:: ]
+- [/] 📙 Light & Web novel ⏲️ 23:30 - 23:59 :
+	- Books reading [BRead:: 0]
+	- Lignt/Web novels time [LWReadMin::]
+	- Lignt/Web novels reading [LWRead::]
+	
+ - [/] 👾 Gaming / ROG time ⏲️ 18:00-20:00 : 
+	- StriX [gamingPCMin::0]
+	- AS21 [gamingMobileMin::]
 
-Manga/Manhwa readed (Count):
-- RManga:: 
-
-Light/Web novel readed (Nbr pages):
-- BRead:: 
-- LWRead:: 
-- LWReadMin:: 
-
-Gaming (in Min):
-- gamingPCMin::
-- gamingMobileMin::
-
-Browsing Social Media (in Min):
-- smMin:: 
-- Fb:: 
-- Insta:: 
+- [/] 📱 Browsing Social Media ⏲️ 22:15-23:00 :
+	- Check all SMs [smMin::]
+	- Facebook  [Fb::]
+	- Instagram [Insta::]
 
 Phone statics :
-- UnlockNbr:: 
-- ScreenTime:: 
+- [UnlockNbr::]
+- [ScreenTime::]
 
 #### 💰 Money
 Various transaction for the day :
+	- 
 
+- [vOwnerfirstnameOwnerlastname::] 
+- [vCDBalance::]
+- [vCjBank2Bank::]
+- [vBBM::]
+- [vCIH::]
+- [vBNP::]
+- [vCache::]
+- [vReserve::777]
 
-How much mony I spent or saved (in Dh)
-- moneyInDh::  
-- dailyDh:: 
+How much money I spent or saved (in Dh)
+	- [moneyInDh::]
+	- [dailyDh:: 150]
+	
+Divided into:
+	- Fixed Essentials [feDh::] 
+	- Variable Essentials [veDh::] 
+	- Non-essential consumption [dsDh::] 
+	- Personal Development [pdDh::] 
+	- Social & Lifestyle [slDh::] 
+	- Irregular / Unexpected [iuDh::] 
+	- Financial Commitments [fcDh::] 
 
+```dataviewjs
+const pages = dv.pages('"00 - Main vault/Notes/Daily Notes"')
+  .where(p => p.file.day <= dv.date("<%moment(tp.file.title).format("YYYY-MM-DD")%>"))
+  .array(); // 🔑 Convert DataArray -> normal array
+
+// Helper function to safely extract a field value
+function getFieldValue(page, fieldName) {
+  return Number(page[fieldName]) || 0;
+}
+
+// Group pages by day
+const groupedByDay = pages.reduce((acc, page) => {
+  const day = page.file.day.toISODate(); // Convert to ISO date string for grouping
+  if (!acc[day]) acc[day] = [];
+  acc[day].push(page);
+  return acc;
+}, {});
+
+// Calculate `dh` and `e` for each day
+const dailyValues = Object.entries(groupedByDay).map(([day, dayPages]) => {
+  const dh = dayPages.reduce(
+    (sum, p) => sum + getFieldValue(p, "vCIH") + getFieldValue(p, "vBBM") + getFieldValue(p, "vCache"),
+    0
+  );
+  const reserve = dayPages.reduce((sum, p) => sum + getFieldValue(p, "vReserve"), 0);
+  const e = dayPages.reduce((sum, p) => sum + getFieldValue(p, "vBNP"), 0);
+  return { day, dh, e, reserve};
+});
+
+// Find the most recent day where both `dh` and `e` are available
+const mostRecent = dailyValues
+  .filter(({ dh }) => dh !== null) // Ensure `dh` exists (can be 0, positive, or negative)
+  .sort((a, b) => new Date(b.day) - new Date(a.day))[0]; // Sort by date descending
+
+// Extract `dh` and `e` for the most recent day
+const dh = mostRecent ? mostRecent.dh : 0;
+const e = mostRecent ? mostRecent.e : 0;
+const reserve = mostRecent ? mostRecent.reserve : 0;
+
+// Check for Zero
+const EPS = 1e-2;
+function isZero(x) {
+  return Math.abs(x) < EPS;
+}
+
+// Perform calculations
+const sumBank2Bank = pages
+  .map(p => getFieldValue(p, "vCjBank2Bank"))
+  .reduce((a, b) => a + b, 0);
+
+const sumMoneyInDh = pages
+  .map(p => getFieldValue(p, "moneyInDh"))
+  .reduce((a, b) => a + b, 0);
+
+const sumCDBalance = pages
+  .map(p => getFieldValue(p, "vCDBalance"))
+  .reduce((a, b) => a + b, 0);
+
+const TH = dh + e * 11 + reserve; // Total holdings
+const TT = sumCDBalance + TH; // Total expected value
+const missingValues = TH - sumMoneyInDh - sumBank2Bank;
+
+// Display results
+dv.paragraph(`📌 Pending transaction: **${(isZero(sumBank2Bank)?0:sumBank2Bank).toLocaleString("fr-FR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}** Dh`);
+dv.paragraph(`⚖️ Credit/Debit balance: **${(isZero(sumCDBalance)?0:sumCDBalance).toLocaleString("fr-FR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}** Dh`);
+dv.paragraph(`🏦 Currently in my banks vault: **${(isZero(sumMoneyInDh)?0:sumMoneyInDh).toLocaleString("fr-FR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}** Dh`);
+if (!isZero(sumBank2Bank) || !isZero(sumCDBalance)) {
+  dv.paragraph(`💸 Normally it should be: **${(sumMoneyInDh + sumBank2Bank + sumCDBalance).toLocaleString("fr-FR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}** Dh`);
+}
+if(!isZero(TH-sumMoneyInDh) && !isZero(TH) && !isZero(TH-reserve)){
+	dv.span(`<br>⚠️ Real values = **${TT.toLocaleString("fr-FR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}** Dh`);
+	dv.span(`<br>⚠️ To money: **${(TH - sumMoneyInDh).toLocaleString("fr-FR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}** Dh`);
+	dv.span(`<br>⚠️ To CjBank: **${(-sumBank2Bank).toLocaleString("fr-FR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}** Dh`);
+	dv.span(`<br>⚠️ Missing values: **${missingValues.toLocaleString("fr-FR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}** Dh`);
+	dv.span(`<br>⚠️ Expected value: **${TH.toLocaleString("fr-FR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}** Dh`);
+};
+```
 #### 😋 Food
 What I recalled I ate this day:
-- 
+	- 
+
+***
+### Stats
+#### 👨‍💼 Work time
+Self-improvements (in Min): 
+- [hWork::]
+- [sWork::]
+
+Research (in Min):
+- [rWork::]
+
+Work (in Min):
+- [oWork::]
+- [tWork::]  [twWork::]
+- [eWork::] 
+- [mWork::]  
+- [pWork::] 
+
+Payment (in Dh/H):
+r=300,t=300,o=402
+- [hWorkDh::0]
+- [sWorkDh::30]
+- [rWorkDh::200]
+- [oWorkDh::200]
+- [tWorkDh::200]
+- [mWorkDh::200]
+- [eWorkDh::100]
+- [pWorkDh::150]
+
+Work timing:
+- [startOWorkAt::]
+- [finishOWorkAt::]
+- [startHWorkAt::]
+- [finishHWorkAt::]
+
+
+#### 🎓 Research Index:
+
+- Google based :  
+	- [AB/hGIndex::] 
+	- [AB/i10GIndex::] 
+	- [AB/GCitations::] 
+	- [AB/gGIndex::] 
+	- [AB/CPPGScore::] 
+	- [AB/hGScore::] 
+	- [AB/gGScore::] 
+	- [AB/GCiteScore::]   
+	- [AB/CitationsGY::] 
+- Researchgate : 
+	- [AB/hRIndex::] 
+	- [AB/i10RIndex::] 
+	- [AB/RCitations::] 
+	- [AB/gRIndex::] 
+	- [AB/CPPRScore::] 
+	- [AB/hRScore::] 
+	- [AB/gRScore::] 
+	- [AB/RCiteScore::] 
+	- [AB/CitationsRY::]
+- Other DBs:
+	- [AB/CitationsSY::]
+	- [AB/CitationsWY::]
+- Publications :
+	- CactiVit:
+		- [AB/CactiVit/GS::]
+		- [AB/CactiVit/RG::]
+		- [AB/CactiVit/S::]
+		- [AB/CactiVit/WOF::]
+	- EDLV3:
+		- [AB/EDLV3/GS::]
+		- [AB/EDLV3/RG::]
+		- [AB/EDLV3/S::]
+		- [AB/EDLV3/WOF::]
+	- DIFD:
+		- [AB/DIFD/GS::]
+		- [AB/DIFD/RG::]
+		- [AB/DIFD/S::]
+		- [AB/DIFD/WOF::]
+	- AITVR:
+		- [AB/AITVR/GS::]
+		- [AB/AITVR/RG::]
+		- [AB/AITVR/S::]
+		- [AB/AITVR/WOF::]
+- General : 
+	- [AB/FWCI::]
+	- [AB/RIS::] 
+	- [AB/CoAScore::]  
+	- [AB/OScore::]  
+	- [AB/PScore::] 
+	- [AB/PapersS::] 
+	- [AB/PapersP::]
+
+#### 🏛️ Bank of Data 
+SIMs :
+- Public 
+	- [IAM/M/C::] 
+	- [IAM/M/I::] 
+	- [IAM/M/IL::] 
+
+#### 🏋️‍♂️ Personal stats:
+- [myWeight::]
+- [myHeight:: ]
+- [BMI::]
+- [FAT::]%
+- [WAT::]%
+- [MUS::]%
+- [BON::]%
+- [KCAL::]
+
+
+How much I moved this day :
+- [travelingDist::]
+- [Steps::]
+- [wCal::]
+
+
+#### 🧑‍🤝‍🧑 Social media stats:
+- Facebook [friendsFb::] [RequestsFb::]
+- Instagram [followingInsta::] [followersInsta::]
+- Github [followingGH::] [followersGH::]
+- YouTube [subsIGX::] [subsIG0::]
+- ResearchGate [followingRG::] [followersRG::]
+- LinkedIn [ConnectionLI::] [followersLI::]
+- Contacts [NbrContacts::]
 
 #### 💤 Personal Space
 How many hours for me to sleep & relax (in min) and other stats: 
-meTime:: 1
-gTime:: 
-bTime:: 
-wokedAt:: 
-sleptAt::
-
+	- [meTime::]
+	- [gTime:: false]
+	- [bTime::]
+	- [wokedAt::]
+	- [sleptAt::]
 ***
 ### Links
 => [[00 - Main vault/Notes/Daily Notes/<%moment(tp.file.title,"YYYY-MM-DD").subtract(1,'day').format("YYYY")%>/<%moment(tp.file.title,"YYYY-MM-DD").subtract(1,'day').format("MM")%>/<%moment(tp.file.title,"YYYY-MM-DD").subtract(1,'day').format("YYYY-MM-DD")%>|View previous day]]
-=> [[00 - Main vault/Notes/Weekly reports/<%moment(tp.file.title,"YYYY-MM-DD").format("YYYY")%>/<%moment(tp.file.title).format("gggg-[W]ww")%>|View the weekly report]]
+=> [[00 - Main vault/Notes/Weekly reports/<%moment(tp.file.title,"YYYY-MM-DD").format("YYYY")%>/<%moment(tp.file.title).format("GGGG-[W]WW")%>|View the weekly report]]
 
+---
+### Additional variables (from DBs)
+[fillData::false]

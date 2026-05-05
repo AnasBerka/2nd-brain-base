@@ -1,0 +1,313 @@
+{
+  "main": {
+    "id": "072d30cb0e8bd803",
+    "type": "split",
+    "children": [
+      {
+        "id": "12ee34505d87f795",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6cfef897f91e3fa3",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "db4d298bb8fd90b3",
+    "type": "split",
+    "children": [
+      {
+        "id": "f8aba3bbf4ed70dc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "86e9711fdc486e1a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "2a4968fb32534f12",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "64dda709d601cfe1",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "c2510f5f0db713cc",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {},
+              "icon": "clock",
+              "title": "Recent Files"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "8e9aeb7641b4aee2",
+    "type": "split",
+    "children": [
+      {
+        "id": "5335c0af3f7bf873",
+        "type": "tabs",
+        "dimension": 69.11231884057972,
+        "children": [
+          {
+            "id": "5cc4c12fd67d37f1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Web/Classes/ENSA/202425/TP3_Web_ENSA_2425.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for TP3_Web_ENSA_2425"
+            }
+          },
+          {
+            "id": "4a0bdfed6ff15f87",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Web/Classes/ENSA/202425/TP3_Web_ENSA_2425.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from TP3_Web_ENSA_2425"
+            }
+          },
+          {
+            "id": "0fe5eaf26527312b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "df92d954aa0c0a84",
+            "type": "leaf",
+            "state": {
+              "type": "mindmap",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "mindmap"
+            }
+          },
+          {
+            "id": "45870095efc3249c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "d9c86fa340532568",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "todo"
+            }
+          },
+          {
+            "id": "47d0b64e45258f85",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "354954aaea99708e",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {},
+              "icon": "checkmark",
+              "title": "Todo List"
+            }
+          },
+          {
+            "id": "bddf0009e94101fb",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {},
+              "icon": "checkmark",
+              "title": "Todo List"
+            }
+          }
+        ],
+        "currentTab": 8
+      },
+      {
+        "id": "c74736c44b3d7b7a",
+        "type": "tabs",
+        "dimension": 30.88768115942029,
+        "children": [
+          {
+            "id": "20e14963b20f0e90",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.6555844896733545,
+                  "close": true
+                }
+              },
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 337.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Create new base": false,
+      "workspaces:Manage workspace layouts": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "random-note:Open random note": false,
+      "zk-prefixer:Create new unique note": false,
+      "audio-recorder:Start/stop recording": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-excalidraw-plugin:New drawing": false
+    }
+  },
+  "active": "6cfef897f91e3fa3",
+  "lastOpenFiles": [
+    "Supervision/PFE DUT/UCA/ESTK/202526/G1 e2 251213.m4a",
+    "Supervision/PFE DUT/UCA/ESTK/202526/UCA ESTK DUT PFE 202526 G5.md",
+    "Supervision/PFE DUT/UCA/ESTK/202526/UCA ESTK DUT PFE 202526 G4.md",
+    "Supervision/PFE DUT/UCA/ESTK/202526/UCA ESTK DUT PFE 202526 G6.md",
+    "Supervision/PFE DUT/UCA/ESTK/202526/UCA ESTK DUT PFE 202526 G3.md",
+    "Supervision/PFE DUT/UCA/ESTK/202526/G2ppt.pdf",
+    "Supervision/PFE DUT/UCA/ESTK/202526/UCA ESTK DUT PFE 202526 G2.md",
+    "Supervision/PFE DUT/UCA/ESTK/202526/G5.pdf",
+    "Supervision/PFE DUT/UCA/ESTK/202526/UCA ESTK DUT PFE 202526 G1.md",
+    "Web/Classes/ENSA/202425/TP1_Web_ENSA_2425.md",
+    "Web/Classes/ENSA/202425/TP2_Web_ENSA_2425.md",
+    "Web/Classes/ENSA/202425/TP3_Web_ENSA_2425.md",
+    "Web/Classes/ENSA/202425/TP4_Web_ENSA_2425.md",
+    "Web/Classes/ENSA/202425/TP5_Web_ENSA_2425.md",
+    "Web/Classes/ENSA/202425/TP6_Web_ENSA_2425.md",
+    "Cpp/Examm_Cpp_GI4_UIZ_FPT_202425.md",
+    "Web/Classes/ENSA/202425/202425ENSAAGADIRTCStudents.md",
+    "Teaching.md",
+    "Digital skills/Digital Skills.md",
+    "Digital skills/Cours/Sequences/8_MSTeams.md",
+    "Deep Learning/CoursDL.md",
+    "C/CoursC.md",
+    "Cpp/Courspp.md",
+    "Assets/News/2025-07-27-00-27-46.md",
+    "Assets/News/2025-07-27-00-27-37.md",
+    "Deep Learning/Classes/FPT/202324/TP1_M3_202324.md",
+    "Deep Learning/Classes/FPT/202425/202425UIZFPTM2Students.md",
+    "Digital skills/Cours/Sequences/7_MSPowerPoint.md",
+    "Assets/News"
+  ]
+}

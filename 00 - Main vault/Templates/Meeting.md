@@ -1,14 +1,14 @@
 ---
-Subject & Objectif: 
+Subject & Objectif:
 Host:
-  - "[[Anas BERKA]]"
-Present: 
-Absent: 
+  - "[[OwnerFirstName OwnerLastName]]"
+Present:
+Absent:
 tags:
   - Meetings/
 Creation date: <% tp.file.creation_date() %>
-Meeting time: 
-isDone: 
+Meeting time:
+isDone:
 banner: "[[FantasyBanner.jpg]]"
 banner_x: 0
 banner_y: 0.371

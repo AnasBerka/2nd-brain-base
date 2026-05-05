@@ -1,0 +1,79 @@
+{
+  "snapStepMinutes": 10,
+  "progressIndicator": "bar",
+  "showTaskNotification": true,
+  "zoomLevel": 4,
+  "timelineIcon": "sheets-in-box",
+  "endLabel": "All done",
+  "startHour": 5,
+  "timelineDateFormat": "YYYY-MM-DD",
+  "centerNeedle": true,
+  "plannerHeading": "✍️ New tasks",
+  "plannerHeadingLevel": 1,
+  "timelineColored": false,
+  "timelineStartColor": "#006466",
+  "timelineEndColor": "#4d194d",
+  "timestampFormat": "HH:mm",
+  "hourFormat": "hh:mm A",
+  "dataviewSource": "\"00 - Main vault/Notes\" or \"00 - Main vault/Meetings\"",
+  "extendDurationUntilNext": true,
+  "defaultDurationMinutes": 30,
+  "minimalDurationMinutes": 10,
+  "showTimestampInTaskBlock": true,
+  "showUncheduledTasks": true,
+  "showUnscheduledNestedTasks": true,
+  "showNow": true,
+  "showNext": true,
+  "pluginVersion": "0.28.0",
+  "showCompletedTasks": true,
+  "showSubtasksInTaskBlocks": true,
+  "icals": [
+    {
+      "name": "Holidays in France",
+      "email": "",
+      "url": "https://calendar.google.com/calendar/embed?src=en.french%23holiday%40group.v.calendar.google.com&ctz=Africa%2FCasablanca",
+      "color": "#ff0000"
+    },
+    {
+      "name": "Muslim's holidays",
+      "email": "",
+      "url": "https://calendar.google.com/calendar/embed?src=en.islamic%23holiday%40group.v.calendar.google.com&ctz=Africa%2FCasablanca",
+      "color": "#4600eb"
+    },
+    {
+      "name": "",
+      "email": "",
+      "url": "",
+      "color": "#ffffff"
+    }
+  ],
+  "colorOverrides": [],
+  "releaseNotes": true,
+  "taskStatusOnCreation": " ",
+  "eventFormatOnCreation": "task",
+  "sortTasksInPlanAfterEdit": true,
+  "firstDayOfWeek": "monday",
+  "multiDayRange": "full-week",
+  "showTimeTracker": false,
+  "showActiveClocks": true,
+  "rawIcals": [
+    {
+      "icalConfig": {
+        "name": "Holidays in France",
+        "email": "",
+        "url": "https://calendar.google.com/calendar/embed?src=en.french%23holiday%40group.v.calendar.google.com&ctz=Africa%2FCasablanca",
+        "color": "#ff0000"
+      },
+      "text": ""
+    },
+    {
+      "icalConfig": {
+        "name": "Muslim's holidays",
+        "email": "",
+        "url": "https://calendar.google.com/calendar/embed?src=en.islamic%23holiday%40group.v.calendar.google.com&ctz=Africa%2FCasablanca",
+        "color": "#4600eb"
+      },
+      "text": ""
+    }
+  ]
+}

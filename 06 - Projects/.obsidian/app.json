@@ -1,0 +1,8 @@
+{
+  "alwaysUpdateLinks": true,
+  "readableLineLength": false,
+  "promptDelete": true,
+  "trashOption": "local",
+  "newFileLocation": "current",
+  "attachmentFolderPath": "./Assets"
+}

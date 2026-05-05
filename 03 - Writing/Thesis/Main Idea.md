@@ -1,1 +1,0 @@
-Smart Farming : Système d’aide à la décision basé sur la fusion de données multi-sources

@@ -19,6 +19,20 @@
       "rgb(51, 0, 0)",
       "rgb(25, 0, 0)"
     ],
+    "obsidianTheme": [
+      "var(--color-base-00)",
+      "var(--color-base-05)",
+      "var(--color-base-10)",
+      "var(--color-base-20)",
+      "var(--color-base-25)",
+      "var(--color-base-30)",
+      "var(--color-base-35)",
+      "var(--color-base-40)",
+      "var(--color-base-50)",
+      "var(--color-base-60)",
+      "var(--color-base-70)",
+      "var(--color-base-100)"
+    ],
     "fire": [
       "rgb(51, 51, 51)",
       "rgb(77, 26, 26)",
@@ -86,6 +100,27 @@
       "rgb(77, 59, 0)",
       "rgb(51, 38, 0)"
     ],
+    "tasksV2": [
+      "rgb(255, 0, 0)",
+      "rgb(181, 61, 61)",
+      "rgb(153, 51, 51)",
+      "rgb(127, 38, 38)",
+      "rgb(102, 26, 26)",
+      "rgb(77, 26, 26)",
+      "rgb(51, 51, 51)",
+      "rgb(217, 221, 222)",
+      "rgb(160, 160, 160)",
+      "rgb(150, 160, 180)",
+      "rgb(102, 102, 102)",
+      "rgb(77, 77, 77)",
+      "rgb(51, 51, 51)",
+      "rgb(50, 55, 75)",
+      "rgb(40, 45, 90)",
+      "rgb(30, 35, 100)",
+      "rgb(15, 20, 80)",
+      "rgb(5, 15, 60)",
+      "rgb(0, 10, 51)"
+    ],
     "gaming": [
       "rgb(51, 51, 51)",
       "rgb(77, 77, 77)",
@@ -117,9 +152,24 @@
       "rgb(128, 128, 128)",
       "rgb(153, 153, 153)",
       "rgb(255, 255, 255)"
+    ],
+    "txn": [
+      "rgb(140, 8, 8)",
+      "rgb(190, 35, 15)",
+      "rgb(220, 70, 35)",
+      "rgb(240, 115, 55)",
+      "rgb(220, 165, 100)",
+      "rgb(180, 175, 155)",
+      "rgb(135, 160, 180)",
+      "rgb(85, 130, 170)",
+      "rgb(50, 100, 150)",
+      "rgb(25, 72, 125)",
+      "rgb(10, 48, 95)",
+      "rgb(3, 25, 62)"
     ]
   },
   "weekStartDay": 1,
+  "showWeekNums": true,
   "weekDisplayMode": "odd",
   "separateMonths": true,
   "language": "en",

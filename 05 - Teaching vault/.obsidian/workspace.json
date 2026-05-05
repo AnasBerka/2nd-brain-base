@@ -1,0 +1,258 @@
+{
+  "main": {
+    "id": "c524cb526756b1f4",
+    "type": "split",
+    "children": [
+      {
+        "id": "489791ef22041ebb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "16f77ff8c85643a1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "UCA/ESTK/202526/Web/DevW_TP5_202526.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "DevW_TP5_202526"
+            }
+          },
+          {
+            "id": "5477f1b57454b77f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "UCA/ESTK/202526/Web/DevW_TP11.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "DevW_TP11"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f197c06755d46bbd",
+    "type": "split",
+    "children": [
+      {
+        "id": "bdd066f331e18b59",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3603c4f53c67f6b5",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "bbd9d630155ac17b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "856226af40954d16",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "fce0865acae00f4f",
+    "type": "split",
+    "children": [
+      {
+        "id": "3c022e7a21938bd9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6447add022d1f72d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "UCA/ESTK/202526/Web/DevW_TP5_202526.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for DevW_TP5_202526"
+            }
+          },
+          {
+            "id": "22fbf6db97a9d604",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "UCA/ESTK/202526/Web/DevW_TP5_202526.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from DevW_TP5_202526"
+            }
+          },
+          {
+            "id": "6e1eb8a4814ba8bd",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "04cec1d3e58e4039",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "c65c0f775ed57297",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "UCA/ESTK/202526/Web/DevW_TP5_202526.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of DevW_TP5_202526"
+            }
+          },
+          {
+            "id": "88ee0c3a904b84f5",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "1adcbe97f86f7114",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {},
+              "icon": "checkmark",
+              "title": "Todo List"
+            }
+          },
+          {
+            "id": "2521d620c22a46e2",
+            "type": "leaf",
+            "state": {
+              "type": "planner-timeline",
+              "state": {},
+              "icon": "sheets-in-box",
+              "title": "Timeline"
+            }
+          }
+        ],
+        "currentTab": 6
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "zk-prefixer:Create new unique note": false,
+      "audio-recorder:Start/stop recording": false,
+      "workspaces:Manage workspace layouts": false,
+      "bases:Create new base": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "templater-obsidian:Templater": false,
+      "dbfolder:Create a new database table": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "obsidian-full-calendar:Open Full Calendar": false,
+      "obsidian-day-planner:Open Timeline": false,
+      "obsidian-day-planner:Open Multi-Day View": false
+    }
+  },
+  "active": "5477f1b57454b77f",
+  "lastOpenFiles": [
+    "UCA/ESTK/202526/Web/Cours/DevWeb_Cours_Ch4_Pr.BERKA.pdf",
+    "UCA/ESTK/202526/Web/Cours/Web _ Ch4 BERKA _ ID-RCIA _ 202526.pdf",
+    "UCA/ESTK/202526/Web/Web _ Ch4 BERKA _ ID-RCIA _ 202526.pdf",
+    "UCA/ESTK/202526/Web/mso50A2.tmp",
+    "UCA/ESTK/202526/Web/mso9F81.tmp",
+    "UCA/ESTK/202526/Web/Demo_Cours/Chapter 4/Ch4_P190.html",
+    "UCA/ESTK/202526/Web/Demo_Cours/Chapter 4/Ch4_P188 copy.html",
+    "UCA/ESTK/202526/Web/Demo_Cours/Chapter 4/Ch4_P188.html",
+    "UCA/ESTK/202526/Web/Demo_Cours/Chapter 4/Ch4_P185 copy 2.html",
+    "UCA/ESTK/202526/Web/Demo_Cours/Chapter 4/Ch4_P185 copy.html",
+    "UCA/ESTK/202526/Web/Demo_Cours/Chapter 4/Ch4_P181.html",
+    "UCA/ESTK/202526/Web/DevW_TP5_202526.md",
+    "UCA/ESTK/202526/Web/DevW_TP6_202526_L1_Groupes.md",
+    "UCA/ESTK/202526/Web/DevW_TP6_202526_Clones.md"
+  ]
+}

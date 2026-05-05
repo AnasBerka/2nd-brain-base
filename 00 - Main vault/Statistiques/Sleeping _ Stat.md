@@ -9,93 +9,96 @@ cssclasses:
   - daily
   - sNote
 ---
-
+#### 💤 Sleeping quality 
 ```dataviewjs
-const calendarData = {
-    intensityScaleStart: 0,
-    intensityScaleEnd: 12, // I have 12 color levels in heat
-    entries: [],
-    separateMonths: true,
-    colorScheme: {
-        paletteName: "heat3",
-        "heat": [
-    "rgb(204, 0, 0)", 
-    "rgb(170, 20, 20)", 
-    "rgb(140, 35, 35)", 
-    "rgb(110, 45, 45)", 
-    "rgb(80, 50, 50)", 
-    "rgb(51, 51, 51)", 
-    "rgb(50, 55, 75)", 
-    "rgb(40, 45, 90)", 
-    "rgb(30, 35, 100)", 
-    "rgb(15, 20, 80)", 
-    "rgb(5, 15, 60)", 
+// --- CONFIG ---
+const YEAR = 2026;
+const MIN = 180;   // threshold
+const MAX = 480;   // expected upper bound
+const LEVELS = 12; // matches heat3 palette
+const heatmapColors = [
+    "rgb(204, 0, 0)",
+    "rgb(170, 20, 20)",
+    "rgb(140, 35, 35)",
+    "rgb(110, 45, 45)",
+    "rgb(80, 50, 50)",
+    "rgb(51, 51, 51)",
+    "rgb(50, 55, 75)",
+    "rgb(40, 45, 90)",
+    "rgb(30, 35, 100)",
+    "rgb(15, 20, 80)",
+    "rgb(5, 15, 60)",
     "rgb(0, 10, 51)"
-],
+];
+
+// --- SCALE FUNCTION (robust, bounded) ---
+function scaleIntensity(value) {
+    if (value == null) return 0;
+    const clamped = Math.max(MIN, Math.min(MAX, value));
+    return Math.floor((clamped - MIN) / (MAX - MIN) * (LEVELS - 1));
+}
+
+// --- BUILD DATA ---
+const calendarData = {
+    year: YEAR,
+    intensityScaleStart: 0,
+    intensityScaleEnd: LEVELS,
+    entries: [],
+    separateMonths: true,
+    colorScheme: {
+        paletteName: "heat3" // ← use predefined palette ONLY
     }
 };
-function scaleIntensity(intensity,maxDay) {
-    if (intensity < maxDay) return 0;
-    return Math.floor(1+11*(intensity-180)/300);//(intensity/480)*12); 
-};
-for (let page of dv.pages('"00 - Main vault/Notes/Daily Notes"').where(p => p.meTime).sort(p => p.file.name, 'dsc')) {
-	let meTime = page.meTime;
-	let scaledIntensity = scaleIntensity(meTime,180);
-    calendarData.entries.push({
-        date: page.file.name,
-        intensity: scaledIntensity, // Use scaled intensity
-        color:"heat",
-        content: await dv.span(`[](${page.file.name})`), // For hover preview
-    });
-}
-//renderHeatmapTracker(this.container, calendarData)
 
-const heatmapTrackerEl = renderHeatmapTracker(this.container, calendarData)
+function renderInlineLegend(container, colors, minLabel, maxLabel) {
+    const legendsContainer = document.createElement('div');
+    legendsContainer.style.display = 'flex';
+    legendsContainer.style.alignItems = 'center';
+    legendsContainer.style.justifyContent = 'center';
+    legendsContainer.style.width = '100%';
+    legendsContainer.style.marginBottom = '12px';
+    legendsContainer.style.gap = '5px';
 
-// Adding container for legends and colored boxes on the same line
-const legendsContainer = document.createElement('div');
-legendsContainer.style.display = 'flex';
-legendsContainer.style.alignItems = 'center'; // Align vertically
-legendsContainer.style.justifyContent = 'center'; // Center horizontally 
-legendsContainer.style.width = '100%'; // Ensure it takes full width for centering
+    const createLabel = (text) => {
+        const label = document.createElement('div');
+        label.innerText = text;
+        label.style.fontSize = '65%';
+        label.style.fontFamily = 'IBM plex mono, sans-serif';
+        label.style.textTransform = 'uppercase';
+        return label;
+    };
 
-// Adding first legend with reduced size and custom font
-const firstLegend = document.createElement('div');
-firstLegend.innerText = 'Bad'; // Updated to "LESS" with all caps
-firstLegend.style.fontSize = '65%'; // Reduce font size by 50%
-firstLegend.style.fontFamily = 'IBM plex mono, sans-serif'; // Set custom font
-firstLegend.style.textTransform = 'uppercase'; // Convert text to uppercase
-firstLegend.style.marginRight = '5px'; // Add margin to separate from the boxes
-legendsContainer.appendChild(firstLegend);
+    legendsContainer.appendChild(createLabel(minLabel));
 
-// Adding colored boxes with adjusted size
-const legendContainer = document.createElement('div');
-legendContainer.style.display = 'flex';
-legendContainer.style.alignItems = 'center'; // Align vertically
+    const colorsContainer = document.createElement('div');
+    colorsContainer.style.display = 'flex';
+    colorsContainer.style.alignItems = 'center';
+    colorsContainer.style.gap = '5px';
 
-for (let color of calendarData.colorScheme.heat) {
-    const colorBox = document.createElement('div');
-    colorBox.style.width = '9px'; // Reduced box width by 50%
-    colorBox.style.height = '9px'; // Reduced box height by 50%
-    colorBox.style.backgroundColor = color;
-    colorBox.style.marginRight = '5px'; // Adjusted margin
-    legendContainer.appendChild(colorBox);
+    for (const color of colors) {
+        const colorBox = document.createElement('div');
+        colorBox.style.width = '9px';
+        colorBox.style.height = '9px';
+        colorBox.style.backgroundColor = color;
+        colorsContainer.appendChild(colorBox);
+    }
+
+    legendsContainer.appendChild(colorsContainer);
+    legendsContainer.appendChild(createLabel(maxLabel));
+    container.appendChild(legendsContainer);
 }
 
-// Adding second legend after the colored boxes with reduced size and custom font
-const secondLegend = document.createElement('div');
-secondLegend.innerText = 'Good'; // Updated to "MORE" with all caps
-secondLegend.style.fontSize = '65%'; // Reduce font size by 50%
-secondLegend.style.fontFamily = 'IBM plex mono, sans-serif'; // Set custom font
-secondLegend.style.textTransform = 'uppercase'; // Convert text to uppercase
-legendContainer.appendChild(secondLegend);
+// --- QUERY ---
+for (let page of dv.pages('"00 - Main vault/Notes/Daily Notes"')
+    .where(p => p.meTime)
+    .sort(p => p.file.name, 'asc')) {
 
-legendsContainer.appendChild(legendContainer);
-legendsContainer.style.marginBottom = "12px";
+    calendarData.entries.push({
+        date: page.file.name,
+        intensity: scaleIntensity(page.meTime)
+    });
+}
 
-heatmapTrackerEl.appendChild(legendsContainer);
-
-dv.span('Relaxing tracker statistics:')
-
-renderHeatmapTrackerStatistics(this.container, calendarData)
+const heatmapTrackerEl = renderHeatmapTracker(this.container, calendarData);
+renderInlineLegend(heatmapTrackerEl, heatmapColors, 'Bad', 'Good');
 ```

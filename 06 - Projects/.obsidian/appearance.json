@@ -1,0 +1,13 @@
+{
+  "cssTheme": "Minimal",
+  "theme": "obsidian",
+  "enabledCssSnippets": [
+    "Colored Sidebar Items",
+    "CyanVoxel's General Tweaks",
+    "Daily Note Themes",
+    "heatmap_custom_styling",
+    "heatmap_styleAlternatingMonths",
+    "Notebook Backgrounds"
+  ],
+  "nativeMenus": false
+}

@@ -2,57 +2,122 @@
   "calendarSources": [
     {
       "type": "local",
-      "color": "hsl( 215, 91%, calc(64% - 5%) )",
-      "directory": "00 - Main vault/Notes/Calenders/Events"
+      "color": "#FF7043",
+      "directory": "00 - Main vault/Notes/Calenders/Work/UCA ESTK/Cours"
     },
     {
       "type": "local",
-      "color": "#ff0000",
-      "directory": "00 - Main vault/Notes/Calenders/Meets"
+      "color": "#FFA270",
+      "directory": "00 - Main vault/Notes/Calenders/Work/UCA ESTK/TPs"
     },
     {
       "type": "local",
-      "color": "#ffffff",
+      "color": "#FFCDD2",
+      "directory": "00 - Main vault/Notes/Calenders/Work/UCA ESTK/Exams"
+    },
+    {
+      "type": "local",
+      "color": "#4CAF50",
+      "directory": "00 - Main vault/Notes/Calenders/Work/UIZ FPT/TPs"
+    },
+    {
+      "type": "local",
+      "color": "#A5D6A7",
+      "directory": "00 - Main vault/Notes/Calenders/Work/UIZ FPT/Exams"
+    },
+    {
+      "type": "local",
+      "color": "#81C784",
+      "directory": "00 - Main vault/Notes/Calenders/Work/UIZ FLSH/Cours"
+    },
+    {
+      "type": "local",
+      "color": "#C8E6C9",
+      "directory": "00 - Main vault/Notes/Calenders/Work/UIZ FLSH/Exams"
+    },
+    {
+      "type": "local",
+      "color": "#64B5F6",
+      "directory": "00 - Main vault/Notes/Calenders/Work/UIZ FSA/Exams"
+    },
+    {
+      "type": "local",
+      "color": "#9575CD",
+      "directory": "00 - Main vault/Notes/Calenders/Work/UIZ FSJES CUAM/Cours"
+    },
+    {
+      "type": "local",
+      "color": "#D1C4E9",
+      "directory": "00 - Main vault/Notes/Calenders/Work/UIZ FSJES CUAM/Exams"
+    },
+    {
+      "type": "local",
+      "color": "#D32F2F",
+      "directory": "00 - Main vault/Notes/Calenders/Events/Recrutement"
+    },
+    {
+      "type": "local",
+      "color": "#140042",
+      "directory": "00 - Main vault/Notes/Calenders/Events/Personal"
+    },
+    {
+      "type": "local",
+      "color": "#FF8A65",
+      "directory": "00 - Main vault/Notes/Calenders/Events/Professional"
+    },
+    {
+      "type": "local",
+      "color": "#4FC3F7",
+      "directory": "00 - Main vault/Notes/Calenders/Meets/Friendly"
+    },
+    {
+      "type": "local",
+      "color": "#0288D1",
+      "directory": "00 - Main vault/Notes/Calenders/Meets/Official"
+    },
+    {
+      "type": "local",
+      "color": "#7E57C2",
       "directory": "00 - Main vault/Notes/Calenders/Studies"
     },
     {
       "type": "local",
-      "color": "#329b37",
-      "directory": "00 - Main vault/Notes/Calenders/Work"
+      "color": "#66BB6A",
+      "directory": "00 - Main vault/Notes/Calenders/Work/Extern/Cours"
     },
     {
       "type": "local",
-      "color": "#5da9e9",
-      "directory": "00 - Main vault/Notes/Calenders/Work/UIZ FPT"
+      "color": "#A5D6A7",
+      "directory": "00 - Main vault/Notes/Calenders/Work/Extern/TPs"
     },
     {
       "type": "local",
-      "color": "#7fdbb6",
-      "directory": "00 - Main vault/Notes/Calenders/Work/ENSA"
+      "color": "#C8E6C9",
+      "directory": "00 - Main vault/Notes/Calenders/Work/Extern/Exams"
     },
     {
       "type": "local",
-      "color": "#ff6b6b",
-      "directory": "00 - Main vault/Notes/Calenders/Work/UIZ FLSH"
+      "color": "#90A4AE",
+      "directory": "00 - Main vault/Notes/Calenders/Work/UIZ ENSAA/TPs"
     },
     {
       "type": "local",
-      "color": "#b0bec5",
-      "directory": "00 - Main vault/Notes/Calenders/Work/UIZ FSA"
+      "color": "#CFD8DC",
+      "directory": "00 - Main vault/Notes/Calenders/Work/UIZ ENSAA/Exams"
     },
     {
-      "type": "local",
-      "color": "#ffd479",
-      "directory": "00 - Main vault/Notes/Calenders/Work/UIZ FSJES CUAM"
+      "type": "ical",
+      "color": "#0000ff",
+      "url": "https://www.officeholidays.com/ics-local-name/france"
     },
     {
-      "type": "local",
+      "type": "ical",
       "color": "#ff0000",
-      "directory": "00 - Main vault/Notes/Calenders/Events/Recrutement"
+      "url": "https://www.officeholidays.com/ics-all/morocco"
     }
   ],
   "defaultCalendar": 0,
-  "firstDay": 1,
+  "firstDay": 0,
   "initialView": {
     "desktop": "timeGridWeek",
     "mobile": "timeGrid3Days"

@@ -72,6 +72,12 @@
     "City": "multitext",
     "Close relations": "multitext",
     "E-mail": "multitext",
-    "authors": "multitext"
+    "authors": "multitext",
+    "excalidraw-embed-md": "checkbox",
+    "Full Technical Name": "text",
+    "completed": "number",
+    "Members": "multitext",
+    "reread": "number",
+    "TQ_show_toolbar": "checkbox"
   }
 }

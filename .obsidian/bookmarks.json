@@ -29,29 +29,19 @@
     },
     {
       "type": "group",
-      "ctime": 1747336036828,
+      "ctime": 1753814517602,
       "items": [
         {
-          "type": "file",
-          "ctime": 1747336019534,
-          "path": "00 - Main vault/Notes/People/Contacts/Anas BERKA.md"
-        },
-        {
-          "type": "file",
-          "ctime": 1747336019534,
-          "path": "00 - Main vault/Cj_IGX.md"
-        },
-        {
           "type": "graph",
-          "ctime": 1747336019535,
-          "title": "Global Graph",
+          "ctime": 1753814498264,
+          "title": "Untitled Graph",
           "options": {
             "collapse-filter": false,
-            "search": "",
+            "search": "-path:\"00 - Main vault/Notes/People/Contacts\"  ",
             "showTags": true,
             "showAttachments": true,
             "hideUnresolved": false,
-            "showOrphans": true,
+            "showOrphans": false,
             "collapse-color-groups": false,
             "colorGroups": [],
             "collapse-display": false,
@@ -64,32 +54,156 @@
             "repelStrength": 10,
             "linkStrength": 1,
             "linkDistance": 250,
-            "scale": 0.08639435530981106,
+            "scale": 0.17853350310640384,
             "close": true
           }
         },
         {
           "type": "file",
-          "ctime": 1747336019535,
+          "ctime": 1753814498264,
           "path": "00 - Main vault/Notes/Annually reports/2025.md"
         },
         {
           "type": "file",
-          "ctime": 1747336019535,
-          "path": "00 - Main vault/Notes/Monthly reports/2025/2025-05 _ May.md"
+          "ctime": 1753814498264,
+          "path": "00 - Main vault/Notes/Weekly reports/2025/2025-W31.md"
         },
         {
           "type": "file",
-          "ctime": 1747336019535,
-          "path": "00 - Main vault/Notes/Weekly reports/2025/2025-W20.md"
+          "ctime": 1753814498264,
+          "path": "00 - Main vault/Notes/Daily Notes/Habits DB.md"
         },
         {
           "type": "file",
-          "ctime": 1747336019535,
-          "path": "00 - Main vault/Notes/Daily Notes/2025/05/2025-05-15.md"
+          "ctime": 1753814498264,
+          "path": "00 - Main vault/Notes/Daily Notes/2025/07/2025-07-29.md"
         }
       ],
-      "title": "Main pages"
+      "title": "Main"
+    },
+    {
+      "type": "group",
+      "ctime": 1755113061719,
+      "items": [
+        {
+          "type": "file",
+          "ctime": 1755113043856,
+          "path": "00 - Main vault/Notes/Relationships/OwnerFirstName OwnerLastName.md"
+        },
+        {
+          "type": "graph",
+          "ctime": 1755113043856,
+          "title": "Untitled Graph",
+          "options": {
+            "collapse-filter": false,
+            "search": "-path:\"00 - Main vault/Notes/People/Contacts\"  ",
+            "showTags": true,
+            "showAttachments": true,
+            "hideUnresolved": false,
+            "showOrphans": false,
+            "collapse-color-groups": false,
+            "colorGroups": [],
+            "collapse-display": false,
+            "showArrow": false,
+            "textFadeMultiplier": 0,
+            "nodeSizeMultiplier": 1,
+            "lineSizeMultiplier": 1,
+            "collapse-forces": false,
+            "centerStrength": 0.518713248970312,
+            "repelStrength": 10,
+            "linkStrength": 1,
+            "linkDistance": 250,
+            "scale": 0.12590061343614442,
+            "close": true
+          }
+        },
+        {
+          "type": "file",
+          "ctime": 1755113043856,
+          "path": "00 - Main vault/Notes/Monthly reports/2022/BNP_2022-0405.pdf"
+        },
+        {
+          "type": "file",
+          "ctime": 1755113043856,
+          "path": "00 - Main vault/Notes/Daily Notes/2022/04/2022-04-14.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1755113043856,
+          "path": "00 - Main vault/Notes/Annually reports/2021.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1755113043856,
+          "path": "00 - Main vault/Notes/Monthly reports/2025/2025-08 _ August.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1755113043856,
+          "path": "00 - Main vault/Notes/Weekly reports/2025/2025-W33.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1755113043856,
+          "path": "00 - Main vault/Notes/Daily Notes/2025/08/2025-08-13.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1755113043856,
+          "path": "00 - Main vault/Notes/Financial Records.md"
+        }
+      ],
+      "title": "All loggings"
+    },
+    {
+      "type": "group",
+      "ctime": 1755778495575,
+      "items": [
+        {
+          "type": "file",
+          "ctime": 1755778470314,
+          "path": "00 - Main vault/Notes/Relationships/OwnerFirstName OwnerLastName.md"
+        },
+        {
+          "type": "graph",
+          "ctime": 1755778470314,
+          "title": "Untitled Graph",
+          "options": {
+            "collapse-filter": false,
+            "search": "-path:\"00 - Main vault/Notes/People/Contacts\"  ",
+            "showTags": true,
+            "showAttachments": true,
+            "hideUnresolved": false,
+            "showOrphans": false,
+            "collapse-color-groups": false,
+            "colorGroups": [],
+            "collapse-display": false,
+            "showArrow": false,
+            "textFadeMultiplier": 0,
+            "nodeSizeMultiplier": 1,
+            "lineSizeMultiplier": 1,
+            "collapse-forces": false,
+            "centerStrength": 0.518713248970312,
+            "repelStrength": 10,
+            "linkStrength": 1,
+            "linkDistance": 250,
+            "scale": 0.1264108769092017,
+            "close": true
+          }
+        },
+        {
+          "type": "file",
+          "ctime": 1755778470314,
+          "path": "00 - Main vault/Notes/Daily Notes/Habits DB.md"
+        }
+      ],
+      "title": "main tabs"
+    },
+    {
+      "type": "file",
+      "ctime": 1770884832389,
+      "path": "00 - Main vault/Notes/Daily Notes/2026/01/2026-01-21.md",
+      "title": "calc page"
     }
   ]
 }

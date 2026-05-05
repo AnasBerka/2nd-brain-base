@@ -1,0 +1,101 @@
+{
+  "calendarSources": [
+    {
+      "type": "local",
+      "color": "#43a047",
+      "directory": "00 - Main vault/Notes/Calenders/Work/UIZ FPT"
+    },
+    {
+      "type": "local",
+      "color": "#a5d6a7",
+      "directory": "00 - Main vault/Notes/Calenders/Work/ENSA"
+    },
+    {
+      "type": "local",
+      "color": "#66bb6a",
+      "directory": "00 - Main vault/Notes/Calenders/Work/UIZ FLSH"
+    },
+    {
+      "type": "local",
+      "color": "#2e7d32",
+      "directory": "00 - Main vault/Notes/Calenders/Work/UIZ FSA"
+    },
+    {
+      "type": "local",
+      "color": "#1b5e20",
+      "directory": "00 - Main vault/Notes/Calenders/Work/UIZ FSJES CUAM"
+    },
+    {
+      "type": "local",
+      "color": "#ff0000",
+      "directory": "00 - Main vault/Notes/Calenders/Events/Recrutement"
+    },
+    {
+      "type": "local",
+      "color": "#ffb74d",
+      "directory": "00 - Main vault/Notes/Calenders/Events/Personal"
+    },
+    {
+      "type": "local",
+      "color": "#ff7043",
+      "directory": "00 - Main vault/Notes/Calenders/Events/Professional"
+    },
+    {
+      "type": "local",
+      "color": "#4fc3f7",
+      "directory": "00 - Main vault/Notes/Calenders/Meets/Friendly"
+    },
+    {
+      "type": "local",
+      "color": "#0288d1",
+      "directory": "00 - Main vault/Notes/Calenders/Meets/Official"
+    },
+    {
+      "type": "local",
+      "color": "#b39dd8",
+      "directory": "00 - Main vault/Notes/Calenders/Studies/Baccalaureate"
+    },
+    {
+      "type": "local",
+      "color": "#9575cd",
+      "directory": "00 - Main vault/Notes/Calenders/Studies/DEUG"
+    },
+    {
+      "type": "local",
+      "color": "#5e35b1",
+      "directory": "00 - Main vault/Notes/Calenders/Studies/Doctorat"
+    },
+    {
+      "type": "local",
+      "color": "#7e57c2",
+      "directory": "00 - Main vault/Notes/Calenders/Studies/Licence"
+    },
+    {
+      "type": "local",
+      "color": "#673ab7",
+      "directory": "00 - Main vault/Notes/Calenders/Studies/Master"
+    },
+    {
+      "type": "local",
+      "color": "#4527a0",
+      "directory": "00 - Main vault/Notes/Calenders/Studies/Post-doc"
+    },
+    {
+      "type": "local",
+      "color": "#d1c439",
+      "directory": "00 - Main vault/Notes/Calenders/Studies/Pre-Bac"
+    },
+    {
+      "type": "local",
+      "color": "#81c784",
+      "directory": "00 - Main vault/Notes/Calenders/Work/INSA-CVL"
+    }
+  ],
+  "defaultCalendar": 0,
+  "firstDay": 1,
+  "initialView": {
+    "desktop": "timeGridWeek",
+    "mobile": "timeGrid3Days"
+  },
+  "timeFormat24h": false
+}

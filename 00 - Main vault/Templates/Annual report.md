@@ -6,7 +6,7 @@ banner_x: 0
 banner_y: 0.906
 cssclasses:
   - daily
-  - sNote
+  - cosmos
 isCompleted:
 ---
 
@@ -17,6 +17,7 @@ Browse each month individually:
 ### Summary about the year <%moment(tp.file.title,"YYYY").format("YYYY")%>🗒️
 
 ***
+- [ ] 📝 Run the file [[ScriptGenerateAnnif.py]] check [[README]] if needed for <%moment(tp.file.title,"YYYY").format("YYYY")%>  ⏬ 📅 <%moment(tp.file.title).startOf('year').format("YYYY-MM-DD")%>
 - [ ] 📝 Add the summary of the year <%moment(tp.file.title,"YYYY").format("YYYY")%>  ⏬ 📅 <%moment(tp.file.title).endOf('year').format("YYYY-MM-DD")%>
 ***
 ### [[Salat _ Stat|Salat]] 🙏
@@ -31,10 +32,12 @@ endDate: <% moment(tp.file.title, "YYYY", true).endOf('year').format("YYYY-MM-DD
 fitPanelWidth: true
 aspectRatio: 20:9
 line:
+    title: Salat on time
     yAxisLabel: Nbr of prayers 
     showPoint: false
     lineColor: #d5f9f6
     fillGap: true
+    yMin: 0
     yAxisTickInterval: 1
     xAxisTickInterval: 1m
     xAxisTickLabelFormat: MMMM
@@ -42,19 +45,24 @@ line:
 #### Reading quran
 ``` tracker
 searchType: dvField
-searchTarget: quranReading
-folder: "00 - Main vault/Notes/Daily Notes"
-accum: false
+searchTarget: quranReading, quranReadingO
+datasetName: Quran at home, Quran outdoor 
 startDate: <% moment(tp.file.title, "YYYY").startOf('year').format("YYYY-MM-DD") %>
 endDate: <% moment(tp.file.title, "YYYY", true).endOf('year').format("YYYY-MM-DD") %>
+accum: true, true
 fitPanelWidth: true
 aspectRatio: 20:9
 line:
-    yAxisLabel: Nbr of a7zab 
+    title: Reading quran
+    yAxisLabel: Nbr of a7zab, Nbr of a7zab 
     showPoint: false
-    lineColor: #d5f9f6
+    yAxisLocation: left, right
+    yAxisColor: '#d5f9f6, #56B4E9' 
+    yAxisLabelColor: '#d5f9f6, #56B4E9' 
+    lineColor: '#d5f9f6, #56B4E9'
+    showLegend: true
+    yMin: 0, 0
     fillGap: true
-    yAxisTickInterval: 1
     xAxisTickInterval: 1m
     xAxisTickLabelFormat: MMMM
 ```
@@ -72,9 +80,10 @@ datasetName: oClock-In, oClock-Out
 fitPanelWidth: true
 aspectRatio: 20:9
 line:
+    title: Active Hours
     yAxisLabel: "Time (24h)"
     reverseYAxis: true
-    lineColor: '#e1401f, #1fc0e1'
+    lineColor: '#E69F00, #56B4E9'
     showPoint: false
     showLegend: true
 	yMin: 06:00 AM
@@ -85,79 +94,739 @@ line:
 #### Time management
 ```tracker
 searchType: dvField
-searchTarget: hWork, rWork, oWork
-datasetName: Self-improvements, Research work, Official work
+searchTarget: hWork, oWork, rWork, sWork, tWork, pWork, mWork, eWork
+datasetName: hWork, oWork, rWork, sWork, tWork, pWork, mWork, eWork
 startDate: <% moment(tp.file.title, "YYYY").startOf('year').format("YYYY-MM-DD") %>
 endDate: <% moment(tp.file.title, "YYYY", true).endOf('year').format("YYYY-MM-DD") %>
+fitPanelWidth: true
+aspectRatio: 1
 pie:
-    label: '{{sum(dataset(0))*100/(sum(dataset(0))+sum(dataset(1))+sum(dataset(2)))}}%,{{sum(dataset(1))*100/(sum(dataset(0))+sum(dataset(1))+sum(dataset(2)))}}%,{{sum(dataset(2))*100/(sum(dataset(0))+sum(dataset(1))+sum(dataset(2)))}}%'
-    data: '{{sum(dataset(0))}},{{sum(dataset(1))}},{{sum(dataset(2))}}'
-    dataColor: '#FF5733,#33FF57,#3388FF'
-    ratioInnerRadius: 0.6
-    dataName: Self-improvements, Research work, Official work
+    title: Time management
+    label: '{{(sum(dataset(4))+sum(dataset(6))+sum(dataset(7)))*100/(12*60*(numTargets(dataset(0))+numTargets(dataset(1))+numTargets(dataset(2))+numTargets(dataset(3))+numTargets(dataset(4))+numTargets(dataset(5))+numTargets(dataset(6))+numTargets(dataset(7))))}}%,    {{sum(dataset(2))*100/(12*60*(numTargets(dataset(0))+numTargets(dataset(1))+numTargets(dataset(2))+numTargets(dataset(3))+numTargets(dataset(4))+numTargets(dataset(5))+numTargets(dataset(6))+numTargets(dataset(7))))}}%,    {{sum(dataset(3))*100/(12*60*(numTargets(dataset(0))+numTargets(dataset(1))+numTargets(dataset(2))+numTargets(dataset(3))+numTargets(dataset(4))+numTargets(dataset(5))+numTargets(dataset(6))+numTargets(dataset(7))))}}%,    {{sum(dataset(5))*100/(12*60*(numTargets(dataset(0))+numTargets(dataset(1))+numTargets(dataset(2))+numTargets(dataset(3))+numTargets(dataset(4))+numTargets(dataset(5))+numTargets(dataset(6))+numTargets(dataset(7))))}}%,    {{sum(dataset(1))*100/(12*60*(numTargets(dataset(0))+numTargets(dataset(1))+numTargets(dataset(2))+numTargets(dataset(3))+numTargets(dataset(4))+numTargets(dataset(5))+numTargets(dataset(6))+numTargets(dataset(7))))}}%,{{sum(dataset(0))*100/(12*60*(numTargets(dataset(0))+numTargets(dataset(1))+numTargets(dataset(2))+numTargets(dataset(3))+numTargets(dataset(4))+numTargets(dataset(5))+numTargets(dataset(6))+numTargets(dataset(7))))}}%,{{(12*60*(numTargets(dataset(0))+numTargets(dataset(1))+numTargets(dataset(2))+numTargets(dataset(3))+numTargets(dataset(4))+numTargets(dataset(5))+numTargets(dataset(6))+numTargets(dataset(7)))-(sum(dataset(0))+sum(dataset(1))+sum(dataset(2))+sum(dataset(3))+sum(dataset(4))+sum(dataset(5))+sum(dataset(6))+sum(dataset(7))))*100/(12*60*(numTargets(dataset(0))+numTargets(dataset(1))+numTargets(dataset(2))+numTargets(dataset(3))+numTargets(dataset(4))+numTargets(dataset(5))+numTargets(dataset(6))+numTargets(dataset(7))))}}%'
+    data: '{{(sum(dataset(4))+sum(dataset(6))+sum(dataset(7)))*100/(12*60*(numTargets(dataset(0))+numTargets(dataset(1))+numTargets(dataset(2))+numTargets(dataset(3))+numTargets(dataset(4))+numTargets(dataset(5))+numTargets(dataset(6))+numTargets(dataset(7))))}},    {{sum(dataset(2))*100/(12*60*(numTargets(dataset(0))+numTargets(dataset(1))+numTargets(dataset(2))+numTargets(dataset(3))+numTargets(dataset(4))+numTargets(dataset(5))+numTargets(dataset(6))+numTargets(dataset(7))))}},    {{sum(dataset(3))*100/(12*60*(numTargets(dataset(0))+numTargets(dataset(1))+numTargets(dataset(2))+numTargets(dataset(3))+numTargets(dataset(4))+numTargets(dataset(5))+numTargets(dataset(6))+numTargets(dataset(7))))}},    {{sum(dataset(5))*100/(12*60*(numTargets(dataset(0))+numTargets(dataset(1))+numTargets(dataset(2))+numTargets(dataset(3))+numTargets(dataset(4))+numTargets(dataset(5))+numTargets(dataset(6))+numTargets(dataset(7))))}},    {{sum(dataset(1))*100/(12*60*(numTargets(dataset(0))+numTargets(dataset(1))+numTargets(dataset(2))+numTargets(dataset(3))+numTargets(dataset(4))+numTargets(dataset(5))+numTargets(dataset(6))+numTargets(dataset(7))))}},{{sum(dataset(0))*100/(12*60*(numTargets(dataset(0))+numTargets(dataset(1))+numTargets(dataset(2))+numTargets(dataset(3))+numTargets(dataset(4))+numTargets(dataset(5))+numTargets(dataset(6))+numTargets(dataset(7))))}},{{(12*60*(numTargets(dataset(0))+numTargets(dataset(1))+numTargets(dataset(2))+numTargets(dataset(3))+numTargets(dataset(4))+numTargets(dataset(5))+numTargets(dataset(6))+numTargets(dataset(7)))-(sum(dataset(0))+sum(dataset(1))+sum(dataset(2))+sum(dataset(3))+sum(dataset(4))+sum(dataset(5))+sum(dataset(6))+sum(dataset(7))))*100/(12*60*(numTargets(dataset(0))+numTargets(dataset(1))+numTargets(dataset(2))+numTargets(dataset(3))+numTargets(dataset(4))+numTargets(dataset(5))+numTargets(dataset(6))+numTargets(dataset(7))))}}'
+    extLabel: '{{(sum(dataset(4))+sum(dataset(6))+sum(dataset(7)))*100/(12*60*(numTargets(dataset(0))+numTargets(dataset(1))+numTargets(dataset(2))+numTargets(dataset(3))+numTargets(dataset(4))+numTargets(dataset(5))+numTargets(dataset(6))+numTargets(dataset(7))))}}%,    {{sum(dataset(2))*100/(12*60*(numTargets(dataset(0))+numTargets(dataset(1))+numTargets(dataset(2))+numTargets(dataset(3))+numTargets(dataset(4))+numTargets(dataset(5))+numTargets(dataset(6))+numTargets(dataset(7))))}}%,    {{sum(dataset(3))*100/(12*60*(numTargets(dataset(0))+numTargets(dataset(1))+numTargets(dataset(2))+numTargets(dataset(3))+numTargets(dataset(4))+numTargets(dataset(5))+numTargets(dataset(6))+numTargets(dataset(7))))}}%,    {{sum(dataset(5))*100/(12*60*(numTargets(dataset(0))+numTargets(dataset(1))+numTargets(dataset(2))+numTargets(dataset(3))+numTargets(dataset(4))+numTargets(dataset(5))+numTargets(dataset(6))+numTargets(dataset(7))))}}%,    {{sum(dataset(1))*100/(12*60*(numTargets(dataset(0))+numTargets(dataset(1))+numTargets(dataset(2))+numTargets(dataset(3))+numTargets(dataset(4))+numTargets(dataset(5))+numTargets(dataset(6))+numTargets(dataset(7))))}}%,{{sum(dataset(0))*100/(12*60*(numTargets(dataset(0))+numTargets(dataset(1))+numTargets(dataset(2))+numTargets(dataset(3))+numTargets(dataset(4))+numTargets(dataset(5))+numTargets(dataset(6))+numTargets(dataset(7))))}}%,{{(12*60*(numTargets(dataset(0))+numTargets(dataset(1))+numTargets(dataset(2))+numTargets(dataset(3))+numTargets(dataset(4))+numTargets(dataset(5))+numTargets(dataset(6))+numTargets(dataset(7)))-(sum(dataset(0))+sum(dataset(1))+sum(dataset(2))+sum(dataset(3))+sum(dataset(4))+sum(dataset(5))+sum(dataset(6))+sum(dataset(7))))*100/(12*60*(numTargets(dataset(0))+numTargets(dataset(1))+numTargets(dataset(2))+numTargets(dataset(3))+numTargets(dataset(4))+numTargets(dataset(5))+numTargets(dataset(6))+numTargets(dataset(7))))}}%'
+
+    
+	showExtLabelOnlyIfNoLabel: true
+    dataColor: '#FF6F00, #B71C1C, #1B5E20, #5D4037, #00838F, #0D47E1, #311B92'
+	ratioInnerRadius: 0.6
+	dataName: Teaching, Research, Studies, Bonus work, Office Work, Home Work, Free time
     showLegend: true
     legendPosition: right
-    legendOrientation: vertical	
+    legendOrientation: vertical
 ```
-#### Official work payment
+#### Time management (Income's source)
 ```tracker
 searchType: dvField
-searchTarget: pWork, oWork
-datasetName: Paid work, Free official work
+folder: "00 - Main vault/Notes/Daily Notes"
+searchTarget: hWork, oWork, rWork, sWork, tWork, pWork, mWork, eWork, hWorkDh, oWorkDh, rWorkDh, sWorkDh, tWorkDh, pWorkDh, mWorkDh, eWorkDh
+datasetName: hWork, oWork, rWork, sWork, tWork, pWork, mWork, eWork, hWorkDh, oWorkDh, rWorkDh, sWorkDh, tWorkDh, pWorkDh, mWorkDh, eWorDh
 startDate: <% moment(tp.file.title, "YYYY").startOf('year').format("YYYY-MM-DD") %>
 endDate: <% moment(tp.file.title, "YYYY", true).endOf('year').format("YYYY-MM-DD") %>
+fitPanelWidth: true
+aspectRatio: 1
 pie:
-    label: '{{100*(1-(sum(dataset(1))-sum(dataset(0)))/sum(dataset(1)))}}%,{{100*(sum(dataset(1))-sum(dataset(0)))/sum(dataset(1))}}%'
-    data: '{{1-(sum(dataset(1))-sum(dataset(0)))/sum(dataset(1))}},{{(sum(dataset(1))-sum(dataset(0)))/sum(dataset(1))}}'
-    dataColor: '#1fc0e1,#e1401f'
-    ratioInnerRadius: 0.6
-    dataName: Paid work, Free official work
-    showLegend: true
+	title: Remunerations
+    label: '{{(sum(dataset(4))*sum(dataset(12))+sum(dataset(7))*sum(dataset(15)))*100/(sum(dataset(0))*sum(dataset(8))+sum(dataset(1))*sum(dataset(9))+sum(dataset(2))*sum(dataset(10))+sum(dataset(3))*sum(dataset(11))+sum(dataset(4))*sum(dataset(12))+sum(dataset(5))*sum(dataset(13))+sum(dataset(6))*sum(dataset(14))+sum(dataset(7))*sum(dataset(15)))}}%,    {{(sum(dataset(2))*sum(dataset(10))+sum(dataset(6))*sum(dataset(14)))*100/(sum(dataset(0))*sum(dataset(8))+sum(dataset(1))*sum(dataset(9))+sum(dataset(2))*sum(dataset(10))+sum(dataset(3))*sum(dataset(11))+sum(dataset(4))*sum(dataset(12))+sum(dataset(5))*sum(dataset(13))+sum(dataset(6))*sum(dataset(14))+sum(dataset(7))*sum(dataset(15)))}}%,    {{(sum(dataset(3))*sum(dataset(11)))*100/(sum(dataset(0))*sum(dataset(8))+sum(dataset(1))*sum(dataset(9))+sum(dataset(2))*sum(dataset(10))+sum(dataset(3))*sum(dataset(11))+sum(dataset(4))*sum(dataset(12))+sum(dataset(5))*sum(dataset(13))+sum(dataset(6))*sum(dataset(14))+sum(dataset(7))*sum(dataset(15)))}}%,    {{sum(dataset(5))*sum(dataset(13))*100/(sum(dataset(0))*sum(dataset(8))+sum(dataset(1))*sum(dataset(9))+sum(dataset(2))*sum(dataset(10))+sum(dataset(3))*sum(dataset(11))+sum(dataset(4))*sum(dataset(12))+sum(dataset(5))*sum(dataset(13))+sum(dataset(6))*sum(dataset(14))+sum(dataset(7))*sum(dataset(15)))}}%,    {{sum(dataset(0))*sum(dataset(8))*100/(sum(dataset(0))*sum(dataset(8))+sum(dataset(1))*sum(dataset(9))+sum(dataset(2))*sum(dataset(10))+sum(dataset(3))*sum(dataset(11))+sum(dataset(4))*sum(dataset(12))+sum(dataset(5))*sum(dataset(13))+sum(dataset(6))*sum(dataset(14))+sum(dataset(7))*sum(dataset(15)))}}%,    {{sum(dataset(1))*sum(dataset(9))*100/(sum(dataset(0))*sum(dataset(8))+sum(dataset(1))*sum(dataset(9))+sum(dataset(2))*sum(dataset(10))+sum(dataset(3))*sum(dataset(11))+sum(dataset(4))*sum(dataset(12))+sum(dataset(5))*sum(dataset(13))+sum(dataset(6))*sum(dataset(14))+sum(dataset(7))*sum(dataset(15)))}}%'
+    data: '{{(sum(dataset(4))*sum(dataset(12))+sum(dataset(7))*sum(dataset(15)))*100/(sum(dataset(0))*sum(dataset(8))+sum(dataset(1))*sum(dataset(9))+sum(dataset(2))*sum(dataset(10))+sum(dataset(3))*sum(dataset(11))+sum(dataset(4))*sum(dataset(12))+sum(dataset(5))*sum(dataset(13))+sum(dataset(6))*sum(dataset(14))+sum(dataset(7))*sum(dataset(15)))}},    {{(sum(dataset(2))*sum(dataset(10))+sum(dataset(6))*sum(dataset(14)))*100/(sum(dataset(0))*sum(dataset(8))+sum(dataset(1))*sum(dataset(9))+sum(dataset(2))*sum(dataset(10))+sum(dataset(3))*sum(dataset(11))+sum(dataset(4))*sum(dataset(12))+sum(dataset(5))*sum(dataset(13))+sum(dataset(6))*sum(dataset(14))+sum(dataset(7))*sum(dataset(15)))}},    {{(sum(dataset(3))*sum(dataset(11)))*100/(sum(dataset(0))*sum(dataset(8))+sum(dataset(1))*sum(dataset(9))+sum(dataset(2))*sum(dataset(10))+sum(dataset(3))*sum(dataset(11))+sum(dataset(4))*sum(dataset(12))+sum(dataset(5))*sum(dataset(13))+sum(dataset(6))*sum(dataset(14))+sum(dataset(7))*sum(dataset(15)))}},    {{sum(dataset(5))*sum(dataset(13))*100/(sum(dataset(0))*sum(dataset(8))+sum(dataset(1))*sum(dataset(9))+sum(dataset(2))*sum(dataset(10))+sum(dataset(3))*sum(dataset(11))+sum(dataset(4))*sum(dataset(12))+sum(dataset(5))*sum(dataset(13))+sum(dataset(6))*sum(dataset(14))+sum(dataset(7))*sum(dataset(15)))}},    {{sum(dataset(0))*sum(dataset(8))*100/(sum(dataset(0))*sum(dataset(8))+sum(dataset(1))*sum(dataset(9))+sum(dataset(2))*sum(dataset(10))+sum(dataset(3))*sum(dataset(11))+sum(dataset(4))*sum(dataset(12))+sum(dataset(5))*sum(dataset(13))+sum(dataset(6))*sum(dataset(14))+sum(dataset(7))*sum(dataset(15)))}},    {{sum(dataset(1))*sum(dataset(9))*100/(sum(dataset(0))*sum(dataset(8))+sum(dataset(1))*sum(dataset(9))+sum(dataset(2))*sum(dataset(10))+sum(dataset(3))*sum(dataset(11))+sum(dataset(4))*sum(dataset(12))+sum(dataset(5))*sum(dataset(13))+sum(dataset(6))*sum(dataset(14))+sum(dataset(7))*sum(dataset(15)))}}'
+    extLabel: '{{(sum(dataset(4))*sum(dataset(12))+sum(dataset(7))*sum(dataset(15)))*100/(sum(dataset(0))*sum(dataset(8))+sum(dataset(1))*sum(dataset(9))+sum(dataset(2))*sum(dataset(10))+sum(dataset(3))*sum(dataset(11))+sum(dataset(4))*sum(dataset(12))+sum(dataset(5))*sum(dataset(13))+sum(dataset(6))*sum(dataset(14))+sum(dataset(7))*sum(dataset(15)))}}%,    {{(sum(dataset(2))*sum(dataset(10))+sum(dataset(6))*sum(dataset(14)))*100/(sum(dataset(0))*sum(dataset(8))+sum(dataset(1))*sum(dataset(9))+sum(dataset(2))*sum(dataset(10))+sum(dataset(3))*sum(dataset(11))+sum(dataset(4))*sum(dataset(12))+sum(dataset(5))*sum(dataset(13))+sum(dataset(6))*sum(dataset(14))+sum(dataset(7))*sum(dataset(15)))}}%,    {{(sum(dataset(3))*sum(dataset(11)))*100/(sum(dataset(0))*sum(dataset(8))+sum(dataset(1))*sum(dataset(9))+sum(dataset(2))*sum(dataset(10))+sum(dataset(3))*sum(dataset(11))+sum(dataset(4))*sum(dataset(12))+sum(dataset(5))*sum(dataset(13))+sum(dataset(6))*sum(dataset(14))+sum(dataset(7))*sum(dataset(15)))}}%,    {{sum(dataset(5))*sum(dataset(13))*100/(sum(dataset(0))*sum(dataset(8))+sum(dataset(1))*sum(dataset(9))+sum(dataset(2))*sum(dataset(10))+sum(dataset(3))*sum(dataset(11))+sum(dataset(4))*sum(dataset(12))+sum(dataset(5))*sum(dataset(13))+sum(dataset(6))*sum(dataset(14))+sum(dataset(7))*sum(dataset(15)))}}%,    {{sum(dataset(0))*sum(dataset(8))*100/(sum(dataset(0))*sum(dataset(8))+sum(dataset(1))*sum(dataset(9))+sum(dataset(2))*sum(dataset(10))+sum(dataset(3))*sum(dataset(11))+sum(dataset(4))*sum(dataset(12))+sum(dataset(5))*sum(dataset(13))+sum(dataset(6))*sum(dataset(14))+sum(dataset(7))*sum(dataset(15)))}}%,    {{sum(dataset(1))*sum(dataset(9))*100/(sum(dataset(0))*sum(dataset(8))+sum(dataset(1))*sum(dataset(9))+sum(dataset(2))*sum(dataset(10))+sum(dataset(3))*sum(dataset(11))+sum(dataset(4))*sum(dataset(12))+sum(dataset(5))*sum(dataset(13))+sum(dataset(6))*sum(dataset(14))+sum(dataset(7))*sum(dataset(15)))}}%'
+	showExtLabelOnlyIfNoLabel: true
+	showLegend: true
+	dataColor: '#E64A19, #C62828, #2E7D32, #6D4C41, #4527A0, #1565C0'
+	ratioInnerRadius: 0.6
+	dataName: Teaching, Research, Studies, Bonus work, Office Work, Home Work
     legendPosition: right
     legendOrientation: vertical	
 ```
 #### Statistique for work
-This year, we got a total of:
+##### This year <%moment(tp.file.title,"YYYY").format("YYYY")%>
+We got a total of:
 ```dataviewjs
 const startDate = moment("<% moment(tp.file.title, "YYYY").startOf('year').format("YYYY-MM-DD") %>", "YYYY-MM-DD");
 const endDate = moment("<% moment(tp.file.title, "YYYY", true).endOf('year').format("YYYY-MM-DD") %>", "YYYY-MM-DD");
-let hWork = 0, oWork = 0, rWork = 0, pWork=0;
-const pages = dv.pages('"00 - Main vault/Notes/Daily Notes"')
-    .filter(p => {
-        // Try to extract the date from filename (assuming YYYY-MM-DD format)
+let hWork = 0, oWork = 0, rWork = 0, pWork=0, sWork=0, tWork=0, mWork=0, eWork=0;
+const pages = dv.pages('"00 - Main vault/Notes/Daily Notes"').where(p => p.hWork || p.oWork || p.rWork || p.sWork || p.pWork || p.tWork || p.mWork || p.eWork).filter(p => {
         let fileDate = moment(p.file.name, "YYYY-MM-DD");
-        
-        // If the date is stored in metadata, use that instead
         if (p.date) {
             fileDate = moment(p.date, "YYYY-MM-DD");
         }
-
-        // Include only pages within the year 2025
         return fileDate.isBetween(startDate, endDate, null, "[]"); // Inclusive range
-    });
-    
+    });    
+
+let payH=0,payS=0,payO=0,payR=0,payP=0,payT=0,payM=0,payE=0;
+
+// Function to safely handle both single numbers and lists
+const sumValues = (value) => {
+	let sum=0;
+	try{
+		for(var k of value){
+			sum+=(Number(k)||0);
+		}
+	}
+	catch{
+		sum = value;
+	}
+	return sum;
+};
+
 for (let p of pages) {
-    hWork += p.hWork || 0;
-    oWork += p.oWork || (p.pWork || 0);
-    rWork += p.rWork || 0;
-    pWork += p.pWork || 0;
+    hWork += sumValues(p.hWork || 0);
+    sWork += sumValues(p.sWork || 0);
+    tWork += sumValues(p.tWork || 0);
+    eWork += sumValues(p.eWork || 0);
+    mWork += sumValues(p.mWork || 0);
+    oWork += sumValues(p.oWork || 0);
+    rWork += sumValues(p.rWork || 0);
+    pWork += sumValues(p.pWork || 0);
+
+	payH += sumValues(p.hWork || 0)*sumValues(p.hWorkDh || 0)/60;
+	payS += sumValues(p.sWork || 0)*sumValues(p.sWorkDh || 0)/60;
+	payT += sumValues(p.tWork || 0)*sumValues(p.tWorkDh || 0)/60;
+	payE += sumValues(p.eWork || 0)*sumValues(p.eWorkDh || 0)/60;
+	payM += sumValues(p.mWork || 0)*sumValues(p.mWorkDh || p.tWorkDh || 0)/60;
+	payO += sumValues(p.oWork || 0)*sumValues(p.oWorkDh || 0)/60;
+	payR += sumValues(p.rWork || 0)*sumValues(p.rWorkDh || 0)/60;
+	payP += sumValues(p.pWork || 0)*sumValues(p.pWorkDh || 0)/60;
+
 }
 
 // Convert minutes to "Xh Ym" format
 const formatTime = (minutes) => {
-    const hours = Math.floor(minutes / 60);
+    const years = Math.floor(minutes / (60*24*365.25));
+    const months = Math.floor(minutes / (60*24*(365.25/12))) % 12;
+    const days = Math.floor(minutes / (60*24)) % 30;
+    const hours = Math.floor(minutes / 60) % 24;
+    const hours_ = Math.floor(minutes / 60);
     const mins = minutes % 60;
-    return `${hours}h ${mins}m`;
+    if (minutes>(60*24*365.25)){
+	    return [`{years}y ${months}m ${days}d ${hours}h ${mins}min`,`(= ${hours_}h ${mins}min)`];
+    }else if (minutes>(60*24*30)){
+	    return [`${months}m ${days}d ${hours}h ${mins}min`,`(= ${hours_}h ${mins}min)`];
+    }else if (minutes>(60*24)){
+	    return [`${days}d ${hours}h ${mins}min`,`(= ${hours_}h ${mins}min)`];
+    }
+	return [`${hours}h ${mins}min`,`(= ${hours_}h ${mins}min)`];
+};
+let O = formatTime(oWork+tWork+rWork+mWork+eWork);
+let H = formatTime(hWork);
+let S = formatTime(sWork);
+let R = formatTime(rWork);
+let T = formatTime(tWork);
+let E = formatTime(eWork);
+let M = formatTime(mWork);
+let P = formatTime(pWork);
+let TT = formatTime(hWork+sWork+oWork+tWork+mWork+rWork+pWork+eWork);
+
+// Display totals in the note
+dv.table(
+    ["Category", "Tracked Time", "Worth of money"], // Table headers
+    [
+        ["👨‍💼 Official work",`<div class="cell-split"><span>${O[0]}</span><span>${O[1]}</span></div>`,`<div class="cell-right">${(payO+payT+payM+payR).toFixed(2)} Dh</div>`],
+        ["🤹‍♂️ Self-improvements", `<div class="cell-split"><span>${H[0]}</span><span>${H[1]}</span></div>`,`<div class="cell-right">${(payH).toFixed(2)} Dh</div>`],
+        ["👶 Studies", `<div class="cell-split"><span>${S[0]}</span><span>${S[1]}</span></div>`,`<div class="cell-right">${(payS).toFixed(2)} Dh</div>`],
+        ["👨‍🎓 Research work",     `<div class="cell-split"><span>${R[0]}</span><span>${R[1]}</span></div>`,`<div class="cell-right">${(payR).toFixed(2)} Dh</div>`],
+        ["👨‍🏫 Teaching work",     `<div class="cell-split"><span>${T[0]}</span><span>${T[1]}</span></div>`,`<div class="cell-right">${(payT).toFixed(2)} Dh</div>`],
+        ["👥 Monitoring work",     `<div class="cell-split"><span>${M[0]}</span><span>${M[1]}</span></div>`,`<div class="cell-right">${(payM).toFixed(2)} Dh</div>`],
+        ["🕵️‍♂️ Examination work",     `<div class="cell-split"><span>${E[0]}</span><span>${E[1]}</span></div>`,`<div class="cell-right">${(payE).toFixed(2)} Dh</div>`],
+        ["💸 Temporary work",      `<div class="cell-split"><span>${P[0]}</span><span>${P[1]}</span></div>`,`<div class="cell-right">${(payP).toFixed(2)} Dh</div>`],
+        ["---", "---", "---"],
+    // Totals row
+    ["**TOTAL**", `<div class="cell-split"><span>${TT[0]}</span><span>${TT[1]}</span></div>`,`<div class="cell-right">${(payP+payS+payR+payH+payO+payT+payM).toFixed(2)} Dh</div>`]]
+);
+```
+
+```dataviewjs
+let pWork=0, pWorkE=0, tWork=0, twWork=0, eWorkP=0;
+const startDate = moment("<% moment(tp.file.title, "YYYY").startOf('year').format("YYYY-MM-DD") %>", "YYYY-MM-DD");
+const endDate = moment("<% moment(tp.file.title, "YYYY", true).endOf('year').format("YYYY-MM-DD") %>", "YYYY-MM-DD");
+const pages = dv.pages('"00 - Main vault/Notes/Daily Notes"').where(p => p.hWork || p.oWork || p.rWork || p.sWork || p.pWork || p.tWork || p.mWork || p.eWork).filter(p => {
+        let fileDate = moment(p.file.name, "YYYY-MM-DD");
+        if (p.date) {
+            fileDate = moment(p.date, "YYYY-MM-DD");
+        }
+        return fileDate.isBetween(startDate, endDate, null, "[]"); // Inclusive range
+    });   
+    
+const toRight = (text) => {
+	return `<div class="cell-right">${text}</div>`
+}
+const forEachCalc = (L1,L2) => {
+	let sum=0;
+	for (let i=0; i<L1.length;i++){
+		sum += L1[i]*L2[i];
+	}
+	return sum;
+}; 
+   
+let tAnasBerkaCM=0, tAnasBerkaTP=0, tAnasBerkaTD=0, SecW=0;
+for (let p of pages) {
+    tWork += (p.tWork || 0);
+    twWork += (p.twWork || (p.tWork || 0));
+    pWork += (p.pWork || 0);
+    pWorkE += (p.tAnasBerkaEM || 0);
+    eWorkP += (p.tAnasBerkaES || 0);
+    tAnasBerkaCM += (p.tAnasBerkaCM || 0);
+    tAnasBerkaTP += (p.tAnasBerkaTP || 0);
+    tAnasBerkaTD += (p.tAnasBerkaTD || 0); 
+}
+SecW = tAnasBerkaCM+tAnasBerkaTP+tAnasBerkaTD;
+
+let tWorkR = tWork;
+let tWorkC = (tWork/(SecW || 1))*(tAnasBerkaCM+(2/3)*tAnasBerkaTD+tAnasBerkaTP*.5);
+let tWorkD = (tWork/(SecW || 1))*(tAnasBerkaCM*(3/2)+tAnasBerkaTD+.75*tAnasBerkaTP);
+let tWorkP = (tWork/(SecW || 1))*(tAnasBerkaCM*2+(4/3)*tAnasBerkaTD+tAnasBerkaTP);
+
+let tWorkR_ = twWork;
+let tWorkC_ = (twWork/(SecW || 1))*(tAnasBerkaCM+(2/3)*tAnasBerkaTD+tAnasBerkaTP*.5);
+let tWorkD_ = (twWork/(SecW || 1))*(tAnasBerkaCM*(3/2)+tAnasBerkaTD+.75*tAnasBerkaTP);
+let tWorkP_ = (twWork/(SecW || 1))*(tAnasBerkaCM*2+(4/3)*tAnasBerkaTD+tAnasBerkaTP);
+
+// Duration
+const YOS=(<%moment(tp.file.title,"YYYY").format("YYYY")%>-2025)>0?(<%moment(tp.file.title,"YYYY").format("YYYY")%>-2025):1;
+
+const rows = [
+  [
+    "👨‍🏫 Work done (raw)",
+    toRight((tWorkR/60).toFixed(2)),
+    toRight((tWorkC/60).toFixed(2)),
+    toRight((tWorkD/60).toFixed(2)),
+    toRight((tWorkP/60).toFixed(2)),
+    toRight((eWorkP/60).toFixed(2)),
+    toRight(((eWorkP+tWorkP)/60).toFixed(2))
+  ],
+  [
+    "👨‍🏫 Work done (majoration)",
+    toRight((tWorkR_/60).toFixed(2)),
+    toRight((tWorkC_/60).toFixed(2)),
+    toRight((tWorkD_/60).toFixed(2)),
+    toRight((tWorkP_/60).toFixed(2)),
+    toRight((eWorkP/60).toFixed(2)),
+    toRight(((eWorkP+tWorkP_)/60).toFixed(2))
+  ],
+  [
+    "🤦‍♂️ Overwork time",
+    toRight((((tWorkR/60)-(300*YOS))>0?((tWorkR/60)-(300*YOS)):0).toFixed(2)),
+    toRight((((tWorkC/60)-(300*YOS))>0?((tWorkC/60)-(300*YOS)):0).toFixed(2)),
+    toRight((((tWorkD/60)-(300*YOS))>0?((tWorkD/60)-(300*YOS)):0).toFixed(2)),
+    toRight((((tWorkP/60)-(300*YOS))>0?((tWorkP/60)-(300*YOS)):0).toFixed(2)),
+    toRight((((eWorkP/60)-(4*YOS))>0?((eWorkP/60)-(4*YOS)):0).toFixed(2))
+  ],
+  [
+    "💲 Bonus work",
+    toRight((pWork/60).toFixed(2)),
+    toRight((pWork*.5/60).toFixed(2)),
+    toRight((pWork*.75/60).toFixed(2)),
+    toRight((pWork/60).toFixed(2)),
+    toRight((pWorkE/60).toFixed(2))
+  ]
+];
+
+dv.table(
+  ["Teaching workload", "Heurs (brut)", "Heurs (cours)", "Heurs (TD)", "Heurs (TP)", "Heurs (Exams)"],
+  rows
+);
+
+```
+[AB/CitationsGY::] [AB/CitationsRY::]
+For university earning scores  :
+![[<%moment(tp.file.title).subtract(1,'year').format("YYYY")%>#<%moment(tp.file.title).subtract(1,'year').format("YYYY")%>-<%moment(tp.file.title,"YYYY").format("YYYY")%>]]
+##### <%moment(tp.file.title,"YYYY").format("YYYY")%>-<%moment(tp.file.title).add(1,'year').format("YYYY")%> 
+###### Summary 
+```dataviewjs
+const startDate = moment("<% moment(tp.file.title, "YYYY").startOf('year').format("YYYY-09-01") %>", "YYYY-MM-DD");
+const endDate = moment("<% moment(tp.file.title, "YYYY", true).add(1,'year').format("YYYY-08-31") %>", "YYYY-MM-DD");
+let hWork = 0, oWork = 0, rWork = 0, pWork=0, sWork=0, tWork=0, mWork=0, eWork=0;
+const pages = dv.pages('"00 - Main vault/Notes/Daily Notes"').where(p => p.hWork || p.oWork || p.rWork || p.sWork || p.pWork || p.tWork || p.mWork || p.eWork).filter(p => {
+        let fileDate = moment(p.file.name, "YYYY-MM-DD");
+        if (p.date) {
+            fileDate = moment(p.date, "YYYY-MM-DD");
+        }
+        return fileDate.isBetween(startDate, endDate, null, "[]"); // Inclusive range
+    });    
+
+let payH=0,payS=0,payO=0,payR=0,payP=0,payT=0,payM=0,payE=0;
+
+// Function to safely handle both single numbers and lists
+const sumValues = (value) => {
+	let sum=0;
+	try{
+		for(var k of value){
+			sum+=(Number(k)||0);
+		}
+	}
+	catch{
+		sum = value;
+	}
+	return sum;
+};
+
+for (let p of pages) {
+    hWork += sumValues(p.hWork || 0);
+    sWork += sumValues(p.sWork || 0);
+    tWork += sumValues(p.tWork || 0);
+    eWork += sumValues(p.eWork || 0);
+    mWork += sumValues(p.mWork || 0);
+    oWork += sumValues(p.oWork || 0);
+    rWork += sumValues(p.rWork || 0);
+    pWork += sumValues(p.pWork || 0);
+
+	payH += sumValues(p.hWork || 0)*sumValues(p.hWorkDh || 0)/60;
+	payS += sumValues(p.sWork || 0)*sumValues(p.sWorkDh || 0)/60;
+	payT += sumValues(p.tWork || 0)*sumValues(p.tWorkDh || 0)/60;
+	payE += sumValues(p.eWork || 0)*sumValues(p.eWorkDh || 0)/60;
+	payM += sumValues(p.mWork || 0)*sumValues(p.mWorkDh || p.tWorkDh || 0)/60;
+	payO += sumValues(p.oWork || 0)*sumValues(p.oWorkDh || 0)/60;
+	payR += sumValues(p.rWork || 0)*sumValues(p.rWorkDh || 0)/60;
+	payP += sumValues(p.pWork || 0)*sumValues(p.pWorkDh || 0)/60;
+
+}
+
+// Convert minutes to "Xh Ym" format
+const formatTime = (minutes) => {
+    const years = Math.floor(minutes / (60*24*365.25));
+    const months = Math.floor(minutes / (60*24*(365.25/12))) % 12;
+    const days = Math.floor(minutes / (60*24)) % 30;
+    const hours = Math.floor(minutes / 60) % 24;
+    const hours_ = Math.floor(minutes / 60);
+    const mins = minutes % 60;
+    if (minutes>(60*24*365.25)){
+	    return [`{years}y ${months}m ${days}d ${hours}h ${mins}min`,`(= ${hours_}h ${mins}min)`];
+    }else if (minutes>(60*24*30)){
+	    return [`${months}m ${days}d ${hours}h ${mins}min`,`(= ${hours_}h ${mins}min)`];
+    }else if (minutes>(60*24)){
+	    return [`${days}d ${hours}h ${mins}min`,`(= ${hours_}h ${mins}min)`];
+    }
+	return [`${hours}h ${mins}min`,`(= ${hours_}h ${mins}min)`];
+};
+let O = formatTime(oWork+tWork+rWork+mWork+eWork);
+let H = formatTime(hWork);
+let S = formatTime(sWork);
+let R = formatTime(rWork);
+let T = formatTime(tWork);
+let E = formatTime(eWork);
+let M = formatTime(mWork);
+let P = formatTime(pWork);
+let TT = formatTime(hWork+sWork+oWork+tWork+mWork+rWork+pWork+eWork);
+
+// Display totals in the note
+dv.table(
+    ["Category", "Tracked Time", "Worth of money"], // Table headers
+    [
+        ["👨‍💼 Official work",`<div class="cell-split"><span>${O[0]}</span><span>${O[1]}</span></div>`,`<div class="cell-right">${(payO+payT+payM+payR).toFixed(2)} Dh</div>`],
+        ["🤹‍♂️ Self-improvements", `<div class="cell-split"><span>${H[0]}</span><span>${H[1]}</span></div>`,`<div class="cell-right">${(payH).toFixed(2)} Dh</div>`],
+        ["👶 Studies", `<div class="cell-split"><span>${S[0]}</span><span>${S[1]}</span></div>`,`<div class="cell-right">${(payS).toFixed(2)} Dh</div>`],
+        ["👨‍🎓 Research work",     `<div class="cell-split"><span>${R[0]}</span><span>${R[1]}</span></div>`,`<div class="cell-right">${(payR).toFixed(2)} Dh</div>`],
+        ["👨‍🏫 Teaching work",     `<div class="cell-split"><span>${T[0]}</span><span>${T[1]}</span></div>`,`<div class="cell-right">${(payT).toFixed(2)} Dh</div>`],
+        ["👥 Monitoring work",     `<div class="cell-split"><span>${M[0]}</span><span>${M[1]}</span></div>`,`<div class="cell-right">${(payM).toFixed(2)} Dh</div>`],
+        ["🕵️‍♂️ Examination work",     `<div class="cell-split"><span>${E[0]}</span><span>${E[1]}</span></div>`,`<div class="cell-right">${(payE).toFixed(2)} Dh</div>`],
+        ["💸 Temporary work",      `<div class="cell-split"><span>${P[0]}</span><span>${P[1]}</span></div>`,`<div class="cell-right">${(payP).toFixed(2)} Dh</div>`],
+        ["---", "---", "---"],
+    // Totals row
+    ["**TOTAL**", `<div class="cell-split"><span>${TT[0]}</span><span>${TT[1]}</span></div>`,`<div class="cell-right">${(payP+payS+payR+payH+payO+payT+payM).toFixed(2)} Dh</div>`]]
+);
+```
+###### Teaching statistics
+```dataviewjs
+const startDate = moment("<% moment(tp.file.title, "YYYY").startOf('year').format("YYYY-09-01") %>", "YYYY-MM-DD");
+const endDate = moment("<% moment(tp.file.title, "YYYY", true).add(1,'year').format("YYYY-08-31") %>", "YYYY-MM-DD");
+let pWork=0, tWork=0, twWork=0, eWorkP=0, pWorkE=0;
+const pages = dv.pages('"00 - Main vault/Notes/Daily Notes"').where(p => p.hWork || p.oWork || p.rWork || p.sWork || p.pWork || p.tWork || p.mWork || p.eWork).filter(p => {
+        // Try to extract the date from filename (assuming YYYY-MM-DD format)
+        let fileDate = moment(p.file.name, "YYYY-MM-DD");
+        // If the date is stored in metadata, use that instead
+        if (p.date) {
+            fileDate = moment(p.date, "YYYY-MM-DD");
+        }
+        // Include only pages within the year 2025
+        return fileDate.isBetween(startDate, endDate, null, "[]"); // Inclusive range
+    });
+    
+const toRight = (text) => {
+	return `<div class="cell-right">${text}</div>`
+}
+const forEachCalc = (L1,L2) => {
+	let sum=0;
+	for (let i=0; i<L1.length;i++){
+		sum += L1[i]*L2[i];
+	}
+	return sum;
+}; 
+   
+let tAnasBerkaCM=0, tAnasBerkaTP=0, tAnasBerkaTD=0, SecW=0;
+for (let p of pages) {
+    tWork += (p.tWork || 0);
+    pWork += (p.pWork || 0);
+    pWorkE += (p.tAnasBerkaEM || 0);
+    eWorkP += (p.tAnasBerkaES || 0);
+    tAnasBerkaCM += (p.tAnasBerkaCM || 0);
+    tAnasBerkaTP += (p.tAnasBerkaTP || 0);
+    tAnasBerkaTD += (p.tAnasBerkaTD || 0); 
+}
+SecW = tAnasBerkaCM+tAnasBerkaTP+tAnasBerkaTD;
+
+let tWorkR = tWork;
+let tWorkC = (tWork/(SecW || 1))*(tAnasBerkaCM+(2/3)*tAnasBerkaTD+tAnasBerkaTP*.5);
+let tWorkD = (tWork/(SecW || 1))*(tAnasBerkaCM*(3/2)+tAnasBerkaTD+.75*tAnasBerkaTP);
+let tWorkP = (tWork/(SecW || 1))*(tAnasBerkaCM*2+(4/3)*tAnasBerkaTD+tAnasBerkaTP);
+
+let tWorkR_ = twWork;
+let tWorkC_ = (twWork/(SecW || 1))*(tAnasBerkaCM+(2/3)*tAnasBerkaTD+tAnasBerkaTP*.5);
+let tWorkD_ = (twWork/(SecW || 1))*(tAnasBerkaCM*(3/2)+tAnasBerkaTD+.75*tAnasBerkaTP);
+let tWorkP_ = (twWork/(SecW || 1))*(tAnasBerkaCM*2+(4/3)*tAnasBerkaTD+tAnasBerkaTP);
+
+// Duration
+let Duration=1.75;
+
+const YOS=(<%moment(tp.file.title,"YYYY").format("YYYY")%>-2025)>0?(<%moment(tp.file.title,"YYYY").format("YYYY")%>-2025):1;
+
+// Fall semester
+let coursF=[0], TDsF=[0], TPsF=[0], FSE = (0), FSEI = (0);
+let classCoursF=[0], GrpTDsF=[0], GrpTPsF=[0];
+
+// Spring semester
+let coursS=[0], TDsS=[0], TPsS=[0], SSE = (0), SSEI = (0);
+let classCoursS=[0], GrpTDsS=[0], GrpTPsS=[0]; 
+
+// Calculation Officiel:
+let FS=(forEachCalc(coursF,classCoursF)+
+forEachCalc(TDsF,GrpTDsF)+
+forEachCalc(TPsF,GrpTPsF))*Duration-FSEI;
+let SS=(forEachCalc(coursS,classCoursS)+
+forEachCalc(TDsS,GrpTDsS)+
+forEachCalc(TPsS,GrpTPsS))*Duration-SSEI;
+
+let FSC=(forEachCalc(coursF,classCoursF)+
+forEachCalc(TDsF,GrpTDsF)*(2/3)+
+forEachCalc(TPsF,GrpTPsF)*.5)*Duration-FSEI*.5;
+let SSC=(forEachCalc(coursS,classCoursS)+
+forEachCalc(TDsS,GrpTDsS)*(2/3)+
+forEachCalc(TPsS,GrpTPsS)*.5)*Duration-SSEI*.5;
+
+let FSD=(forEachCalc(coursF,classCoursF)*1.5+
+forEachCalc(TDsF,GrpTDsF)+
+forEachCalc(TPsF,GrpTPsF)*.75)*Duration-FSEI*.75;
+let SSD=(forEachCalc(coursS,classCoursS)*1.5+
+forEachCalc(TDsS,GrpTDsS)+
+forEachCalc(TPsS,GrpTPsS)*.75)*Duration-SSEI*.75;
+
+let FSP=(forEachCalc(coursF,classCoursF)*2+
+forEachCalc(TDsF,GrpTDsF)*(4/3)+
+forEachCalc(TPsF,GrpTPsF))*Duration-FSEI;
+let SSP=(forEachCalc(coursS,classCoursS)*2+
+forEachCalc(TDsS,GrpTDsS)*(4/3)+
+forEachCalc(TPsS,GrpTPsS))*Duration-SSEI;
+
+// Calculation Strict:
+let coursFH=[0], TDsFH=[0], TPsFH=[0], DsFH=[0];
+let classCoursFH=[0], GrpTDsFH=[0], GrpTPsFH=[0], GrpDsFH=[0];
+let coursSH=[0], TDsSH=[0], TPsSH=[0], DsSH=[0];
+let classCoursSH=[0], GrpTDsSH=[0], GrpTPsSH=[0], GrpDsSH=[0]; 
+
+
+let FS_=forEachCalc(coursFH,classCoursFH)+forEachCalc(TDsFH,GrpTDsFH)+forEachCalc(TPsFH,GrpTPsFH);
+let SS_=forEachCalc(coursS,classCoursS)+
+forEachCalc(TDsS,GrpTDsS)+
+forEachCalc(TPsS,GrpTPsS);
+
+let FSC_=forEachCalc(coursFH,classCoursFH)+forEachCalc(TDsFH,GrpTDsFH)*(2/3)+forEachCalc(TPsFH,GrpTPsFH)*.5;
+let SSC_=forEachCalc(coursS,classCoursS)+
+forEachCalc(TDsS,GrpTDsS)*(2/3)+
+forEachCalc(TPsS,GrpTPsS)*.5;
+
+let FSD_=forEachCalc(coursFH,classCoursFH)*1.5+forEachCalc(TDsFH,GrpTDsFH)+forEachCalc(TPsFH,GrpTPsFH)*.75;
+let SSD_=forEachCalc(coursS,classCoursS)*1.5+
+forEachCalc(TDsS,GrpTDsS)+
+forEachCalc(TPsS,GrpTPsS)*.75;
+
+let FSP_=forEachCalc(coursFH,classCoursFH)*2+forEachCalc(TDsFH,GrpTDsFH)*(4/3)+forEachCalc(TPsFH,GrpTPsFH);
+let SSP_=forEachCalc(coursS,classCoursS)*2+
+forEachCalc(TDsS,GrpTDsS)*(4/3)+
+forEachCalc(TPsS,GrpTPsS);
+
+const rows = [
+  [
+    "🗒️ By Descriptive",
+    toRight((SS_+FS_).toFixed(2)),
+    toRight((SSC_+FSC_).toFixed(2)),
+    toRight((SSD_+FSD_).toFixed(2)),
+    toRight((SSP_+FSP_).toFixed(2)),
+    toRight((forEachCalc(DsFH,GrpDsFH)+forEachCalc(DsSH,GrpDsSH)).toFixed(2)),
+    toRight((forEachCalc(DsFH,GrpDsFH)+forEachCalc(DsSH,GrpDsSH)+SSP_+FSP_).toFixed(2)),
+  ],
+  [
+    "👨‍🏫 Work done (raw)",
+    toRight((tWorkR/60).toFixed(2)),
+    toRight((tWorkC/60).toFixed(2)),
+    toRight((tWorkD/60).toFixed(2)),
+    toRight((tWorkP/60).toFixed(2)),
+    toRight((eWorkP/60).toFixed(2)),
+    toRight(((eWorkP+tWorkP)/60).toFixed(2))
+  ],
+  [
+    "👨‍🏫 Work done (majoration)",
+    toRight((tWorkR_/60).toFixed(2)),
+    toRight((tWorkC_/60).toFixed(2)),
+    toRight((tWorkD_/60).toFixed(2)),
+    toRight((tWorkP_/60).toFixed(2)),
+    toRight((eWorkP/60).toFixed(2)),
+    toRight(((eWorkP+tWorkP_)/60).toFixed(2))
+  ],
+  [
+    "🤦‍♂️ Overwork time",
+    toRight((((tWorkR/60)-(300*YOS))>0?((tWorkR/60)-(300*YOS)):0).toFixed(2)),
+    toRight((((tWorkC/60)-(300*YOS))>0?((tWorkC/60)-(300*YOS)):0).toFixed(2)),
+    toRight((((tWorkD/60)-(300*YOS))>0?((tWorkD/60)-(300*YOS)):0).toFixed(2)),
+    toRight((((tWorkP/60)-(300*YOS))>0?((tWorkP/60)-(300*YOS)):0).toFixed(2)),
+    toRight((((eWorkP/60)-(4*YOS))>0?((eWorkP/60)-(4*YOS)):0).toFixed(2)),
+    toRight(((((eWorkP/60)-(4*YOS))>0?(((eWorkP+tWorkP)/60)-(4*YOS)):0)+(((tWorkP/60)-(300*YOS))>0?((tWorkP/60)-(300*YOS)):0)).toFixed(2))
+  ],
+  [
+    "💲 Bonus work",
+    toRight((((tWorkR>(18000*YOS)?(tWork-(300*YOS)):0)+pWork)/60).toFixed(2)),
+    toRight((((tWorkC>(18000*YOS)?(tWork-(300*YOS)):0)+pWork)*.5/60).toFixed(2)),
+    toRight((((tWorkD>(18000*YOS)?(tWork-(300*YOS)):0)+pWork)*.75/60).toFixed(2)),
+    toRight((((tWorkP>(18000*YOS)?(tWork-(300*YOS)):0)+pWork)/60).toFixed(2)),
+    toRight(((pWorkE/60).toFixed(2))),
+    toRight((((pWorkE+(((tWorkD>(18000*YOS)?(tWork-(300*YOS)):0)+pWork)*.75/60))/60).toFixed(2))),
+  ],
+  [
+    "🍂 Fall semester",
+    toRight(FS.toFixed(2)),
+    toRight(FSC.toFixed(2)),
+    toRight(FSD.toFixed(2)),
+    toRight(FSP.toFixed(2)),
+    toRight((FSE+FSEI).toFixed(2)),
+    toRight((FSE+FSEI+FSP).toFixed(2)),
+  ],
+  [
+    "🌱 Spring semester",
+    toRight(SS.toFixed(2)),
+    toRight(SSC.toFixed(2)),
+    toRight(SSD.toFixed(2)),
+    toRight(SSP.toFixed(2)),
+    toRight((SSE+SSEI).toFixed(2)),
+    toRight((SSE+SSEI+SSP).toFixed(2)),
+  ],
+  [
+    "🏫 By annual planning",
+    toRight((FS+SS).toFixed(2)),
+    toRight((FSC+SSC).toFixed(2)),
+    toRight((FSD+SSD).toFixed(2)),
+    toRight((FSP+SSP).toFixed(2)),
+    toRight((FSE+FSEI+SSE+SSEI).toFixed(2)),
+    toRight((FSE+FSEI+SSE+SSEI+FSP+SSP).toFixed(2)),
+  ]
+];
+
+dv.table(
+  ["Teaching workload", "Heurs (brut)", "Heurs (cours)", "Heurs (TD)", "Heurs (TP)", "Heurs (Exams)", "Heurs (Total)"],
+  rows
+);
+
+dv.paragraph(`⚠️ Additional unpaid work hours: **${(((tWork-500*60*YOS)<0?0:(tWork-500*60*YOS))/60).toFixed(2)}**h`);
+```
+###### Per institute 
+```dataviewjs
+
+let vINSACVLT=0, vUCAESTKT=0, vUIZENSAAT=0, vUIZFLSHT=0, vUIZFPTT=0, vUIZFSAT=0, vUIZFSJESCUAMT=0;
+let vINSACVLE=0, vUCAESTKE=0, vUIZENSAAE=0, vUIZFLSHE=0, vUIZFPTE=0, vUIZFSAE=0, vUIZFSJESCUAME=0;
+let vINSACVLP=0, vUCAESTKP=0, vUIZENSAAP=0, vUIZFLSHP=0, vUIZFPTP=0, vUIZFSAP=0, vUIZFSJESCUAMP=0;
+
+const startDate = moment("<% moment(tp.file.title, "YYYY").startOf('year').format("YYYY-09-01") %>", "YYYY-MM-DD");
+const endDate = moment("<% moment(tp.file.title, "YYYY", true).add(1,'year').format("YYYY-08-31") %>", "YYYY-MM-DD");
+let pWork=0, tWork=0, twWork=0, eWorkP=0, pWorkE=0;
+const pages = dv.pages('"00 - Main vault/Notes/Daily Notes"').where(p => p.hWork || p.oWork || p.rWork || p.sWork || p.pWork || p.tWork || p.mWork || p.eWork).filter(p => {
+        let fileDate = moment(p.file.name, "YYYY-MM-DD");
+        if (p.date) {
+            fileDate = moment(p.date, "YYYY-MM-DD");
+        }
+        return fileDate.isBetween(startDate, endDate, null, "[]"); 
+    });
+
+// Function to safely handle both single numbers and lists
+const sumValues = (value) => {
+	let sum=0;
+	try{
+		for(var k of value){
+			sum+=(Number(k)||0);
+		}
+	}
+	catch{
+		sum = value;
+	}
+	return sum;
+};
+const timeToTable = (timeVar) => {
+  timeVar = formatTime(timeVar)
+  //return `<div class="cell-split"><span>${timeVar[0]}</span><span>${timeVar[1]}</span></div>`
+  return `<div class="cell-stack">
+            <div class="stack-top">${timeVar[0]}</div>
+            <div class="stack-bottom">${timeVar[1]}</div>
+         </div>`
+}
+    
+for (let p of pages) {
+	//vUCAESTKT += sumValues(p["Ma/UCA/ESTK/T"] || 0);
+    //vUCAESTKE += sumValues(p["Ma/UCA/ESTK/E"] || 0);
+    //vUCAESTKP += sumValues(p["Ma/UCA/ESTK/P"] || 0);
+}
+    
+// Convert minutes to "Xh Ym" format
+// Convert minutes to "Xh Ym" format
+const formatTime = (minutes) => {
+    const years = Math.floor(minutes / (60*24*365.25));
+    const months = Math.floor(minutes / (60*24*(365.25/12))) % 12;
+    const days = Math.floor(minutes / (60*24)) % 30;
+    const hours = Math.floor(minutes / 60) % 24;
+    const hours_ = Math.floor(minutes / 60);
+    const mins = minutes % 60;
+    if (minutes>(60*24*365.25)){
+	    return [`{years}y ${months}m ${days}d ${hours}h ${mins}min`,`(= ${hours_}h ${mins}min)`];
+    }else if (minutes>(60*24*30)){
+	    return [`${months}m ${days}d ${hours}h ${mins}min`,`(= ${hours_}h ${mins}min)`];
+    }else if (minutes>(60*24)){
+	    return [`${days}d ${hours}h ${mins}min`,`(= ${hours_}h ${mins}min)`];
+    }
+	return [`${hours}h ${mins}min`,`(= ${hours_}h ${mins}min)`];
+};
+let timeList=[];
+//timeList.push(vUCAESTKT);
+
+const formatMoneyS = (money) => {
+ return `<div class="cell-right">${(money).toFixed(2)} Dh</div>`;
+};
+
+const formatMoneyE = (money) => {
+ return `<div class="cell-right">${(money).toLocaleString("fr-FR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })} Dh</div>`;
 };
 
 // Display totals in the note
-dv.paragraph(`👨‍💼 **${formatTime(hWork)}**:\t Self-improvements   
-👨‍🏫 **${formatTime(oWork)}**:\t Official work   
-👨‍🎓 **${formatTime(rWork)}**:\t Research work 
-💸 **${formatTime(pWork)}**:\t Payed work`);
+dv.table(
+    ["Institution", "Tracked time working", "Expected payment", "Actuel payment","Total left 💰"], // Table headers
+    [
+        //["UCA ESTK",timeToTable(timeList[1]), formatMoneyE(vUCAESTKE),formatMoneyE(vUCAESTKP),formatMoneyE(vUCAESTKP-vUCAESTKE)],
+    ]
+);
 ```
-***
+##### Growth in research
 
+```tracker
+searchType: dvField
+searchTarget: AB/hGIndex, AB/hRIndex, AB/gGIndex, AB/gRIndex, AB/i10GIndex, AB/i10RIndex
+datasetName: hGIndex,hRIndex,gGIndex,gRIndex,i10GIndex,i10RIndex
+startDate: <% moment(tp.file.title, "YYYY").startOf('year').format("YYYY-MM-DD") %>
+endDate: <% moment(tp.file.title, "YYYY", true).endOf('year').format("YYYY-MM-DD") %>
+accum: false
+fitPanelWidth: true
+aspectRatio: 20:9
+line:
+    title: Main index
+    yAxisLabel: Google Scholar, Researchgate  
+    showPoint: false
+    yAxisLocation: left, right, left, right, left, right
+    yAxisColor: '#E69F00, #56B4E9' 
+    yAxisLabelColor: '#E69F00, #56B4E9' 
+    lineColor: '#E69F00, #56B4E9, #F0E442, #009E73, #D55E00, #0072B2'
+    showLegend: true
+    yMin: 0, 0
+    fillGap: true
+    xAxisTickInterval: 1m
+    xAxisTickLabelFormat: MMMM
+```
+```tracker
+searchType: dvField
+searchTarget: AB/PapersS, AB/PapersP, AB/PScore
+datasetName: Submitted, Published, PScore
+startDate: <% moment(tp.file.title, "YYYY").startOf('year').format("YYYY-MM-DD") %>
+endDate: <% moment(tp.file.title, "YYYY", true).endOf('year').format("YYYY-MM-DD") %>
+accum: false
+fitPanelWidth: true
+aspectRatio: 20:9
+line:
+    title: Publications
+    yAxisLabel: Score, Papers count   
+    showPoint: false
+    yAxisLocation: right,right,left 
+    yAxisColor: '#009E73, #56B4E9' 
+    yAxisLabelColor: '#009E73, #56B4E9' 
+    lineColor: '#E69F00, #56B4E9, #009E73'
+    showLegend: true
+    yMin: 0, 0
+    fillGap: true
+    xAxisTickInterval: 1m
+    xAxisTickLabelFormat: MMMM
+```
+```tracker
+searchType: dvField
+searchTarget: AB/CPPGScore, AB/CPPRScore, AB/GCiteScore, AB/RCiteScore
+datasetName: CPPGScore,CPPRScore,GCiteScore,RCiteScore
+startDate: <% moment(tp.file.title, "YYYY").startOf('year').format("YYYY-MM-DD") %>
+endDate: <% moment(tp.file.title, "YYYY", true).endOf('year').format("YYYY-MM-DD") %>
+accum: false
+fitPanelWidth: true
+aspectRatio: 20:9
+line:
+    title: Citation index
+    yAxisLabel: Google Scholar, Researchgate  
+    showPoint: false
+    yAxisLocation: left, right, left, right
+    yAxisColor: '#E69F00, #56B4E9' 
+    yAxisLabelColor: '#E69F00, #56B4E9' 
+    lineColor: '#E69F00, #56B4E9, #F0E442, #009E73'
+    showLegend: true
+    yMin: 0, 0
+    fillGap: true
+    xAxisTickInterval: 1m
+    xAxisTickLabelFormat: MMMM
+```
+```tracker
+searchType: dvField
+searchTarget: AB/hGScore, AB/hRScore, AB/gGScore, AB/gRScore
+datasetName: hGScore,hRScore,gGScore,gRScore
+startDate: <% moment(tp.file.title, "YYYY").startOf('year').format("YYYY-MM-DD") %>
+endDate: <% moment(tp.file.title, "YYYY", true).endOf('year').format("YYYY-MM-DD") %>
+accum: false
+fitPanelWidth: true
+aspectRatio: 20:9
+line:
+    title: My preferred index
+    yAxisLabel: Google Scholar, Researchgate  
+    showPoint: false
+    yAxisLocation: left, right, left, right
+    yAxisColor: '#E69F00, #56B4E9' 
+    yAxisLabelColor: '#E69F00, #56B4E9' 
+    lineColor: '#E69F00, #56B4E9, #F0E442, #009E73'
+    showLegend: true
+    yMin: 0, 0
+    fillGap: true
+    xAxisTickInterval: 1m
+    xAxisTickLabelFormat: MMMM
+```
+```tracker
+searchType: dvField
+searchTarget: AB/GCitations, AB/RCitations
+datasetName: Citations GS,Citations R
+startDate: <% moment(tp.file.title, "YYYY").startOf('year').format("YYYY-MM-DD") %>
+endDate: <% moment(tp.file.title, "YYYY", true).endOf('year').format("YYYY-MM-DD") %>
+accum: false
+fitPanelWidth: true
+aspectRatio: 20:9
+line:
+    title: Citations growth 
+    yAxisLabel: Google Scholar, Researchgate  
+    showPoint: false
+    yAxisLocation: left, right
+    yAxisColor: '#E69F00, #56B4E9' 
+    yAxisLabelColor: '#E69F00, #56B4E9' 
+    lineColor: '#E69F00, #56B4E9'
+    showLegend: true
+    yMin: 0, 0
+    fillGap: true
+    xAxisTickInterval: 1m
+    xAxisTickLabelFormat: MMMM
+```
+
+***
 ### [[GYM _ Stat|GYM]] 💪
 
 #### Home training
@@ -180,6 +849,28 @@ month:
     circleColorByValue: true
     showSelectedValue: true
     initMonth: <% moment(tp.file.title, "YYYY").format("YYYY-01") %>
+```
+```tracker
+searchType: dvField
+searchTarget: pushUpReps, setUpReps, squadReps, pushUpRepsMax, setUpRepsMax, squadRepsMax
+datasetName: PushUp, SetUp, Squad, PushUpMax, SetUpMax, SquadMax
+folder: "00 - Main vault/Notes/Daily Notes"
+startDate: <% moment(tp.file.title, "YYYY").startOf('year').format("YYYY-MM-DD") %>
+endDate: <% moment(tp.file.title, "YYYY", true).endOf('year').format("YYYY-MM-DD") %>
+fitPanelWidth: true
+aspectRatio: 20:9
+line:
+	title: Home exercices
+    yAxisLabel: Count, Max reps
+    yAxisLocation: left, left, left, right
+    lineColor: '#FF5733,#33FF57,#3388FF,#FF5733,#33FF57,#3388FF'
+    showLegend: true
+    legendPosition: bottom
+	yMin: 0
+    showPoint: false
+    fillGap: true
+    xAxisTickInterval: 1m
+    xAxisTickLabelFormat: MMMM
 ```
 #### GYM exercices (Nbr Reps)
 ```tracker
@@ -247,26 +938,26 @@ line:
     legendPosition: bottom
 	yMin: 0
     fillGap: true
-    showPoint: false
     xAxisTickInterval: 1m
     xAxisTickLabelFormat: MMMM
 ```
 #### Traveling on feet
 ```tracker
 searchType: dvField
-searchTarget: travelingDist, runingKm, Steps
-datasetName: Traveling, runingKm, Steps
+searchTarget: travelingDist, runingKm, cal
+datasetName: Traveling, runingKm, Calories 
 folder: "00 - Main vault/Notes/Daily Notes"
 startDate: <% moment(tp.file.title, "YYYY").startOf('year').format("YYYY-MM-DD") %>
 endDate: <% moment(tp.file.title, "YYYY", true).endOf('year').format("YYYY-MM-DD") %>
 fitPanelWidth: true
 aspectRatio: 20:9
 line:
-    yAxisLabel: Weight (Kg)
-    lineColor: '#FF5733,#33FF57,#3388FF'
+    title: Traveling on feet
+    lineColor: '#56B4E9, #E69F00, #009E73'
+    yAxisColor: '#3388FF, #009E73'
+    yAxisLabelColor: '#3388FF, #009E73'
     yAxisLocation: left, left, right
-    yAxisLabel: Distance (Km), Steps (Count)
-    showLegend: true
+    yAxisLabel: Distance (Km), Cal (Count)
     legendPosition: bottom
 	yMin: 0
     fillGap: true
@@ -281,6 +972,7 @@ searchTarget: travelingDist
 folder: "00 - Main vault/Notes/Daily Notes"
 startDate: <% moment(tp.file.title, "YYYY").startOf('year').format("YYYY-MM-DD") %>
 endDate: <% moment(tp.file.title, "YYYY", true).endOf('year').format("YYYY-MM-DD") %>
+
 summary:
     template: "Average: {{average()}} Km\t_\tMinimum: {{min()}} Km\t-\tMaximum: {{max()}} Km"
 ```
@@ -291,6 +983,7 @@ searchTarget: runingKm
 folder: "00 - Main vault/Notes/Daily Notes"
 startDate: <% moment(tp.file.title, "YYYY").startOf('year').format("YYYY-MM-DD") %>
 endDate: <% moment(tp.file.title, "YYYY", true).endOf('year').format("YYYY-MM-DD") %>
+
 summary:
     template: "Average: {{average()}} Km\t_\tMinimum: {{min()}} Km\t-\tMaximum: {{max()}} Km"
 ```
@@ -305,8 +998,10 @@ endDate: <% moment(tp.file.title, "YYYY", true).endOf('year').format("YYYY-MM-DD
 fitPanelWidth: true
 aspectRatio: 20:9
 line:
+    title: I'm speed
     yAxisLabel: Speed (Km/h)
     yAxisLabelColor: '#1fc0e1,#e1401f'
+    yAxisColor: '#1fc0e1,#e1401f'
     lineColor: '#1fc0e1,#e1401f'
     yAxisLocation: left, right
     showLegend: true
@@ -348,9 +1043,10 @@ endDate: <% moment(tp.file.title, "YYYY", true).endOf('year').format("YYYY-MM-DD
 fitPanelWidth: true
 aspectRatio: 20:9
 line:
-    title: How much can I last ?
+    title: Stamina vs Adrenaline
     lineColor: '#1fc0e1,#e1401f'
     yAxisLabelColor: '#1fc0e1,#e1401f'
+    yAxisColor: '#1fc0e1,#e1401f'
     yAxisLocation: left, right
     yAxisLabel: Duration (Mim), Duration (Seconds)
     showLegend: true
@@ -387,6 +1083,7 @@ summary:
 ``` tracker
 searchType: dvField
 searchTarget: myWeight, myHeight
+datasetName: myWeight, myHeight
 folder: "00 - Main vault/Notes/Daily Notes"
 startDate: <% moment(tp.file.title, "YYYY").startOf('year').format("YYYY-MM-DD") %>
 endDate: <% moment(tp.file.title, "YYYY", true).endOf('year').format("YYYY-MM-DD") %>
@@ -394,8 +1091,6 @@ fitPanelWidth: true
 aspectRatio: 20:9
 line:
     title: Weight Log
-    yAxisLabel: Weight, Height
-    lineColor: yellow
     fillGap: true
     yAxisLabel: Weight, Height
     yAxisUnit: Kg, cm
@@ -408,7 +1103,119 @@ line:
     xAxisTickInterval: 1m
     xAxisTickLabelFormat: MMMM
 ```
-Globaly, my weight statistics:
+``` tracker
+searchType: dvField
+searchTarget: BMI, FAT, WAT
+folder: "00 - Main vault/Notes/Daily Notes"
+startDate: <% moment(tp.file.title, "YYYY").startOf('year').format("YYYY-MM-DD") %>
+endDate: <% moment(tp.file.title, "YYYY", true).endOf('year').format("YYYY-MM-DD") %>
+fitPanelWidth: true
+datasetName: BMI, FAT, WAT
+aspectRatio: 20:9
+line:
+	title: Body Composition & Weight Status
+	lineColor: '#1fc0e1, yellow, #e1401f'
+	fillGap: true
+	yAxisLabel:
+	  - Mesure and percentage
+	  - Percentage
+	yAxisUnit:
+	  - kg/m², %
+	  - "%"
+	yAxisLocation:
+	  - left
+	  - left
+	  - right
+	yAxisColor:
+	  - yellow
+	  - white
+	yAxisLabelColor:
+	  - yellow
+	  - white
+	yAxisTickLabelFormat:
+	  - .2f
+	showPoint: true
+	showLegend: true
+    xAxisTickInterval: 1m
+    xAxisTickLabelFormat: MMMM
+```
+``` tracker
+searchType: dvField
+searchTarget: MUS, FAT
+folder: "00 - Main vault/Notes/Daily Notes"
+startDate: <% moment(tp.file.title, "YYYY").startOf('year').format("YYYY-MM-DD") %>
+endDate: <% moment(tp.file.title, "YYYY", true).endOf('year').format("YYYY-MM-DD") %>
+fitPanelWidth: true
+datasetName: MUS, FAT
+aspectRatio: 20:9
+
+line:
+	title: Muscular and Skeletal Profile
+	lineColor:
+	  - yellow
+	  - blue
+	fillGap: true
+	yAxisLabel:
+	  - Percentage
+	  - Percentage
+	yAxisUnit:
+	  - "%"
+	  - "%"
+	yAxisLocation:
+	  - left
+	  - right
+	yAxisColor:
+	  - yellow
+	  - blue
+	yAxisLabelColor:
+	  - yellow
+	  - blue
+	yAxisTickLabelFormat:
+	  - .2f
+	showPoint: true
+	showLegend: true
+    xAxisTickInterval: 1m
+    xAxisTickLabelFormat: MMMM
+```
+``` tracker
+searchType: dvField
+searchTarget: myWeight, KCAL
+folder: "00 - Main vault/Notes/Daily Notes"
+startDate: <% moment(tp.file.title, "YYYY").startOf('year').format("YYYY-MM-DD") %>
+endDate: <% moment(tp.file.title, "YYYY", true).endOf('year').format("YYYY-MM-DD") %>
+fitPanelWidth: true
+datasetName: myWeight, KCAL
+aspectRatio: 20:9
+
+line:
+	title: Muscular and Skeletal Profile
+	lineColor:
+	  - yellow
+	  - white
+	fillGap: true
+	yAxisLabel:
+	  - Weight
+	  - BMR
+	yAxisUnit:
+	  - "Kg"
+	  - "Kcal/day"
+	yAxisLocation:
+	  - left
+	  - right
+	yAxisColor:
+	  - yellow
+	  - white
+	yAxisLabelColor:
+	  - yellow
+	  - white
+	yAxisTickLabelFormat:
+	  - .2f
+	showPoint: true
+	showLegend: true
+    xAxisTickInterval: 1m
+    xAxisTickLabelFormat: MMMM
+```
+Globaly this year, my weight statistics:
 ``` tracker
 searchType: dvField
 searchTarget: myWeight
@@ -444,6 +1251,7 @@ endDate: <% moment(tp.file.title, "YYYY", true).endOf('year').format("YYYY-MM-DD
 fitPanelWidth: true
 aspectRatio: 20:9
 line:
+    title: Watching & reading
     lineColor: '#F4A261,#2A9D8F,#FF5733,#3388FF'
     yAxisLabel: Count
     showLegend: true
@@ -466,8 +1274,12 @@ endDate: <% moment(tp.file.title, "YYYY", true).endOf('year').format("YYYY-MM-DD
 fitPanelWidth: true
 aspectRatio: 20:9
 line:
+    title: Gaming
     lineColor: '#1fc0e1,#e1401f'
-    yAxisLabel: Time (Min)
+    yAxisColor: '#1fc0e1,#e1401f'
+    yAxisLabelColor: '#1fc0e1,#e1401f'
+    yAxisLocation: left, right
+    yAxisLabel: G-Phone time (Min), ROG StriX time (Min) 
     showLegend: true
     legendPosition: bottom
 	yMin: 0
@@ -488,14 +1300,17 @@ endDate: <% moment(tp.file.title, "YYYY", true).endOf('year').format("YYYY-MM-DD
 fitPanelWidth: true
 aspectRatio: 20:9
 line:
-    lineColor: yellow, red, blue
+    title: Time on phone
+    lineColor: 'yellow, #33A02C, #009E73, #56B4E9, #0072B2'
     yAxisLocation: left, left, left, left, right
     yAxisLabel: Time (Min), Count
+    yAxisLabelColor: 'yellow, #0072B2'
+    yAxisColor: 'yellow, #0072B2'
     showLegend: true
-    legendPosition: bottom
-	yMin: 0
+    legendPosition: bottom   
     showPoint: false
     fillGap: true
+    yMin: 0 
     xAxisTickInterval: 1m
     xAxisTickLabelFormat: MMMM
 ```
@@ -513,17 +1328,22 @@ endDate: <% moment(tp.file.title, "YYYY", true).endOf('year').format("YYYY-MM-DD
 fitPanelWidth: true
 aspectRatio: 20:9
 line:
+    title: Money log
     yAxisLabel: Dirham 
     yAxisUnit: Dh
     showPoint: false
     fillGap: true
     xAxisTickInterval: 1m
     xAxisTickLabelFormat: MMMM
+    yMin: 0
+    yMax: 0
+summary:
+    template: "Average: {{average()}} Dh \t Minimum: {{min()}}Dh \t Maximum: {{max()}}Dh"
 ```
 
 ***
 
-### [[Sleeping _ Stat|Sleeping & Mood]] 😏
+### [[Money _ Stat|Money spending]] 💸
 A healthy brain in a healthy body 💤
 
 ```tracker
@@ -535,11 +1355,15 @@ startDate: <% moment(tp.file.title, "YYYY").startOf('year').format("YYYY-MM-DD")
 endDate: <% moment(tp.file.title, "YYYY", true).endOf('year').format("YYYY-MM-DD") %>
 fitPanelWidth: true
 aspectRatio: 20:9
+accum: false,true
 line:
+    title: Sleeping & Mood
     lineColor: '#1fc0e1,#e1401f'
     yAxisLocation: left, right
     yAxisLabel: Time (Min), Count
     showLegend: true
+    yAxisLabelColor: '#1fc0e1,#e1401f'
+    yAxisColor: '#1fc0e1,#e1401f'
     legendPosition: bottom
 	yMin: 0
     showPoint: false
@@ -550,27 +1374,31 @@ line:
 ### Sleeping timer ⌚ 
 ``` tracker
 searchType: dvField
-searchTarget: wokedAt,sleptAt
+searchTarget: wokedAt,sleptAt,vUpTimeROG
 startDate: <% moment(tp.file.title, "YYYY").startOf('year').format("YYYY-MM-DD") %>
 endDate: <% moment(tp.file.title, "YYYY", true).endOf('year').format("YYYY-MM-DD") %>
 folder: "00 - Main vault/Notes/Daily Notes"
-datasetName: Waking up, Sleeping
+datasetName: Waking up, Sleeping, ROG StriX ON
 fitPanelWidth: true
 aspectRatio: 20:9
 line:
-    yAxisLabel: "Time (24h)"
+    title: Sleeping timer
+    yAxisLabel: "Time (24h),Time (24h)"
     reverseYAxis: true, false
-    yAxisLocation: left, right
-    lineColor: '#e1401f, #1fc0e1'
+    yAxisLocation: left, right, left
+    lineColor: '#e1401f, #1fc0e1, yellow'
     yAxisColor: '#e1401f, #1fc0e1'
+    yAxisLabelColor: '#e1401f, #1fc0e1'
     showPoint: false
     fillGap: true
     xAxisTickInterval: 1m
     xAxisTickLabelFormat: MMMM
     showLegend: true
-	yMin: 03:00 AM, 12:00 AM
-    yMax: 02:00 PM, 11:59 PM
+	yMin: 04:00 AM, 10:00 AM
+    yMax: 06:00 PM, -03:59 AM
 ```
 ***
 ### [[Tasks _ Stat|Tasks]] 📆
-### [[Good vs Bad _ Stat|Self global judge ⚖️]]
+You can always check yearly [[SDays_<%moment(tp.file.title,"YYYY").format("YYYY")%>|events]] or [[PDays_<%moment(tp.file.title,"YYYY").format("YYYY")%>|payments]] if needed.
+## [[Good vs Bad _ Stat|Self global judge ⚖️]]
+![[Cj_IG_W<%moment(tp.file.title,"YYYY").format("YYYY")%>.png]]

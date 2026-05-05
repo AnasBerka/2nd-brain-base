@@ -1,24 +1,69 @@
 ---
-tags: 
-Creation date: 2020-07-25
-Last modification: 
-Owner(s):
-  - Anas BERKA
-Related notes: 
-banner: "[[Road map.jpg]]"
-banner_x: 0
-banner_y: 0.965
+excalidraw-plugin: parsed
+tags:
+  - excalidraw
+cssclasses:
+  - daily
+  - reflection
 ---
+==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
+
+# Road to CS
+
  I have to be expert in [[Programming]] and all related stuffs
 
 
-1. [[Fundamentals]]
-2. [[Statistics]]
-3. [[Programming (for CS)]] ([[Python]] & [[C++]] & [[DB]] )
-4. [[Machine Learning]]
-5. [[Text Mining]] / [[NLP]]
-6. [[Visualization]]
-7. [[Big Data]]
-8. [[Data Munging]]
-9. [[Data Ingestion]]
-10. [[Toolbox]]
+1. [[_ Fundamentals _]]
+2. [[_ Statistics _]]
+3. [[_ Programming (for CS) _]] ([[Python]] & [[C++]] & [[DB]] )
+4. [[_ Machine Learning _]]
+5. [[_ Text Mining _]] / [[NLP]]
+6. [[_ Visualization _]]
+7. [[_ Big Data _]]
+8. [[_ Data Munging _]]
+9. [[_ Data Ingestion _]]
+10. [[_ Toolbox _]]
+# Excalidraw Data
+
+## Text Elements
+## Embedded Files
+7909b7b83030989dfbb74f076cab2dc0884b67eb: [[Road map.jpg]]
+
+%%
+## Drawing
+```compressed-json
+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
+```
+%%

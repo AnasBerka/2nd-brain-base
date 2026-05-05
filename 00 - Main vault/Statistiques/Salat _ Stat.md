@@ -11,23 +11,61 @@ cssclasses:
 ---
 #### Salat streaks
 ```dataviewjs
-const calendarData = {
+const heatmapColors = [
+    "rgb(51, 51, 51)",
+    "rgb(77, 77, 77)",
+    "rgb(102, 102, 102)",
+    "rgb(128, 128, 128)",
+    "rgb(153, 153, 153)",
+    "rgb(255, 255, 255)"
+];
+
+const calendarData = { year: 2026,
     intensityScaleStart: 0,
+//     monthsToShow:12,
+//     layout:"monthly",
     intensityScaleEnd: 5, // I have 12 color levels in heat
     entries: [],
     separateMonths: true,
     colorScheme: {
-        paletteName: "activate",
-        "work": [
-    "rgb(51, 51, 51)", 
-    "rgb(77, 77, 77)", 
-    "rgb(102, 102, 102)", 
-    "rgb(128, 128, 128)", 
-    "rgb(153, 153, 153)", 
-    "rgb(255, 255, 255)"
-],
+        customColors: heatmapColors,
     }
 };
+
+function renderInlineLegend(container, colors, minLabel, maxLabel) {
+    const legendsContainer = container.createDiv();
+    legendsContainer.style.display = "flex";
+    legendsContainer.style.alignItems = "center";
+    legendsContainer.style.justifyContent = "center";
+    legendsContainer.style.width = "100%";
+    legendsContainer.style.marginBottom = "12px";
+    legendsContainer.style.gap = "5px";
+
+    const createLabel = (text) => {
+        const label = legendsContainer.createDiv({ text });
+        label.style.fontSize = "65%";
+        label.style.fontFamily = "IBM plex mono, sans-serif";
+        label.style.textTransform = "uppercase";
+        return label;
+    };
+
+    createLabel(minLabel);
+
+    const colorsContainer = legendsContainer.createDiv();
+    colorsContainer.style.display = "flex";
+    colorsContainer.style.alignItems = "center";
+    colorsContainer.style.gap = "5px";
+
+    for (const color of colors) {
+        const colorBox = colorsContainer.createDiv();
+        colorBox.style.width = "9px";
+        colorBox.style.height = "9px";
+        colorBox.style.backgroundColor = color;
+    }
+
+    createLabel(maxLabel);
+}
+
 function scaleIntensity(intensity,maxDay) {
     if (intensity < maxDay) {
         return Math.floor((intensity / maxDay) * 5); // Scale to 0-5
@@ -43,60 +81,12 @@ for (let page of dv.pages('"00 - Main vault/Notes/Daily Notes"').where(p => p.sa
 	calendarData.entries.push({
         date: page.file.name,
         intensity: scaledIntensity, // Use scaled intensity
-        color:"work",
-        content: await dv.span(`[](${page.file.name})`), // For hover preview
+//         color:"work",
+        //content: await dv.span(`[](${page.file.name})`), // For hover preview
     });
 }
-//renderHeatmapTracker(this.container, calendarData)
-
 const heatmapTrackerEl = renderHeatmapTracker(this.container, calendarData)
-
-// Adding container for legends and colored boxes on the same line
-const legendsContainer = document.createElement('div');
-legendsContainer.style.display = 'flex';
-legendsContainer.style.alignItems = 'center'; // Align vertically
-legendsContainer.style.justifyContent = 'center'; // Center horizontally 
-legendsContainer.style.width = '100%'; // Ensure it takes full width for centering
-
-// Adding first legend with reduced size and custom font
-const firstLegend = document.createElement('div');
-firstLegend.innerText = 'Evil'; // Updated to "LESS" with all caps
-firstLegend.style.fontSize = '65%'; // Reduce font size by 50%
-firstLegend.style.fontFamily = 'IBM plex mono, sans-serif'; // Set custom font
-firstLegend.style.textTransform = 'uppercase'; // Convert text to uppercase
-firstLegend.style.marginRight = '5px'; // Add margin to separate from the boxes
-legendsContainer.appendChild(firstLegend);
-
-// Adding colored boxes with adjusted size
-const legendContainer = document.createElement('div');
-legendContainer.style.display = 'flex';
-legendContainer.style.alignItems = 'center'; // Align vertically
-
-for (let color of calendarData.colorScheme.work) {
-    const colorBox = document.createElement('div');
-    colorBox.style.width = '9px'; // Reduced box width by 50%
-    colorBox.style.height = '9px'; // Reduced box height by 50%
-    colorBox.style.backgroundColor = color;
-    colorBox.style.marginRight = '5px'; // Adjusted margin
-    legendContainer.appendChild(colorBox);
-}
-
-// Adding second legend after the colored boxes with reduced size and custom font
-const secondLegend = document.createElement('div');
-secondLegend.innerText = 'Good'; // Updated to "MORE" with all caps
-secondLegend.style.fontSize = '65%'; // Reduce font size by 50%
-secondLegend.style.fontFamily = 'IBM plex mono, sans-serif'; // Set custom font
-secondLegend.style.textTransform = 'uppercase'; // Convert text to uppercase
-legendContainer.appendChild(secondLegend);
-
-legendsContainer.appendChild(legendContainer);
-legendsContainer.style.marginBottom = "12px";
-
-heatmapTrackerEl.appendChild(legendsContainer);
-
-dv.span('Salat tracker statistics:')
-
-renderHeatmapTrackerStatistics(this.container, calendarData)
+renderInlineLegend(heatmapTrackerEl, heatmapColors, "Less", "More")
 ```
 #### Streak Counter and Last Value
 ```dataviewjs
@@ -117,6 +107,7 @@ let lastDate = null;
 // Iterate through sorted pages to calculate streak
 for (let i = 0; i < pages.length; i++) {
     let currentDate = dv.date(pages[i].file.name); // Extract date from file name
+    if (!currentDate) continue;
     let value = pages[i][variableKey];
     if (value === undefined || value === null){
 	    nonStop = false;
@@ -157,80 +148,68 @@ dv.paragraph(`**Last Logged Value:** ${lastValue} (on ${lastDate})`);
 
 #### Quran reading streaks
 ```dataviewjs
-const calendarData = {
+const heatmapColors = [
+    "rgb(51, 51, 51)",
+    "rgb(77, 77, 77)",
+    "rgb(102, 102, 102)",
+    "rgb(128, 128, 128)",
+    "rgb(153, 153, 153)",
+    "rgb(255, 255, 255)"
+];
+
+const calendarData = { year: 2026,
+    intensityScaleStart:1,
     entries: [],
     separateMonths: true,
     colorScheme: {
-        paletteName: "activate",
-        "work": [
-    "rgb(51, 51, 51)", 
-    "rgb(77, 77, 77)", 
-    "rgb(102, 102, 102)", 
-    "rgb(128, 128, 128)", 
-    "rgb(153, 153, 153)", 
-    "rgb(255, 255, 255)"
-],
+        customColors: heatmapColors,
     }
 };
 
+function renderInlineLegend(container, colors, minLabel, maxLabel) {
+    const legendsContainer = container.createDiv();
+    legendsContainer.style.display = "flex";
+    legendsContainer.style.alignItems = "center";
+    legendsContainer.style.justifyContent = "center";
+    legendsContainer.style.width = "100%";
+    legendsContainer.style.marginBottom = "12px";
+    legendsContainer.style.gap = "5px";
+
+    const createLabel = (text) => {
+        const label = legendsContainer.createDiv({ text });
+        label.style.fontSize = "65%";
+        label.style.fontFamily = "IBM plex mono, sans-serif";
+        label.style.textTransform = "uppercase";
+        return label;
+    };
+
+    createLabel(minLabel);
+
+    const colorsContainer = legendsContainer.createDiv();
+    colorsContainer.style.display = "flex";
+    colorsContainer.style.alignItems = "center";
+    colorsContainer.style.gap = "5px";
+
+    for (const color of colors) {
+        const colorBox = colorsContainer.createDiv();
+        colorBox.style.width = "9px";
+        colorBox.style.height = "9px";
+        colorBox.style.backgroundColor = color;
+    }
+
+    createLabel(maxLabel);
+}
+
 for (let page of dv.pages('"00 - Main vault/Notes/Daily Notes"').where(p => p.quranReading)) {
-	let quranReading = page.quranReading;
+	let quranReading = (page.quranReading||0) + (page.quranReadingO||0) + (page.quranReadingE||0);
 	if ( quranReading == 0) { continue; }
 	calendarData.entries.push({
         date: page.file.name,
         intensity: quranReading, 
-        color:"work",
-        content: await dv.span(`[](${page.file.name})`), // For hover preview
+//         color:"work",
+        //content: await dv.span(`[](${page.file.name})`), // For hover preview
     });
 }
-//renderHeatmapTracker(this.container, calendarData)
-
 const heatmapTrackerEl = renderHeatmapTracker(this.container, calendarData)
-
-// Adding container for legends and colored boxes on the same line
-const legendsContainer = document.createElement('div');
-legendsContainer.style.display = 'flex';
-legendsContainer.style.alignItems = 'center'; // Align vertically
-legendsContainer.style.justifyContent = 'center'; // Center horizontally 
-legendsContainer.style.width = '100%'; // Ensure it takes full width for centering
-
-// Adding first legend with reduced size and custom font
-const firstLegend = document.createElement('div');
-firstLegend.innerText = 'Evil'; // Updated to "LESS" with all caps
-firstLegend.style.fontSize = '65%'; // Reduce font size by 50%
-firstLegend.style.fontFamily = 'IBM plex mono, sans-serif'; // Set custom font
-firstLegend.style.textTransform = 'uppercase'; // Convert text to uppercase
-firstLegend.style.marginRight = '5px'; // Add margin to separate from the boxes
-legendsContainer.appendChild(firstLegend);
-
-// Adding colored boxes with adjusted size
-const legendContainer = document.createElement('div');
-legendContainer.style.display = 'flex';
-legendContainer.style.alignItems = 'center'; // Align vertically
-
-for (let color of calendarData.colorScheme.work) {
-    const colorBox = document.createElement('div');
-    colorBox.style.width = '9px'; // Reduced box width by 50%
-    colorBox.style.height = '9px'; // Reduced box height by 50%
-    colorBox.style.backgroundColor = color;
-    colorBox.style.marginRight = '5px'; // Adjusted margin
-    legendContainer.appendChild(colorBox);
-}
-
-// Adding second legend after the colored boxes with reduced size and custom font
-const secondLegend = document.createElement('div');
-secondLegend.innerText = 'Good'; // Updated to "MORE" with all caps
-secondLegend.style.fontSize = '65%'; // Reduce font size by 50%
-secondLegend.style.fontFamily = 'IBM plex mono, sans-serif'; // Set custom font
-secondLegend.style.textTransform = 'uppercase'; // Convert text to uppercase
-legendContainer.appendChild(secondLegend);
-
-legendsContainer.appendChild(legendContainer);
-legendsContainer.style.marginBottom = "12px";
-
-heatmapTrackerEl.appendChild(legendsContainer);
-
-dv.span('Salat tracker statistics:')
-
-renderHeatmapTrackerStatistics(this.container, calendarData)
+renderInlineLegend(heatmapTrackerEl, heatmapColors, "Less", "More")
 ```

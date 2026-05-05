@@ -1,0 +1,29 @@
+{
+  "database": "Zotero",
+  "noteImportFolder": "02 - Reading and Watching/Zotero Notes",
+  "pdfExportImageDPI": 120,
+  "pdfExportImageFormat": "jpg",
+  "pdfExportImageQuality": 90,
+  "citeFormats": [
+    {
+      "name": "Citation",
+      "format": "pandoc",
+      "brackets": false,
+      "cslStyle": "apa"
+    }
+  ],
+  "exportFormats": [
+    {
+      "name": "SHwH",
+      "outputPathTemplate": "/02 - Reading and Watching/Zotero Notes/@{{citekey}}.md",
+      "imageOutputPathTemplate": "/00 - Main vault/Assets/Zotero/{{citekey}}/",
+      "imageBaseNameTemplate": "image",
+      "cslStyle": "apa",
+      "templatePath": "00 - Main vault/Templates/Zotero Importer.md"
+    }
+  ],
+  "citeSuggestTemplate": "[[{{citekey}}]]",
+  "openNoteAfterImport": true,
+  "whichNotesToOpenAfterImport": "last-imported-note",
+  "shouldConcat": true
+}

@@ -1,0 +1,203 @@
+{
+  "items": [
+    {
+      "type": "graph",
+      "ctime": 1740573132387,
+      "title": "Only real connections and files",
+      "options": {
+        "collapse-filter": false,
+        "search": "-tag:#Daily  ",
+        "showTags": true,
+        "showAttachments": true,
+        "hideUnresolved": true,
+        "showOrphans": false,
+        "collapse-color-groups": false,
+        "colorGroups": [],
+        "collapse-display": false,
+        "showArrow": true,
+        "textFadeMultiplier": 0,
+        "nodeSizeMultiplier": 1.031,
+        "lineSizeMultiplier": 1.12380457380457,
+        "collapse-forces": false,
+        "centerStrength": 0.518713248970312,
+        "repelStrength": 10,
+        "linkStrength": 1,
+        "linkDistance": 250,
+        "scale": 0.3135980353276692,
+        "close": false
+      }
+    },
+    {
+      "type": "group",
+      "ctime": 1753814517602,
+      "items": [
+        {
+          "type": "graph",
+          "ctime": 1753814498264,
+          "title": "Untitled Graph",
+          "options": {
+            "collapse-filter": false,
+            "search": "-path:\"00 - Main vault/Notes/People/Contacts\"  ",
+            "showTags": true,
+            "showAttachments": true,
+            "hideUnresolved": false,
+            "showOrphans": false,
+            "collapse-color-groups": false,
+            "colorGroups": [],
+            "collapse-display": false,
+            "showArrow": false,
+            "textFadeMultiplier": 0,
+            "nodeSizeMultiplier": 1,
+            "lineSizeMultiplier": 1,
+            "collapse-forces": false,
+            "centerStrength": 0.518713248970312,
+            "repelStrength": 10,
+            "linkStrength": 1,
+            "linkDistance": 250,
+            "scale": 0.17853350310640384,
+            "close": true
+          }
+        },
+        {
+          "type": "file",
+          "ctime": 1753814498264,
+          "path": "00 - Main vault/Notes/Annually reports/2025.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1753814498264,
+          "path": "00 - Main vault/Notes/Weekly reports/2025/2025-W31.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1753814498264,
+          "path": "00 - Main vault/Notes/Daily Notes/Habits DB.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1753814498264,
+          "path": "00 - Main vault/Notes/Daily Notes/2025/07/2025-07-29.md"
+        }
+      ],
+      "title": "Main"
+    },
+    {
+      "type": "group",
+      "ctime": 1755113061719,
+      "items": [
+        {
+          "type": "file",
+          "ctime": 1755113043856,
+          "path": "00 - Main vault/Notes/Relationships/Anas BERKA.md"
+        },
+        {
+          "type": "graph",
+          "ctime": 1755113043856,
+          "title": "Untitled Graph",
+          "options": {
+            "collapse-filter": false,
+            "search": "-path:\"00 - Main vault/Notes/People/Contacts\"  ",
+            "showTags": true,
+            "showAttachments": true,
+            "hideUnresolved": false,
+            "showOrphans": false,
+            "collapse-color-groups": false,
+            "colorGroups": [],
+            "collapse-display": false,
+            "showArrow": false,
+            "textFadeMultiplier": 0,
+            "nodeSizeMultiplier": 1,
+            "lineSizeMultiplier": 1,
+            "collapse-forces": false,
+            "centerStrength": 0.518713248970312,
+            "repelStrength": 10,
+            "linkStrength": 1,
+            "linkDistance": 250,
+            "scale": 0.12590061343614442,
+            "close": true
+          }
+        },
+        {
+          "type": "file",
+          "ctime": 1755113043856,
+          "path": "00 - Main vault/Notes/Monthly reports/2022/BNP_2022-0405.pdf"
+        },
+        {
+          "type": "file",
+          "ctime": 1755113043856,
+          "path": "00 - Main vault/Notes/Daily Notes/2022/04/2022-04-14.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1755113043856,
+          "path": "00 - Main vault/Notes/Annually reports/2021.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1755113043856,
+          "path": "00 - Main vault/Notes/Monthly reports/2025/2025-08 _ August.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1755113043856,
+          "path": "00 - Main vault/Notes/Weekly reports/2025/2025-W33.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1755113043856,
+          "path": "00 - Main vault/Notes/Daily Notes/2025/08/2025-08-13.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1755113043856,
+          "path": "00 - Main vault/Notes/Financial Records.md"
+        }
+      ],
+      "title": "All loggings"
+    },
+    {
+      "type": "group",
+      "ctime": 1755778495575,
+      "items": [
+        {
+          "type": "file",
+          "ctime": 1755778470314,
+          "path": "00 - Main vault/Notes/Relationships/Anas BERKA.md"
+        },
+        {
+          "type": "graph",
+          "ctime": 1755778470314,
+          "title": "Untitled Graph",
+          "options": {
+            "collapse-filter": false,
+            "search": "-path:\"00 - Main vault/Notes/People/Contacts\"  ",
+            "showTags": true,
+            "showAttachments": true,
+            "hideUnresolved": false,
+            "showOrphans": false,
+            "collapse-color-groups": false,
+            "colorGroups": [],
+            "collapse-display": false,
+            "showArrow": false,
+            "textFadeMultiplier": 0,
+            "nodeSizeMultiplier": 1,
+            "lineSizeMultiplier": 1,
+            "collapse-forces": false,
+            "centerStrength": 0.518713248970312,
+            "repelStrength": 10,
+            "linkStrength": 1,
+            "linkDistance": 250,
+            "scale": 0.1264108769092017,
+            "close": true
+          }
+        },
+        {
+          "type": "file",
+          "ctime": 1755778470314,
+          "path": "00 - Main vault/Notes/Daily Notes/Habits DB.md"
+        }
+      ],
+      "title": "main tabs"
+    }
+  ]
+}

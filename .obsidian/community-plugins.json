@@ -1,6 +1,5 @@
 [
   "obsidian-minimal-settings",
-  "calendar",
   "obsidian-icon-folder",
   "table-editor-obsidian",
   "templater-obsidian",
@@ -24,9 +23,10 @@
   "dataview",
   "heatmap-tracker",
   "recent-files-obsidian",
-  "obsidian-excalidraw-plugin",
   "obsidian-zotero-desktop-connector",
-  "obsidian-full-calendar",
   "obsidian-day-planner",
-  "obsidian-pandoc-reference-list"
+  "obsidian-pandoc-reference-list",
+  "obsidian-excalidraw-plugin",
+  "calendar",
+  "obsidian-full-calendar"
 ]
